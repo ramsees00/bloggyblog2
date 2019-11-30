@@ -3,23 +3,30 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
+<!-- 2019-11-29 Fri 19:32 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Sammy's Blog</title>
-<!-- 2019-09-27 Fri 12:51 -->
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="generator" content="Org-mode" />
-<meta  name="author" content="sam" />
+<meta name="generator" content="Org mode" />
+<meta name="author" content="sam" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
   .todo   { font-family: monospace; color: red; }
-  .done   { color: green; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
   .tag    { background-color: #eee; font-family: monospace;
             padding: 2px; font-size: 80%; font-weight: normal; }
   .timestamp { color: #bebebe; }
   .timestamp-kwd { color: #5f9ea0; }
-  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
   .underline { text-decoration: underline; }
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
@@ -46,27 +53,111 @@
     border: 1px solid black;
   }
   pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
   pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
   table { border-collapse:collapse; }
   caption.t-above { caption-side: top; }
   caption.t-bottom { caption-side: bottom; }
   td, th { vertical-align:top;  }
-  th.right  { text-align: center;  }
-  th.left   { text-align: center;   }
-  th.center { text-align: center; }
-  td.right  { text-align: right;  }
-  td.left   { text-align: left;   }
-  td.center { text-align: center; }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
   dt { font-weight: bold; }
-  .footpara:nth-child(2) { display: inline; }
-  .footpara { display: block; }
+  .footpara { display: inline; }
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
@@ -86,6 +177,7 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
 <style> body {width:80%; margin-left: 10%;}</style>
@@ -94,7 +186,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -143,25 +235,79 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. The Importance of Doing Nothing</a></li>
-<li><a href="#sec-2">2. Why I Support Citizens United</a></li>
-<li><a href="#sec-3">3. Camera Settings</a></li>
+<li><a href="#orgfaab43e">1. Treating Cancer with Chemo (Part 1)</a></li>
+<li><a href="#org09f29b6">2. The Importance of Doing Nothing</a></li>
+<li><a href="#orgfde1502">3. Why I Support Citizens United</a></li>
+<li><a href="#org49f6b18">4. Camera Settings</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> The Importance of Doing Nothing</h2>
+<div id="outline-container-orgfaab43e" class="outline-2">
+<h2 id="orgfaab43e"><span class="section-number-2">1</span> Treating Cancer with Chemo (Part 1)</h2>
 <div class="outline-text-2" id="text-1">
+<p>
+Cancer treatment is something I've thought about a lot recently, and the more I've studied it, the more I've seen that it's an interesting and complex problem. At it's core a cancer is a group of cells whose genetic code has mutated such that they divide uncontrollably, in a way that cannot be properly regulated by the body. Cancer cells, in contrast to benign tumors, also have the ability to sustain their growth, and to invade other parts of the body. If the cancer cells grow too much, they can "crowd out" other bodily functions, by having large tumors that press against vital organs, or "replace" other healthy cells.
+</p>
+
+<p>
+The challenge with treatment is that cancer cells, unlike bacteria or viruses, look remarkably like healthy human cells. It's difficult to kill the cancer cells without accidentally killing the normal cells. As a result, the main treatment options for cancer are:
+</p>
+<ul class="org-ul">
+<li>Surgery: Cancers typically grow as a cluster of cells in the same physical location, called a tumor. One way to treat this is to just cut out the tumor. This is good because it can quickly and fully remove the entire tumor, but bad because it might not be in a place you can safely reach with a knife, and bad because it doesn't catch it if the cancer spread without your knowledge.</li>
+<li>Radiation: Radiation zaps the cancer with high intensity beams of light. Think a really powerful microwave pointed directly at your tumor. This is good because it kills cells in places that aren't easy to reach with a knife, and can cover a wider area than would be safe to cut out, but bad because it might not kill everything in its beam and again, it won't catch the cancer if it spreads.</li>
+<li>Chemotherapy: This is a broad term that refers to using chemicals to kill, or otherwise harm the cancer cells. Since this refers to many different types of chemicals, which act in many different types of ways, it's hard to give a one-size-fits all explanation. One type of chemical which is fairly common essentially tries to kill cells which are dividing very quickly or haphazardly, hoping to target the cancer cells unctonrollable growth. Chemotherapy is great because unlike radiation or surgery, it can attack cancer cells anywhere in the body, meaning that if the tumor had spread to a small undetectable cluster of cells, chemotherapy would still fight it. The downside of chemotherapy is it's not always very good at determining which cells are cancer cells. This means it can kill healthy cells all over your body, most notably in the bone marrow, which tends to replenish quickly.</li>
+</ul>
+
+<p>
+There are a few other types of treatments, such as immunotherapy, which I'll skip for now as largely niche (but growing) fields.
+</p>
+
+
+<p>
+I'd like to focus here on chemotherapy because, while currently surgery and radiation are often necessary, because they are unable to attack small groups of cells, I don't believe that in the future, anything more than incremental progress will be made. Whatever the solution is will likely have to be some sort of medicine because we can't physically target something we don't have the ability to detect.
+</p>
+
+<p>
+Medicines that treat cancer (even including immunotherapy) are hard to make because it's hard for anything to classify whether or not a cell is cancerous. So, in order to treat cancer, we need to solve the classification problem, build a model to predict whether or not a cell is cancerous, and then encode it on a macroscopic scale. The more accurate our model, the more likely that the drug will kill the cancer without being otherwise fatal to the human body.
+</p>
+
+<p>
+We can approach this classification as a "black box", i.e. the cell is a generic thing with certain properties which we can't see into. Or, we can think of it as an open box, i.e. the mutated DNA of a cancer cell causes these specific chemical reactions which, eventually cause the cell to divide uncontrollably. With open box models, we have a tremendous amount more information that we can use to classify the cell as dangerous, and it seems like this would be intrinsically easier, but this information comes at a cost. Cancer is a name for a disease that can occur in many different ways and for many different reasons, often exhibiting significant heterogeneity within a single tumor. If we treat one specific pathway of chemical reactions, we'll only solve the problem for those specific cells, and we'll miss out on all the different types of cancer that are possible.
+</p>
+
+<p>
+I'd like to think about this problem as a black box problem because in addition to the curse of heterogeneity, it's also just better suited to my background. Treating the cell as an open box generally means lab work with equipment I don't have access to, and at best a 5-10 year trial period before a new chemical gets into production. It's my hypothesis that there are enough building blocks that are already well studied, that if we put them together in just the right way, we'll get a better result.
+</p>
+
+<p>
+So let's take a look at the black box. I took a look at the definition of a cancer cell. It boils down to roughly:
+</p>
+<ol class="org-ol">
+<li>The cells grow and divide regardless of what body signals them to do</li>
+<li>They don't die when they're supposed to</li>
+<li>They can invade other parts of the body</li>
+<li>They get the rest of the body to support their growth (encourage blood vessel construction)</li>
+</ol>
+
+<p>
+I'd say 2 is almost impossible to go after as a black box, since you can't ask a cell whether it will die without killing it. 3 seems similarly difficult because at best it can only attack spread, and not the original tumor, and because it's hard to ask a cell where it originally came from. 4 seems promising, but again has the problem that it likely won't cure tumors of smaller than a certain size. So, all things considered, I'd like to take a closer look at 1, that cancer cells grow and divide regardless of the body's signals.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org09f29b6" class="outline-2">
+<h2 id="org09f29b6"><span class="section-number-2">2</span> The Importance of Doing Nothing</h2>
+<div class="outline-text-2" id="text-2">
 <p>
 This morning I woke up, a little on the later side, and didn't have anything important to do. I didn't have work, and I didn't have chores, just had to eat breakfast, and be out the door by noon. I had 2 and a half hours, so it should have been easy.
 </p>
 
 <p>
-With so much time, and nothing, really, to do, I wanted something to occupy myself, so I browsed the front page of reddit. I thought maybe the act of reading, or looking at something would wake me up a little. 30 minutes passed. This was no big deal, as I had all morning, really, but I felt like I wasn't quite done yet, so I kept going.
+With so much time, and nothing, really, to do, I started browsing the front page of reddit. I thought maybe the act of reading, or looking at something would wake me up a little. 30 minutes passed. This was no big deal, as I had all morning, really, but I felt like I wasn't quite done yet, so I kept going.
 </p>
 
 <p>
-By 1130, I was still trying to find something initeresting, and I still hadn't found what I was looking for. I knew I was wasting time, and I knew that I wasn't going to feel fully satisfied at the end of it, but it always felt like the next two or three minutes would make me feel a little bit better, and that little time wouldn't be a deal breaker. By the end of it, I would click on a YouTube video and only watch the last thirty seconds of it, because in truth I didn't really want to watch the video, but I wanted to feel like I was going to find something new and entertaining. I didn't really feel like I was thinking at all, or even that I was enjoying what I was doing, but I wanted to see something. You can probably guess that I rushed the quickest breakfast (read: two bananas), and was out the door 20 minutes late.
+By 1130, I was still searching for something initeresting, and I still hadn't found what I was looking for. I knew I was wasting time, and I knew that I wasn't going to feel fully satisfied at the end of it, but it always felt like the next two or three minutes would make me feel a little bit better, and that little time wouldn't be a deal breaker. By the end of it, I would click on a YouTube video and only watch the last thirty seconds of it, because in truth I didn't really want to watch the video, but I wanted to feel like I was going to find something new and entertaining. I didn't really feel like I was thinking at all, or even that I was enjoying what I was doing, but I wanted to see something. You can probably guess that I rushed the quickest breakfast (read: two bananas), and was out the door 20 minutes late.
 </p>
 
 <p>
@@ -182,9 +328,9 @@ Maybe the videos made me feel happy for a half hour or so. Maybe I even learned 
 </div>
 </div>
 
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> Why I Support Citizens United</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-orgfde1502" class="outline-2">
+<h2 id="orgfde1502"><span class="section-number-2">3</span> Why I Support Citizens United</h2>
+<div class="outline-text-2" id="text-3">
 <p>
 Most people I know really don't like Citizens United. For those who aren't familiar, Citizens United was a supreme court decision that essentially let corporations and wealthy individuals funnel unlimited amounts of money into American politics. Not only that, it let people donate to certain types of political causes with little to no transparency or oversight. The people I know who don't like it view it as letting big money buy elections and spread corruption in American politics.
 </p>
@@ -214,9 +360,9 @@ So, the question is, where do you draw the line? What's the difference between p
 </p>
 </div>
 </div>
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> Camera Settings</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-org49f6b18" class="outline-2">
+<h2 id="org49f6b18"><span class="section-number-2">4</span> Camera Settings</h2>
+<div class="outline-text-2" id="text-4">
 <p>
 When I got my first DSLR, I opened up the settings menu, and found it loaded with options: active-d lighting, vignette control, auto-bracketing, ambient lighting, and much more. It took a while to sift through all the options, but after assigning some reasonable defaults (use full resolution, turn on vibration reduction when available, etc.), I found that despite all of the options, there were really only four dials that effected the raw image. The rest were either only in post-processing, or just different ways of twisting those original four dials.
 </p>
@@ -225,7 +371,9 @@ When I got my first DSLR, I opened up the settings menu, and found it loaded wit
 Despite all the complexity, the only four dials you have on your camera are:
 </p>
 <ol class="org-ol">
-<li>Exposure
+<li><p>
+Exposure
+</p>
 
 <p>
 Your camera has a sensor in it. When you take a picture, the camera opens up and lets light into the sensor. The longer the camera opens up, the more time light has to hit the sensor, and the brighter the overall image. 
@@ -233,9 +381,10 @@ Your camera has a sensor in it. When you take a picture, the camera opens up and
 
 <p>
 This comes from a time before people had digital cameras. When people used film, each wave of light would cause a chemical reaction on the film, so letting in waves of light for a longer period of time would cause more chemical reactions, and all of the individual waves of light would "add together" to form the overall image. That's why if you move a camera around while the film is exposed, the image comes out blurry.
+</p></li>
+<li><p>
+Focus Distance
 </p>
-</li>
-<li>Focus Distance
 
 <p>
 In front of the sensor, your camera has a lens. The job of the lens is to take in all of the light from the outside world, and bend it, so that the light is pointed at the sensor. Typically the outside world is larger than the size of the sensor, so the lens bends the light toward the center, with the light kind of following the shape of a cone. If the lens bends the light correctly, the square of the outside world that you want to capture will hit the image like a bunch of parallel beams of light, and you'll project a much bigger image onto a much smaller sensor. However, if the cone of light is too short, or too long, instead of hitting the image like parallel lines, the beams of light will get criss-crossed. Instead of one exact point on the outside world corresponding to one exact spot on the sensor, it might miss, and send some of the light kind of nearby, causing the image to be blurry. The correct focal distance is different for objects at different distances from the camera, so if you make nearby objects in focus, you make faraway objects out of focus.
@@ -243,20 +392,21 @@ In front of the sensor, your camera has a lens. The job of the lens is to take i
 
 <p>
 Long story short, if a part of an image is not in focus, it looks blurry. You get to choose a distance away from the camera such that objects at that distance are in focus. The further away an object is from the focus you chose, the more blurry it looks in the photo.
+</p></li>
+<li><p>
+Aperture
 </p>
-</li>
-<li>Aperture
 
 <p>
 Typically, there's a physical shutter that opens up when you take a picture to let light onto the film or sensor. Aperature refers to how big of an opening there is when the shutter is open. If there's a really big hole, it lets in a lot of light, but if there's really small hole, it only lets in a little bit of light. Also, if there's a small hole, the cone of light (from the focus section) is skinnier, so the beams don't get criss-crossed as much. This means that objects that aren't at the focus distance don't wind up being as blurry, because there's less interference. If there's a big hole, the cone is wider, so only objects at a specific distance are in focus, and everything else comes out blurry. This can be useful in taking portraits when you want to emphasize an in-focus person against an out-of-focus background.
+</p></li>
+<li><p>
+ISO
 </p>
-</li>
-<li>ISO
 
 <p>
 How sensitive your camera sensors are to light. High ISO means your camera registers a lot of input from a small amount of light. Most cameras are only able to get accurate readings up to a certain level of sensitivity, so bumping your ISO too high can result in noisy/grainy images.
-</p>
-</li>
+</p></li>
 </ol>
 
 
@@ -272,8 +422,7 @@ In addition, even though it doesn't effect the raw image, many cameras have buil
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: sam</p>
-<p class="date">Created: 2019-09-27 Fri 12:51</p>
-<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="date">Created: 2019-11-29 Fri 19:32</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
