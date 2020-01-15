@@ -1,70 +1,636 @@
-<!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-01-14 Tue 19:25 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sammy's Blog</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Sam" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
-    http://www.apache.org/licenses/LICENSE-2.0
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<style> body {width:80%; margin-left: 10%;}</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
 
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-<html>
-    <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com cdvfile://* https://* * 'unsafe-eval'; style-src 'self' cdvfile://* 'unsafe-inline'; media-src *; img-src 'self' cdvfile://* data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-          <h1 class="title" id="title2">ImagePop!</h1>
-	  <div class="photo" id="photobox">
-	    <div class="plus" id="plus"> + </div>
-	    <img src="" id="selectedphoto" class="mainimage">
-	    <canvas id="canvasOutput3"></canvas>
-	    <div class="photo-info" id="phototext">Use + to Select an Image</div>
-	    <div class="photo-info loading" id="loading">Loading. . .</div>
-	  </div>
-	  <div class="buttons">
-	    <div class="makeitpop mainbutton" id="poptext">
-	      <div class="popbuttontext mainbuttontext">Make it Pop!
-	      </div>
-	    </div>
-	    <div class="saveimage mainbutton" id="saveimage">
-	      <div class="saveimagetext mainbuttontext">Save Image</div>
-	    </div>
-	  </div>
-	</div>
-        <script type="text/javascript" src="cordova.js"></script>
-	<script type="text/javascript" src="js/opencv.js"></script>
-	<script src="face-api.js/dist/face-api.js"  type="text/javascript"></script>
-	<script type="text/javascript" src="js/fetch.umd.js">
-	window.fetch = WHATWGFetch.fetch;</script>
-	<!-- Load TensorFlow.js -->
-	<script src="node_modules/@tensorflow/tfjs/dist/tf.js"></script>
-	<!-- Load BodyPix -->
-	<script type="text/javascript" src="node_modules/@tensorflow-models/body-pix/dist/body-pix.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
 
-    </body>
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Sammy's Blog</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgcecfe39">1. The Wonky Math behind the Democratic Primary</a>
+<ul>
+<li><a href="#org70b73ff">1.1. Biden is Winning in States with Low Voter Turnout</a></li>
+</ul>
+</li>
+<li><a href="#org8638385">2. What's Going on With The Impeachment</a>
+<ul>
+<li><a href="#orgd2c9eec">2.1. The Russia Investiagtion</a></li>
+<li><a href="#org353de56">2.2. The Mueller Report</a></li>
+<li><a href="#org4e618b2">2.3. Rebuilding a Case</a></li>
+<li><a href="#org24f149a">2.4. The Ukraine Scandal</a></li>
+<li><a href="#org420a317">2.5. The Threshold of Popular Support</a></li>
+</ul>
+</li>
+<li><a href="#org253d085">3. Treating Cancer with Chemo (Part 2)</a></li>
+<li><a href="#org9defd25">4. Treating Cancer with Chemo (Part 1)</a></li>
+<li><a href="#orgc9d9996">5. The Importance of Doing Nothing</a></li>
+<li><a href="#org5cc6e74">6. Why I Support Citizens United</a></li>
+<li><a href="#org926dd17">7. Camera Settings</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcecfe39" class="outline-2">
+<h2 id="orgcecfe39"><span class="section-number-2">1</span> The Wonky Math behind the Democratic Primary</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Oh man, if you thought the electoral college was bad, you're in for a real treat.
+On paper, it looks like primaries are mostly the same process. Every state gets "electoral college delegates", and the number of delegates for each state is the same as in the presidential election: two plus some extra porportionate to the state's population.
+The thing is, the number of delegates is porportional to the state's TOTAL population, not the number of people that actually vote in the election. If California has 50 million citizens, but only 5 people actually vote, those 5 people have tremendous influence. In primaries, certain states are dominated by particular parties. That means even though Tennessee has 5 million elligible citizens, it only has 400 thousand voting in the Democratic primary. That means if you're a Democrat in Tenessee, you have much more influence than a Democrat from California. The state is considered large even though the number of Democrats actually voting is small.
+</p>
+</div>
+<div id="outline-container-org70b73ff" class="outline-3">
+<h3 id="org70b73ff"><span class="section-number-3">1.1</span> Biden is Winning in States with Low Voter Turnout</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Ever wonder why Biden seems so unpopular with so many voters, yet forecasts frequently predict him to win the election? Biden's best state's, according to 538: Alabama, Mississippi ,Delaware ,South Carolina, North Carolina, and Louisiana, are ALL low Democratic voter turnout states. Biden isn't actually that popular with the Democratic party overall, but it doesn't matter because he's disporportionately popular among the subsets of people that have the most voting power.
+By contrast, take a look at the best states for Bernie Sanders: Vermont, Utah, Washington, California, Colorado, New Hampshire, all heavily Democratic states. Because he's appealing to more liberal states, and because his message resonates with certain groups of people, he's being disproportionately hurt by the electoral college relative to his popularity.
+</p>
+
+<p>
+<a href="https://fivethirtyeight.com/features/biden-is-the-front-runner-but-there-is-no-clear-favorite/">https://fivethirtyeight.com/features/biden-is-the-front-runner-but-there-is-no-clear-favorite/</a>
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org8638385" class="outline-2">
+<h2 id="org8638385"><span class="section-number-2">2</span> What's Going on With The Impeachment</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+The impeachment trial, as it stands, is a little bit of a mess, with what feels like many muddled and ever-changing accusations, against a president who keeps doing new things to be accused of. Right now Nancy Pelosi orchestrated an impeachment vote in the house, but has stalled refusing to send a vote to the senate. Given all the confusion I'd like to take a step back to understand how we got here, and why it all happened the way it did.
+</p>
+
+<p>
+Before anything, we need to understand that this is first and foremost a popularity contest, with a jury of the American public. There are legal rules, sure, but the people who are voting on impeachment are congressmen, and congressmen represent the desires of their constituents. You can see this in the correllation between congressmen's willingness to defend Trump and his popularity within their home state, as well as how their treatment of him changed as he rose in popularity within the republican party. In order to get him impeached, the Democrats need to convince the people that he should be removed from office.
+</p>
+</div>
+<div id="outline-container-orgd2c9eec" class="outline-3">
+<h3 id="orgd2c9eec"><span class="section-number-3">2.1</span> The Russia Investiagtion</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+On November 8, 2016 Democrats were absolutely stunned. Despite all the polls from trustworthy sources like the New York Times*, an unthinkable candidate had won the election. There had to have been a mistake. There had to have been something deeply wrong, Democrats everywhere searched for an explanation.
+</p>
+
+<p>
+Not believing that such a candidate could have won fairly, they blamed James Comey for unfairly reporting on Hillary's e-mails just days before the election. They blamed misleading polls discouraging Democrats from voting in an already "certain" election. And finally, they blamed Russia for interfering in our Democratic process, certain that for this to happen, rules must have been deeply and influentially broken.
+</p>
+
+<p>
+There was a lot of evidence suggesting wrongdoing. Trump always seemed to have a soft spot when he spoke of Russia. There were the meetings in Trump tower. And Trump seemed to be doing everything in his power to kill the investigation.
+</p>
+
+<p>
+The first weeks of Trump's administration were hectic to say the least. Trump picked fights with anyone and everyone. He struggled to assemble a cabinet and wound up leaving many key government positions unfilled. He seemed hell-bent on ignoring all rules and structure, as much as he possibly could. And finally, in a move that shocked many, he fired the person investigating him, FBI director James Comey.
+</p>
+
+<p>
+Things moved quickly. Deputy Attorney Rod Rosenstien appointed a special counsel to replace Comey in the Russia investigation. Mueller seemed like just the man for the job, and over the coming weeks, his team gained momentum. Democrats saw not only mountains of evidence piling up, but real criminal offenses, with Mueller and his team reaching indictment after indictment. And Trump, although powerless to fire Mueller seemed to be doing everything in his power to kill the investigation.
+</p>
+
+<p>
+The Democrats saw the way the investigation was going, and they saw the indictments lining up, and they made a crucial tactical error. Instead of zeroing in on the firing of Comey, the offense they knew he had committed, they threw all their efforts behind the Russia investigation, doing everything possible to stoke public excitement for a dramatic Mueller testimony.
+</p>
+
+<p>
+They had a precedent from the Nixon investigation, one of the few issues on which Trump lacked positive sentiment within the Republican party, and what looked to be an undeniable act of treason. They thought the Mueller report was going to be a bombshell. That they were going to catch Trump red-handed, and that it would suddenly and dramatically sway public opinion. They were expecting something so severe that it would be impossible to claim impeachment was a purely partisan investigation. Even many Republicans were holding their words, waiting to see what the report described.
+</p>
+
+<p>
+A week before the report's release, the Democrats made another tactical error. Instead of demanding Mueller first testify to the public directly, they allowed his report to pass, largely unquestioned, through Trump's justice department, and Attorney General William Barr. I don't know if they could have stopped Barr from publishing his letter, but they could have kept the tension, pushing people to wait for the bombshell that was the final report. Instead, they let the singular news story, the one they were building up for months, be not Mueller's report itself, but Barr's report on Mueller's report.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org353de56" class="outline-3">
+<h3 id="org353de56"><span class="section-number-3">2.2</span> The Mueller Report</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+On March 24, 2019, Barr issued his letter to Congress. The verdict was "no collusion", i.e. the investigation did not establish coordination between Trump and the Russian government. Importantly, despite all the evidence in the report, Barr himself decided that Trump had not committed obstruction of justice, and attached his own findings, instead of the report's in his letter. Mueller himself described Barr's letter as a mischaracterization of his report, and in another mistake, Mueller expressed his discontent privately instead of immediately going to the public.
+</p>
+
+<p>
+It was only after the full report was released, nearly a month later, that people began to realize what happened. Most neutral media organizations and fact checkers described Barr's letter to be intentionally misleading. Instead of "totally exhonerating" the president, Mueller had carefully layed out the case for obstruction of justice, and seemed only to not reach a verdict because it was not in the mandate for his report. In addition, instead of finding no evidence of direct collusion, he did suggest there was questionable behavior towards Russia.
+</p>
+
+<p>
+By this point the moment had long since passed. Democrats had been hyping up a jarring news story, and what they got was a drawn out fizzle. There was a lot of dirt in the Mueller report, but Democrats didn't get the conclusive proof they claimed was lurking. They tried to pivot and push further, but having failed the first time, it looks like they were just grasping at ways to accuse the president.
+</p>
+
+<p>
+If they had focused in on obstruction of justice, they would have gotten the president on an act they knew he had committed, and bad news from the Russia investigation wouldn't have broken their momentum. On the other hand, if they had spent months arguing that Trump had broken rules by firing Comey, and real evidence was found from the Russia investigation it still would have been the bombshell they needed to sway public sentiment and press further. This is again an instance where Democratic leadership was too confident and failed to plan effectively to minimize their downside.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4e618b2" class="outline-3">
+<h3 id="org4e618b2"><span class="section-number-3">2.3</span> Rebuilding a Case</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+In the months after the Barr's letter, the Democrats were frustrated and disorganized. They sensed Trump was doing something wrong still, and pushing the boundries, but they lacked a single rallying cry. If they had done so from the beginning, their strongest play would have been to rally around the firing of James Comey, but by now years had passed, and it would be hard to pick back up again.
+</p>
+
+<p>
+Despite the lack of a central rallying cry Democratic voters were angry, and they were growing more angry with each new presidential offense. More and more moderate Democrats, long evasive, now publically voiced their support for impeachment. As primary season rolled in, all eyes turned to the candidates, who felt rising pressure from the left-most wing of the party. Unable to avoid the question in debate after debate, the candidates all lined up in support of impeachment. Only Nancy Pelosi and her closest allies held their breath.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org24f149a" class="outline-3">
+<h3 id="org24f149a"><span class="section-number-3">2.4</span> The Ukraine Scandal</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+Finally, in September, news broke that President Trump asked the Ukranian government to investigate Hunter Biden the son of his chief political rival. Abuse of power to investigate a political oponent drew such a parallel to Watergate that it immediately set off alarm bells in politician's minds. Not only did they have more evidence of wrongdoing, but their anger had a central focus once again. Pelosi, sensing a shift in momentum, announced that she would begin the impeachment process. After an announcement from their extremely cautious, yet trusted leader, the rest of the Democratic party followed suit.
+</p>
+
+<p>
+Why was Pelosi cautious for so long? I think it's because you only get one shot to announce articles of impeachment (or at least, if your first attempt fails, it makes your second attempt harder). I think she was saving it, waiting for a news story like this one to break, so that when something like this did come out, she could investigate it and apply pressure on it. Starting an impeachment proceding draws national news coverage, and she wanted an event that the American people would see as definitely wrong, something that was worth spending her news coverage on.
+</p>
+
+<p>
+The impeachment process also makes it easier for the Democrats to carry out a formal investigation. This means that the democrats got to learn about the Ukraine scandal in more detail, and potentially uncover even more damaging information. In addition, waiting for so long gave some kind of additional credibility to the investigation. It sends the message that Pelosi feels "we don't want to do this, and we won't unless we really have to, but as it turns out we really have to."
+</p>
+
+<p>
+In addition, Pelosi learned from the mistakes of the Russia investigation. Despite gaining such a powerful rallying cry, she didn't make the impeachment entirely reliant on proving coordination with Ukraine. She included an article "Obstruction of Congress", about Trump's efforts to block investigation, which relies almost entirely on publically available knowledge. As such, it can't be easily disproven, so Democrats can keep pushing in that direction no matter what other information comes out.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org420a317" class="outline-3">
+<h3 id="org420a317"><span class="section-number-3">2.5</span> The Threshold of Popular Support</h3>
+<div class="outline-text-3" id="text-2-5">
+<p>
+Despite all this, Nancy Pelosi is stuck. One of the reasons why she stalled on starting the impeachment process for so long is she knew that she wouldn't be able to carry it through to completion. At least not through the Reupblican controlled Senate, where Mitch McConnel has promised a speedy acquittal. And yet, she still wanted to start the impeachment process so that she could draw public attention and promote an investigation. So, she drafted the articles of impeachment, got them passed in the house, and then, did the only thing that she could do. She stalled. Hearing Mitch McConnel's vow, she refused to send the articles of impeachment to the senate. This means that Mitch can't kill the impeachment, and she gets to keep up the pressure until the tide turns in her favor.
+</p>
+
+<p>
+What gives? Trump is an unpopular president. Just a month after he took office, over 50% of people disapproved of his presidency, according to polling tracked by 538. As of this moment, more Americans support impeaching Trump than those who are against it. Congressional votes are largely determined by the opinions of their voter-base. So why can't Pelosi get the votes she needs?
+</p>
+
+<p>
+Well, impeachment is very popular among Democratic voters, but as you might have guessed, it's not very popular among Republican voters. And the thing is, it's Republican senators that need to vote for impeachment for the thing to pass. 50% of people might want Trump impeached, but that breaks down to like 80% of Democrats and only 10% of Republicans. Republican senators likely won't support impeachment unless a majority of their own party supports it. That means Trump has to be <b>really</b> unpopular.
+</p>
+
+<p>
+Given the unwavering support of his base, it's not clear what it would take to move the needle on impeachment. Polls show an uptick in support for impeachment after news of the Ukraine scandal broke, but only a small uptick, and one that still gives impeachment less than 10% support among Republicans. If anything, the history behind the impeachment proceedings, and the haphazard way in which it all went down made it much harder to impeach Trump because it gave wiggle room for his most ferverent supporters to believe it was all just a partisan mess. I don't think it'll go anywhere in the near future, because if Pelosi is smart, she'll hold her cards and continue to prevent a Senate vote, and if Trump doesn't make any big mistakes, he likely won't lose enough popular support to be impeached.
+</p>
+
+<p>
+I think going forward, the stalemate will continue. Pelosi doesn't have the votes, and shouldn't risk a clean shot at impeaching the president. Senate Republicans might try to entice her with the promise of additional testimony in the house trial, but I think Pelosi would be stupid to take it. I think Pelosi is going to wait for the next big bombshell, and then pull the trigger whenever the momentum swings.
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org253d085" class="outline-2">
+<h2 id="org253d085"><span class="section-number-2">3</span> Treating Cancer with Chemo (Part 2)</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+In the last section we looked into what types of cancer treatments are out there, and, from a research perspective, what areas hopefully have the most low hanging fruit. Due to cancer heterogeneity, and the problem of targeting undetectable or microscopic tumors, black-box chemotherapy methods seemed like they would yield the best results. I wrote down the definition of our "black box" and narrowed in on one property, that cancer cells divide regardless of external signaling.
+</p>
+
+<p>
+Many drugs already target this pathway. Certain drugs attack cells which divide more rapidly, intentionally causing damage to cells during the process of cell division. In theory this will cause cancer cells to die because they will be more likely to die than the normal cells.
+</p>
+
+<p>
+The problem is, this also kills healthy cells. Some cells, such as bone marrow cells, divide rapidly and, some cancers don't even grow that quickly. Some cancers grow at a normal rate for cells, they just don't stop growing when they're supposed to. The problem is that what you want to measure is not the cancer's rate of growth, but it's responsiveness to external signals within the body.
+</p>
+
+<p>
+So how can we target this? How do we identify cells which don't respond to signals?
+</p>
+
+<p>
+Well, instead of targeting cancer cells, we can send signals to identify healthy cells. We know that the healthy cells will respond to the signals and the cancer cells won't. By targeting everything else, we can measure when something doesn't respond to the signals that it's supposed to, and then go after it. Instead of attacking cells that divide quickly, we can tell all of the cells to stop dividing, and then kill all the cells that still divide. The cancer cells won't listen, but the normal cells will, so they won't get the damage that usually comes with intensive chemotherapy.
+</p>
+
+<p>
+What's completely wild about this to me is that people are doing this already, but not on the cells that actually matter. We treat hair loss. We can help people not lose all their hair who are going through chemo by having them apply ice packs to the top of their head while they're receiving treatment. This works by slowing the division of the cells around your hair follicles, so they won't actually get killed and fall out while you're getting treatment.
+</p>
+
+<p>
+In the same way that we treat hair loss, we can tell the cells in your bone marrow to stop dividing as quickly while the chemo is active and thus drastically reduce the side effects. Furthermore, we'd be able to use drugs that weren't previously available because even though they killed the cancer they were otherwise too toxic to the human body. Even better, we already have the tools to do this. We already have drugs which slow the growth of bone marrow cells. We just have to apply them in the right way.
+</p>
+
+
+<p>
+Edit: I found the paper that has this idea <a href="https://www.ncbi.nlm.nih.gov/pubmed/8839398">https://www.ncbi.nlm.nih.gov/pubmed/8839398</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org9defd25" class="outline-2">
+<h2 id="org9defd25"><span class="section-number-2">4</span> Treating Cancer with Chemo (Part 1)</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Cancer treatment is something I've thought about a lot recently, and the more I've studied it, the more I've seen that it's an interesting and complex problem. At it's core a cancer is a group of cells whose genetic code has mutated such that they divide uncontrollably, in a way that cannot be properly regulated by the body. Cancer cells, in contrast to benign tumors, also have the ability to sustain their growth, and to invade other parts of the body. If the cancer cells grow too much, they can "crowd out" other bodily functions, by having large tumors that press against vital organs, or "replace" other healthy cells.
+</p>
+
+<p>
+The challenge with treatment is that cancer cells, unlike bacteria or viruses, look remarkably like healthy human cells. It's difficult to kill the cancer cells without accidentally killing the normal cells. As a result, the main treatment options for cancer are:
+</p>
+<ul class="org-ul">
+<li>Surgery: Cancers typically grow as a cluster of cells in the same physical location, called a tumor. One way to treat this is to just cut out the tumor. This is good because it can quickly and fully remove the entire tumor, but bad because it might not be in a place you can safely reach with a knife, and bad because it doesn't catch it if the cancer spread without your knowledge.</li>
+<li>Radiation: Radiation zaps the cancer with high intensity beams of light. Think a really powerful microwave pointed directly at your tumor. This is good because it kills cells in places that aren't easy to reach with a knife, and can cover a wider area than would be safe to cut out, but bad because it might not kill everything in its beam and again, it won't catch the cancer if it spreads.</li>
+<li>Chemotherapy: This is a broad term that refers to using chemicals to kill, or otherwise harm the cancer cells. Since this refers to many different types of chemicals, which act in many different types of ways, it's hard to give a one-size-fits all explanation. One type of chemical which is fairly common essentially tries to kill cells which are dividing very quickly or haphazardly, hoping to target the cancer cells unctonrollable growth. Chemotherapy is great because unlike radiation or surgery, it can attack cancer cells anywhere in the body, meaning that if the tumor had spread to a small undetectable cluster of cells, chemotherapy would still fight it. The downside of chemotherapy is it's not always very good at determining which cells are cancer cells. This means it can kill healthy cells all over your body, most notably in the bone marrow, which tends to replenish quickly.</li>
+</ul>
+
+<p>
+There are a few other types of treatments, such as immunotherapy, which I'll skip for now as largely niche (but growing) fields.
+</p>
+
+
+<p>
+I'd like to focus here on chemotherapy because, while currently surgery and radiation are often necessary, because they are unable to attack small groups of cells, I don't believe that in the future, anything more than incremental progress will be made. Whatever the solution is will likely have to be some sort of medicine because we can't physically target something we don't have the ability to detect.
+</p>
+
+<p>
+Medicines that treat cancer (even including immunotherapy) are hard to make because it's hard for anything to classify whether or not a cell is cancerous. So, in order to treat cancer, we need to solve the classification problem, build a model to predict whether or not a cell is cancerous, and then encode it on a macroscopic scale. The more accurate our model, the more likely that the drug will kill the cancer without being otherwise fatal to the human body.
+</p>
+
+<p>
+We can approach this classification as a "black box", i.e. the cell is a generic thing with certain properties which we can't see into. Or, we can think of it as an open box, i.e. the mutated DNA of a cancer cell causes these specific chemical reactions which, eventually cause the cell to divide uncontrollably. With open box models, we have a tremendous amount more information that we can use to classify the cell as dangerous, and it seems like this would be intrinsically easier, but this information comes at a cost. Cancer is a name for a disease that can occur in many different ways and for many different reasons, often exhibiting significant heterogeneity within a single tumor. If we treat one specific pathway of chemical reactions, we'll only solve the problem for those specific cells, and we'll miss out on all the different types of cancer that are possible.
+</p>
+
+<p>
+I'd like to think about this problem as a black box problem because in addition to the curse of heterogeneity, it's also just better suited to my background. Treating the cell as an open box generally means lab work with equipment I don't have access to, and at best a 5-10 year trial period before a new chemical gets into production. It's my hypothesis that there are enough building blocks that are already well studied, that if we put them together in just the right way, we'll get a better result.
+</p>
+
+<p>
+So let's take a look at the black box. I took a look at the definition of a cancer cell. It boils down to roughly:
+</p>
+<ol class="org-ol">
+<li>The cells grow and divide regardless of what body signals them to do</li>
+<li>They don't die when they're supposed to</li>
+<li>They can invade other parts of the body</li>
+<li>They get the rest of the body to support their growth (encourage blood vessel construction)</li>
+</ol>
+
+<p>
+I'd say 2 is almost impossible to go after as a black box, since you can't ask a cell whether it will die without killing it. 3 seems similarly difficult because at best it can only attack spread, and not the original tumor, and because it's hard to ask a cell where it originally came from. 4 seems promising, but again has the problem that it likely won't cure tumors of smaller than a certain size. So, all things considered, I'd like to take a closer look at 1, that cancer cells grow and divide regardless of the body's signals.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc9d9996" class="outline-2">
+<h2 id="orgc9d9996"><span class="section-number-2">5</span> The Importance of Doing Nothing</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+This morning I woke up, a little on the later side, and didn't have anything important to do. I didn't have work, and I didn't have chores, just had to eat breakfast, and be out the door by noon. I had 2 and a half hours, so it should have been easy.
+</p>
+
+<p>
+With so much time, and nothing, really, to do, I started browsing the front page of reddit. I thought maybe the act of reading, or looking at something would wake me up a little. 30 minutes passed. This was no big deal, as I had all morning, really, but I felt like I wasn't quite done yet, so I kept going.
+</p>
+
+<p>
+By 1130, I was still searching for something initeresting, and I still hadn't found what I was looking for. I knew I was wasting time, and I knew that I wasn't going to feel fully satisfied at the end of it, but it always felt like the next two or three minutes would make me feel a little bit better, and that little time wouldn't be a deal breaker. By the end of it, I would click on a YouTube video and only watch the last thirty seconds of it, because in truth I didn't really want to watch the video, but I wanted to feel like I was going to find something new and entertaining. I didn't really feel like I was thinking at all, or even that I was enjoying what I was doing, but I wanted to see something. You can probably guess that I rushed the quickest breakfast (read: two bananas), and was out the door 20 minutes late.
+</p>
+
+<p>
+Whenever I mess something up, I ask myself how I could of done better. In this case it seems pretty obvious. I could have just not wasted 3 hours scrolling around on the internet. I could have looked at Reddit for only an hour and a half, made myself a delicious breakfast, and still left on time.
+</p>
+
+<p>
+But in practice, it's not that simple. That's because what you do with your time affects your ability to think and make decisions. If, after 90 minutes, I took a break to really sit, and think clearly about what I wanted to be doing, I would have realized I still wanted to breakfast, and that I wanted to be on time. But because I was watching videos, and because I was constantly blasting my mind with different signals, I never had a moment to really process what was going on.
+</p>
+
+<p>
+Not only that, I noticed even after I left my apartment, after I had already stopped looking at a screen, I was still left with that same mentality. While I was walking to the train, I still felt this impulse to play chess or read the news. I wasn't thinking about the rest of the day, or about things I wanted to learn, or things I really cared about. For most of the afternoon, my head was still overloaded, and when I went to think, what came out were random memes and stories. I had given myself so much new information to process, that even after I was done looking at it, it still crowded out my other thoughts. It's not just about the moment, wasting your time does damage, and it's important to recognize what damage it's doing.
+</p>
+
+<p>
+Maybe the videos made me feel happy for a half hour or so. Maybe I even learned a tiny bit, about news, or life advice, or something that might make good conversation. But I think I would have been better off if I had done, really, absolutely nothing. I would have been better off if I just sat down in a chair, and just waited. When I do nothing, it gives me the mental space to process longer-term thoughts, to prepare for my day, and to figure out what I really, genuinely want to be doing.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5cc6e74" class="outline-2">
+<h2 id="org5cc6e74"><span class="section-number-2">6</span> Why I Support Citizens United</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Most people I know really don't like Citizens United. For those who aren't familiar, Citizens United was a supreme court decision that essentially let corporations and wealthy individuals funnel unlimited amounts of money into American politics. Not only that, it let people donate to certain types of political causes with little to no transparency or oversight. The people I know who don't like it view it as letting big money buy elections and spread corruption in American politics.
+</p>
+
+<p>
+We have anti-bribery laws (which the courts have upheld). We have campaign finance laws (which the courts have upheld). So, what makes the Citizens United ruling different?
+</p>
+
+<p>
+The Citizens United ruling applies only to campaign advertisements (not general campaign contributions), and only to money that is spent "independently", i.e. without talking directly to the candidate or political party. This means that if I'm Exxon Mobile, I still can't write Mitch McConnell a check for 10 million dollars. I also can't work with Mitch McConnel to film a TV ad for his upcoming election. But if I decide that I really like Mitch McConnel, and I don't talk to anybody, and I just pay for an ad telling everyone how great he is, then nobody can stop me.
+</p>
+
+<p>
+As experience has shown, advertising can make a huge difference in the outcome of an election. If someone is allowed to spend an infinite amount of money on advertising, they, as an individual can have a massive influence on the outcome of an election. We have anti-bribery laws, but if someone can use money to ensure candidates with certain political views are elected, aren't the effects the same?
+</p>
+
+<p>
+I like to think of this by considering the role of a news organization. We need some news organizations discussing American politics in order to keep voters informed, so that they can better understand the issues and decide who to vote for. Along these lines, it's even important to have news organizations that debate different topics, and to have editorials which discuss their own opinions because it's important for people to understand the reasoning behind the legislation, and get a sense of why or why not something is a good idea. Especially for traditional media outlets like newspapers and television, It's nearly impossible to publish editorials or simply report the news without incurring some sort of bias.
+</p>
+
+<p>
+If you wanted to start a new cable news channel, you'd have to pay for a studio, for cable companies to distribute your broadcast, and to advertise your broadcast to others. Your news broadcast might be extremely biased, because, as we've already discussed, it's impossible to regulate bias in news organizations. You might not want a long-form news broadcast, so instead of paying for an entire television channel for an entire day, you might want to only purchase a slot that's the length of your show, or the message you want to publish. Separately, you might also want to be able to advertise your show (as news organizations are able to advertise), and in doing so accurately describe what's in it.
+</p>
+
+<p>
+So, the question is, where do you draw the line? What's the difference between paying to broadcast an editorial piece and donating directly to a political campaign? Well, I think making sure that the broadcast isn't part of (organized by) the political campaign itself is a pretty fair place to draw the line.
+</p>
+</div>
+</div>
+<div id="outline-container-org926dd17" class="outline-2">
+<h2 id="org926dd17"><span class="section-number-2">7</span> Camera Settings</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+When I got my first DSLR, I opened up the settings menu, and found it loaded with options: active-d lighting, vignette control, auto-bracketing, ambient lighting, and much more. It took a while to sift through all the options, but after assigning some reasonable defaults (use full resolution, turn on vibration reduction when available, etc.), I found that despite all of the options, there were really only four dials that effected the raw image. The rest were either only in post-processing, or just different ways of twisting those original four dials.
+</p>
+
+<p>
+Despite all the complexity, the only four dials you have on your camera are:
+</p>
+<ol class="org-ol">
+<li><p>
+Exposure
+</p>
+
+<p>
+Your camera has a sensor in it. When you take a picture, the camera opens up and lets light into the sensor. The longer the camera opens up, the more time light has to hit the sensor, and the brighter the overall image. 
+</p>
+
+<p>
+This comes from a time before people had digital cameras. When people used film, each wave of light would cause a chemical reaction on the film, so letting in waves of light for a longer period of time would cause more chemical reactions, and all of the individual waves of light would "add together" to form the overall image. That's why if you move a camera around while the film is exposed, the image comes out blurry.
+</p></li>
+<li><p>
+Focus Distance
+</p>
+
+<p>
+In front of the sensor, your camera has a lens. The job of the lens is to take in all of the light from the outside world, and bend it, so that the light is pointed at the sensor. Typically the outside world is larger than the size of the sensor, so the lens bends the light toward the center, with the light kind of following the shape of a cone. If the lens bends the light correctly, the square of the outside world that you want to capture will hit the image like a bunch of parallel beams of light, and you'll project a much bigger image onto a much smaller sensor. However, if the cone of light is too short, or too long, instead of hitting the image like parallel lines, the beams of light will get criss-crossed. Instead of one exact point on the outside world corresponding to one exact spot on the sensor, it might miss, and send some of the light kind of nearby, causing the image to be blurry. The correct focal distance is different for objects at different distances from the camera, so if you make nearby objects in focus, you make faraway objects out of focus.
+</p>
+
+<p>
+Long story short, if a part of an image is not in focus, it looks blurry. You get to choose a distance away from the camera such that objects at that distance are in focus. The further away an object is from the focus you chose, the more blurry it looks in the photo.
+</p></li>
+<li><p>
+Aperture
+</p>
+
+<p>
+Typically, there's a physical shutter that opens up when you take a picture to let light onto the film or sensor. Aperature refers to how big of an opening there is when the shutter is open. If there's a really big hole, it lets in a lot of light, but if there's really small hole, it only lets in a little bit of light. Also, if there's a small hole, the cone of light (from the focus section) is skinnier, so the beams don't get criss-crossed as much. This means that objects that aren't at the focus distance don't wind up being as blurry, because there's less interference. If there's a big hole, the cone is wider, so only objects at a specific distance are in focus, and everything else comes out blurry. This can be useful in taking portraits when you want to emphasize an in-focus person against an out-of-focus background.
+</p></li>
+<li><p>
+ISO
+</p>
+
+<p>
+How sensitive your camera sensors are to light. High ISO means your camera registers a lot of input from a small amount of light. Most cameras are only able to get accurate readings up to a certain level of sensitivity, so bumping your ISO too high can result in noisy/grainy images.
+</p></li>
+</ol>
+
+
+<p>
+So why do cameras have so many other options? Well, taking photos in the real world it isn't always easy to quickly and accurately adjust these four dials to set up for the shot you want. Want to get that monkey in focus? The one that's swinging across the jungle? Good luck twisting your focus knob and trying to keep up with it. You'll probably want your camera's autofocus tracking. Want to take many photos in a row, with different levels of exposure? There's a setting for that. It's not enough to just have access to those dials, you also want convenience tools that let you quickly choose how and when to take a photo.
+</p>
+
+<p>
+In addition, even though it doesn't effect the raw image, many cameras have built-in post-processing to adjust for things like ambient lighting. While for more serious shots, you'll probably edit the raw files in a program on your computer like photoshop or lightroom, it is convenient, visually to get quick feedback on what the image might look like, and for those of us that are lazy out there, can be a quick way to produce reasonable quality images.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Sam</p>
+<p class="date">Created: 2020-01-14 Tue 19:25</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
 </html>
