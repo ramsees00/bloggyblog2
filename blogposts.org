@@ -1,4 +1,4 @@
-#+TITLE: Sammy's Blog
+hi#+TITLE: Sammy's Blog
 #+HTML_HEAD: <style> body {width:80%; margin-left: 10%;}</style>
 * Treating Cancer with Chemo (Part 3)
   In this section, we now look at the specific drugs we would need to put the ideas in Part 2 into practice. We have a tremendous advantage here because we are not developing new chemicals. All of the drugs listed have already seen clinical use.
