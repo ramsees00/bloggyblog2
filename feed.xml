@@ -14,8 +14,8 @@
   <link></link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Sun, 14 Dec 2025 18:39:57 -0500</pubDate>
-  <lastBuildDate>Sun, 14 Dec 2025 18:39:57 -0500</lastBuildDate>
+  <pubDate>Sun, 14 Dec 2025 19:00:01 -0500</pubDate>
+  <lastBuildDate>Sun, 14 Dec 2025 19:00:01 -0500</lastBuildDate>
   <generator>Emacs 29.1 Org-mode 9.6.6</generator>
   <webMaster>sam@sams-MacBook-Pro.local (sam)</webMaster>
   <image>
@@ -26,9 +26,9 @@
 
   <item>
     <title>How to Win at Wordle</title>
-    <link>./https://www.sammystraus.com/how-to-win-at-wordle.html</link>
+    <link>./https://www.sammystraus.com/#how-to-win-at-wordle</link>
     <author>sam@sams-MacBook-Pro.local (sam)</author>
-    <guid isPermaLink="false">./https://www.sammystraus.com/how-to-win-at-wordle.html</guid>
+    <guid isPermaLink="false">./https://www.sammystraus.com/#how-to-win-at-wordle</guid>
     <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
     <description><![CDATA[<p>
@@ -39,8 +39,8 @@
     Ok, I got a little bit lucky, but it wasn't all luck. While I was playing I had a chance to think through some of the strategies, and saw some pitfalls I think others might have missed.
     </p>
 
-    <div id="outline-container-orga476d7e" class="outline-3">
-    <h3 id="orga476d7e"><span class="section-number-3">1.1.</span> Don't guess letters that are already green</h3>
+    <div id="outline-container-orga65dd1b" class="outline-3">
+    <h3 id="orga65dd1b"><span class="section-number-3">1.1.</span> Don't guess letters that are already green</h3>
     <div class="outline-text-3" id="text-1-1">
     <p>
     Unless you're trying to make your final guess to win the game, you shouldn't guess the same letter in the same place. You already tried that, so doing it again doesn't give you new information.
@@ -56,8 +56,8 @@
     </div>
     </div>
 
-    <div id="outline-container-org7692a9f" class="outline-3">
-    <h3 id="org7692a9f"><span class="section-number-3">1.2.</span> When you guess new letters, put them in places they commonly appear</h3>
+    <div id="outline-container-org3cff7b2" class="outline-3">
+    <h3 id="org3cff7b2"><span class="section-number-3">1.2.</span> When you guess new letters, put them in places they commonly appear</h3>
     <div class="outline-text-3" id="text-1-2">
     <p>
     Just for a moment, think of worlde a little bit like binary search. Your goal is to learn as much information as possible with every guess. If your guess splits the problem space in half (i.e. you eliminate half of possible words if it shows up green, and half of words if it shows up yellow), you learn (on average) the most possible information with every guess.
@@ -73,8 +73,8 @@
     </div>
     </div>
 
-    <div id="outline-container-orgb5d1910" class="outline-3">
-    <h3 id="orgb5d1910"><span class="section-number-3">1.3.</span> Guess common letters first</h3>
+    <div id="outline-container-org6af0116" class="outline-3">
+    <h3 id="org6af0116"><span class="section-number-3">1.3.</span> Guess common letters first</h3>
     <div class="outline-text-3" id="text-1-3">
     <p>
     Basically the same logic as above. It's either one of the 5 specific letters you guessed, or it's one of the 21 other letters. You want to guess the 5 that most closely split the problem in half.
@@ -86,8 +86,8 @@
     </div>
     </div>
 
-    <div id="outline-container-org2495594" class="outline-3">
-    <h3 id="org2495594"><span class="section-number-3">1.4.</span> Think through the list of possible words at every step</h3>
+    <div id="outline-container-org737cc35" class="outline-3">
+    <h3 id="org737cc35"><span class="section-number-3">1.4.</span> Think through the list of possible words at every step</h3>
     <div class="outline-text-3" id="text-1-4">
     <p>
     Remember, your goal is to "divide in half" with every letter. If you have a sense of/random sample of the words in the space, it's easier to pick the letters/positions that divide that list the most precisely.
@@ -99,9 +99,9 @@
 
   <item>
     <title>The Power Of Habit (Book Review Pt 1)</title>
-    <link>./https://www.sammystraus.com/the-power-of-habit-book-review-pt-1-.html</link>
+    <link>./https://www.sammystraus.com/#the-power-of-habit-book-review-pt-1</link>
     <author>sam@sams-MacBook-Pro.local (sam)</author>
-    <guid isPermaLink="false">./https://www.sammystraus.com/the-power-of-habit-book-review-pt-1-.html</guid>
+    <guid isPermaLink="false">./https://www.sammystraus.com/#the-power-of-habit-book-review-pt-1</guid>
     <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
     <description><![CDATA[<p>
@@ -132,9 +132,9 @@
   </item>
   <item>
     <title>Modern Monetary Theory and You</title>
-    <link>./https://www.sammystraus.com/modern-monetary-theory-and-you.html</link>
+    <link>./https://www.sammystraus.com/#modern-monetary-theory-and-you</link>
     <author>sam@sams-MacBook-Pro.local (sam)</author>
-    <guid isPermaLink="false">./https://www.sammystraus.com/modern-monetary-theory-and-you.html</guid>
+    <guid isPermaLink="false">./https://www.sammystraus.com/#modern-monetary-theory-and-you</guid>
     <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
     <description><![CDATA[<p>
@@ -149,8 +149,8 @@
     Some people argue that with the power of MMT, we have the money to finance all of our wildest hopes and dreams, if somebody would just have the courage to turn on the money printer. Free college, loan reimbursement, free housing, we could pay for everything with a click of a button, and no negative long-term reprecussions. As long as we don't cause inflation, there really isn't anything to worry about.
     </p>
 
-    <div id="outline-container-org98d26bb" class="outline-3">
-    <h3 id="org98d26bb"><span class="section-number-3">3.1.</span> The Big If</h3>
+    <div id="outline-container-orge975f67" class="outline-3">
+    <h3 id="orge975f67"><span class="section-number-3">3.1.</span> The Big If</h3>
     <div class="outline-text-3" id="text-3-1">
     <p>
     The thing is, that's a pretty big if. You can "prove" anything you want if you start with a false assumption. If we could print infinite money, and not cause inflation, that'd be pretty awesome, but is such a thing even possible? How did we get here, and why does anybody believe we can do this?
@@ -170,8 +170,8 @@
     </div>
     </div>
 
-    <div id="outline-container-org2791638" class="outline-3">
-    <h3 id="org2791638"><span class="section-number-3">3.2.</span> How We Got Here</h3>
+    <div id="outline-container-org5170076" class="outline-3">
+    <h3 id="org5170076"><span class="section-number-3">3.2.</span> How We Got Here</h3>
     <div class="outline-text-3" id="text-3-2">
     <p>
     So if America went out tommorrow, and started printing tons of money, and taking on tons of debt, we'd expect the cost of everything to go way up. We'd expect government bonds to be much less valuable, right? Right?
@@ -188,8 +188,8 @@
     </p>
     </div>
     </div>
-    <div id="outline-container-orga9c4dc4" class="outline-3">
-    <h3 id="orga9c4dc4"><span class="section-number-3">3.3.</span> The United States as a Trustworthy Institution</h3>
+    <div id="outline-container-org72b86a3" class="outline-3">
+    <h3 id="org72b86a3"><span class="section-number-3">3.3.</span> The United States as a Trustworthy Institution</h3>
     <div class="outline-text-3" id="text-3-3">
     <p>
     Ok, so, we took on a lot of debt before, and it was fine. We printed a truly wild amount of money, and people still trusted us as a stable, reliable institution. Everyone believed that the U.S. government would pay them back, and would pay them back in dollars that held value.
@@ -225,8 +225,8 @@
     </div>
     </div>
 
-    <div id="outline-container-orgbd03d40" class="outline-3">
-    <h3 id="orgbd03d40"><span class="section-number-3">3.4.</span> Take From the Rich and Give to the Poor</h3>
+    <div id="outline-container-orgf5cfb89" class="outline-3">
+    <h3 id="orgf5cfb89"><span class="section-number-3">3.4.</span> Take From the Rich and Give to the Poor</h3>
     <div class="outline-text-3" id="text-3-4">
     <p>
     The argument goes something like this:
@@ -250,8 +250,8 @@
     </div>
     </div>
 
-    <div id="outline-container-org8ccae42" class="outline-3">
-    <h3 id="org8ccae42"><span class="section-number-3">3.5.</span> Stimulus and Economic Growth</h3>
+    <div id="outline-container-org0c806e2" class="outline-3">
+    <h3 id="org0c806e2"><span class="section-number-3">3.5.</span> Stimulus and Economic Growth</h3>
     <div class="outline-text-3" id="text-3-5">
     <p>
     Ok so there's a real argument here. The idea is – it's ok to print money because we can generate more goods and services. If we spend it wisely – build bridges, improve broadband, we can create jobs for people who were previously out of work. What's more, that new infrastructure and spending will spur even further economic growth.
@@ -275,9 +275,9 @@
 
 <item>
   <title>The Perfect Camera</title>
-  <link>./https://www.sammystraus.com/the-perfect-camera.html</link>
+  <link>./https://www.sammystraus.com/#the-perfect-camera</link>
   <author>sam@sams-MacBook-Pro.local (sam)</author>
-  <guid isPermaLink="false">./https://www.sammystraus.com/the-perfect-camera.html</guid>
+  <guid isPermaLink="false">./https://www.sammystraus.com/#the-perfect-camera</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
   <description><![CDATA[<p>
@@ -530,9 +530,9 @@
 
 <item>
   <title>Camera Lenses: What's in My Bag</title>
-  <link>./https://www.sammystraus.com/camera-lenses-what-s-in-my-bag.html</link>
+  <link>./https://www.sammystraus.com/#camera-lenses-what-s-in-my-bag</link>
   <author>sam@sams-MacBook-Pro.local (sam)</author>
-  <guid isPermaLink="false">./https://www.sammystraus.com/camera-lenses-what-s-in-my-bag.html</guid>
+  <guid isPermaLink="false">./https://www.sammystraus.com/#camera-lenses-what-s-in-my-bag</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
   <description><![CDATA[<p>
@@ -591,9 +591,9 @@
 
 <item>
   <title>Why Many Primary Forecasts are Wrong</title>
-  <link>./https://www.sammystraus.com/why-many-primary-forecasts-are-wrong.html</link>
+  <link>./https://www.sammystraus.com/#why-many-primary-forecasts-are-wrong</link>
   <author>sam@sams-MacBook-Pro.local (sam)</author>
-  <guid isPermaLink="false">./https://www.sammystraus.com/why-many-primary-forecasts-are-wrong.html</guid>
+  <guid isPermaLink="false">./https://www.sammystraus.com/#why-many-primary-forecasts-are-wrong</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
   <description><![CDATA[<p>
@@ -612,9 +612,9 @@
 
 <item>
   <title>The Wonky Math behind the Democratic Primary</title>
-  <link>./https://www.sammystraus.com/the-wonky-math-behind-the-democratic-primary.html</link>
+  <link>./https://www.sammystraus.com/#the-wonky-math-behind-the-democratic-primary</link>
   <author>sam@sams-MacBook-Pro.local (sam)</author>
-  <guid isPermaLink="false">./https://www.sammystraus.com/the-wonky-math-behind-the-democratic-primary.html</guid>
+  <guid isPermaLink="false">./https://www.sammystraus.com/#the-wonky-math-behind-the-democratic-primary</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
   <description><![CDATA[<p>
@@ -649,9 +649,9 @@
 
 <item>
   <title>What's Going on With The Impeachment</title>
-  <link>./https://www.sammystraus.com/what-s-going-on-with-the-impeachment.html</link>
+  <link>./https://www.sammystraus.com/#what-s-going-on-with-the-impeachment</link>
   <author>sam@sams-MacBook-Pro.local (sam)</author>
-  <guid isPermaLink="false">./https://www.sammystraus.com/what-s-going-on-with-the-impeachment.html</guid>
+  <guid isPermaLink="false">./https://www.sammystraus.com/#what-s-going-on-with-the-impeachment</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
   <description><![CDATA[<p>
@@ -779,9 +779,9 @@
 
 <item>
   <title>Treating Cancer with Chemo (Part 3)</title>
-  <link>./https://www.sammystraus.com/treating-cancer-with-chemo-part-3-.html</link>
+  <link>./https://www.sammystraus.com/#treating-cancer-with-chemo-part-3</link>
   <author>sam@sams-MacBook-Pro.local (sam)</author>
-  <guid isPermaLink="false">./https://www.sammystraus.com/treating-cancer-with-chemo-part-3-.html</guid>
+  <guid isPermaLink="false">./https://www.sammystraus.com/#treating-cancer-with-chemo-part-3</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
   <description><![CDATA[<p>
@@ -803,9 +803,9 @@
 
 <item>
   <title>Treating Cancer with Chemo (Part 2)</title>
-  <link>./https://www.sammystraus.com/treating-cancer-with-chemo-part-2-.html</link>
+  <link>./https://www.sammystraus.com/#treating-cancer-with-chemo-part-2</link>
   <author>sam@sams-MacBook-Pro.local (sam)</author>
-  <guid isPermaLink="false">./https://www.sammystraus.com/treating-cancer-with-chemo-part-2-.html</guid>
+  <guid isPermaLink="false">./https://www.sammystraus.com/#treating-cancer-with-chemo-part-2</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
   <description><![CDATA[<p>
@@ -840,9 +840,9 @@
 
 <item>
   <title>Treating Cancer with Chemo (Part 1)</title>
-  <link>./https://www.sammystraus.com/treating-cancer-with-chemo-part-1-.html</link>
+  <link>./https://www.sammystraus.com/#treating-cancer-with-chemo-part-1</link>
   <author>sam@sams-MacBook-Pro.local (sam)</author>
-  <guid isPermaLink="false">./https://www.sammystraus.com/treating-cancer-with-chemo-part-1-.html</guid>
+  <guid isPermaLink="false">./https://www.sammystraus.com/#treating-cancer-with-chemo-part-1</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
   <description><![CDATA[<p>
@@ -897,9 +897,9 @@
 
 <item>
   <title>The Importance of Doing Nothing</title>
-  <link>./https://www.sammystraus.com/the-importance-of-doing-nothing.html</link>
+  <link>./https://www.sammystraus.com/#the-importance-of-doing-nothing</link>
   <author>sam@sams-MacBook-Pro.local (sam)</author>
-  <guid isPermaLink="false">./https://www.sammystraus.com/the-importance-of-doing-nothing.html</guid>
+  <guid isPermaLink="false">./https://www.sammystraus.com/#the-importance-of-doing-nothing</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
   <description><![CDATA[<p>
@@ -934,9 +934,9 @@
 
 <item>
   <title>Why I Support Citizens United</title>
-  <link>./https://www.sammystraus.com/why-i-support-citizens-united.html</link>
+  <link>./https://www.sammystraus.com/#why-i-support-citizens-united</link>
   <author>sam@sams-MacBook-Pro.local (sam)</author>
-  <guid isPermaLink="false">./https://www.sammystraus.com/why-i-support-citizens-united.html</guid>
+  <guid isPermaLink="false">./https://www.sammystraus.com/#why-i-support-citizens-united</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
   <description><![CDATA[<p>
@@ -970,9 +970,9 @@
 </item>
 <item>
   <title>Camera Settings</title>
-  <link>./https://www.sammystraus.com/camera-settings.html</link>
+  <link>./https://www.sammystraus.com/#camera-settings</link>
   <author>sam@sams-MacBook-Pro.local (sam)</author>
-  <guid isPermaLink="false">./https://www.sammystraus.com/camera-settings.html</guid>
+  <guid isPermaLink="false">./https://www.sammystraus.com/#camera-settings</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
   <description><![CDATA[<p>

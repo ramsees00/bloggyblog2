@@ -2,9 +2,10 @@
 #+HTML_HEAD: <style> body {width:80%; margin-left: 10%;}</style>
 * How to Win at Wordle
 :PROPERTIES:
-:RSS_PERMALINK: https://www.sammystraus.com/how-to-win-at-wordle.html
+:CUSTOM_ID: how-to-win-at-wordle
+:RSS_PERMALINK: https://www.sammystraus.com/#how-to-win-at-wordle
 :PUBDATE:  2025-12-14
-:ID:       D52D41C0-66F3-4DFA-85DA-BA389EB90732
+:ID:       292EC38B-FF63-4F82-B785-3FF5E7638FAF
 :END:
 
 I played my first game of Wordle this week, and I got in 4!
@@ -13,7 +14,7 @@ Ok, I got a little bit lucky, but it wasn't all luck. While I was playing I had 
 
 ** Don't guess letters that are already green
 :PROPERTIES:
-:ID:       82563B83-4F51-4DA4-B2CB-3061A1FA2F06
+:ID:       96585BA3-51D2-40DF-A09F-31DD6090DF88
 :END:
 
 Unless you're trying to make your final guess to win the game, you shouldn't guess the same letter in the same place. You already tried that, so doing it again doesn't give you new information.
@@ -24,7 +25,7 @@ Suppose you have B - A - _ - E - S, all green. You just need to guess the last l
 
 ** When you guess new letters, put them in places they commonly appear
 :PROPERTIES:
-:ID:       71F93FC0-FA0D-40E9-8C45-31FE252661E1
+:ID:       51F3B20E-F672-40C6-B0C3-DCC76170463C
 :END:
 
 Just for a moment, think of worlde a little bit like binary search. Your goal is to learn as much information as possible with every guess. If your guess splits the problem space in half (i.e. you eliminate half of possible words if it shows up green, and half of words if it shows up yellow), you learn (on average) the most possible information with every guess.
@@ -35,7 +36,7 @@ You learn (on average) way more about the letter 'Y' with a guess like R - A - I
 
 ** Guess common letters first
 :PROPERTIES:
-:ID:       B97D8830-23EA-4A7F-809D-096F01B91F60
+:ID:       6AC566BC-8565-48CC-8E60-55F2A20A6260
 :END:
 
 Basically the same logic as above. It's either one of the 5 specific letters you guessed, or it's one of the 21 other letters. You want to guess the 5 that most closely split the problem in half.
@@ -44,16 +45,17 @@ Going a step further, once you have a few lines guessed, you want to guess the m
 
 ** Think through the list of possible words at every step
 :PROPERTIES:
-:ID:       A9BE2FD5-3E6C-4A30-B70E-B2634CDF35A7
+:ID:       E85815A6-5856-446F-AC1D-F176A81CB02F
 :END:
 
 Remember, your goal is to "divide in half" with every letter. If you have a sense of/random sample of the words in the space, it's easier to pick the letters/positions that divide that list the most precisely.
 
 * The Power Of Habit (Book Review Pt 1)
 :PROPERTIES:
-:RSS_PERMALINK: https://www.sammystraus.com/the-power-of-habit-book-review-pt-1-.html
+:CUSTOM_ID: the-power-of-habit-book-review-pt-1
+:RSS_PERMALINK: https://www.sammystraus.com/#the-power-of-habit-book-review-pt-1
 :PUBDATE:  2025-12-14
-:ID:       ED0992AD-AF6A-4038-AEF5-3F51A8DDCF58
+:ID:       2459B9B2-B3FC-447B-A8F4-3F62219ABCA8
 :END:
 
 Charles Duhigg was a reporter for the New York Times, and you can feel it in his writing. This is a modern-science report that's sensational, inspirational, and often highly misleading.
@@ -72,9 +74,10 @@ If you want to make a transformative change, it's easiest to focus all your atte
 Habits can be a good thing. Thinking is hard, and deciding what to do takes effort. If something (like choosing what to make for dinner) takes mental effort, your less likely to do it, because that mental effort is as much work as the actual cooking. Try to form habits, and try to think about what you're going to do ahead of time, so that when you get to the moment of truth, it doesn't take effort.
 * Modern Monetary Theory and You
 :PROPERTIES:
-:RSS_PERMALINK: https://www.sammystraus.com/modern-monetary-theory-and-you.html
+:CUSTOM_ID: modern-monetary-theory-and-you
+:RSS_PERMALINK: https://www.sammystraus.com/#modern-monetary-theory-and-you
 :PUBDATE:  2025-12-14
-:ID:       E96D4D7F-C38F-45AA-B96E-96539ECEF4B3
+:ID:       69FCB332-FD1A-45C6-B67A-F32EC2B867A5
 :END:
 
 Like any political agenda, modern monetary theory isn't perfectly specified, and people often tailor its definition to their own ambitions. As best I can tell it goes like this:
@@ -85,7 +88,7 @@ Some people argue that with the power of MMT, we have the money to finance all o
 
 ** The Big If
 :PROPERTIES:
-:ID:       33ABC7AC-A0D6-4BFF-9604-AA151DCAE26E
+:ID:       033ACEFE-0919-4B16-9C0F-F1D75FF4F794
 :END:
 
 The thing is, that's a pretty big if. You can "prove" anything you want if you start with a false assumption. If we could print infinite money, and not cause inflation, that'd be pretty awesome, but is such a thing even possible? How did we get here, and why does anybody believe we can do this?
@@ -98,7 +101,7 @@ Fundamentally, people want money so that they can use it to buy goods and servic
 
 ** How We Got Here
 :PROPERTIES:
-:ID:       32257BB4-A019-403F-8587-70C877520142
+:ID:       A2B96F7E-B151-493D-BAF2-126C4AAD1A34
 :END:
 
 So if America went out tommorrow, and started printing tons of money, and taking on tons of debt, we'd expect the cost of everything to go way up. We'd expect government bonds to be much less valuable, right? Right?
@@ -110,7 +113,7 @@ The world financial system is already so invested in the U.S. dollar that the U.
 The stimulus bill spurred so much economic growth that it offset inflation.
 ** The United States as a Trustworthy Institution
 :PROPERTIES:
-:ID:       67879C49-3380-4763-BE32-5AAEAE357A8F
+:ID:       E50F479D-4F41-4ABB-93EC-EFAEB27C5BEA
 :END:
 
 Ok, so, we took on a lot of debt before, and it was fine. We printed a truly wild amount of money, and people still trusted us as a stable, reliable institution. Everyone believed that the U.S. government would pay them back, and would pay them back in dollars that held value.
@@ -131,7 +134,7 @@ We can "cash in" on our current trust and influence, but once we break that trus
 
 ** Take From the Rich and Give to the Poor
 :PROPERTIES:
-:ID:       AE9CF20F-77FC-4D55-BB89-6FC817F2C96B
+:ID:       3133C057-98D6-4EF9-BA18-61D15ACBEAFF
 :END:
 
 The argument goes something like this:
@@ -146,7 +149,7 @@ The people that it does hurt are the ones governed by a fixed $15 (or less) mini
 
 ** Stimulus and Economic Growth
 :PROPERTIES:
-:ID:       6EF64313-87B9-4E60-B4DD-7BCC259B68DC
+:ID:       B2875354-AF05-4D49-9B20-87825F518827
 :END:
 
 Ok so there's a real argument here. The idea is – it's ok to print money because we can generate more goods and services. If we spend it wisely – build bridges, improve broadband, we can create jobs for people who were previously out of work. What's more, that new infrastructure and spending will spur even further economic growth.
@@ -159,9 +162,10 @@ The challenge here is it's extremely optimistic. Is your government so smart and
 
 * The Perfect Camera
 :PROPERTIES:
-:RSS_PERMALINK: https://www.sammystraus.com/the-perfect-camera.html
+:CUSTOM_ID: the-perfect-camera
+:RSS_PERMALINK: https://www.sammystraus.com/#the-perfect-camera
 :PUBDATE:  2025-12-14
-:ID:       9055E766-8322-47FC-941E-05437F69BA24
+:ID:       B60D3A2C-BEB6-49F5-9731-4E4D765D082E
 :END:
 
 Every year, sometime around the holidays, I splurge on one really nice thing for myself. Locked inside during quarantine, there hasn't been much to spend on, but I've had a great time doing landscape photography. We still haven't been to bars and restaurants, but we can drive around in a car, and we've been exploring parks in and around New Jersey.
@@ -294,9 +298,10 @@ It's a 4-year-old camera, but, weirdly I don't think it's going away for a reall
 
 * Camera Lenses: What's in My Bag
 :PROPERTIES:
-:RSS_PERMALINK: https://www.sammystraus.com/camera-lenses-what-s-in-my-bag.html
+:CUSTOM_ID: camera-lenses-what-s-in-my-bag
+:RSS_PERMALINK: https://www.sammystraus.com/#camera-lenses-what-s-in-my-bag
 :PUBDATE:  2025-12-14
-:ID:       218E6DC1-84AE-4E7C-8AA3-46461B469B1E
+:ID:       277F324D-BDAB-4166-813E-35171A7FDDF3
 :END:
 
 Camera lenses are expensive. If you own a DSLR, chances are your lenses cost more than the camera body itself. This is because lenses are often the bottleneck for image quality. If you're looking through a blurry window, it doesn't matter how sensitive your sensor is.
@@ -327,9 +332,10 @@ I'm gonna be honest, the only reason why I own this lens is it was half off when
 
 * Why Many Primary Forecasts are Wrong
 :PROPERTIES:
-:RSS_PERMALINK: https://www.sammystraus.com/why-many-primary-forecasts-are-wrong.html
+:CUSTOM_ID: why-many-primary-forecasts-are-wrong
+:RSS_PERMALINK: https://www.sammystraus.com/#why-many-primary-forecasts-are-wrong
 :PUBDATE:  2025-12-14
-:ID:       C91B64DD-7F44-469C-8440-A8BCE03469B4
+:ID:       B8E09A6D-7D4D-4956-89D8-35E40C59820A
 :END:
 
 Ok, wrong might be a little bit too severe, but at the very least unfairly biased. I think most models underestimate Warren and Sander's chances of winning the primary because it evaluates the voting in every state as a single event, rather than viewing the primaries as a sequential selection process. In past elections, while the later states still matter, the early voting states have had special significance because they narrow down the pool of candidates by eliminating out candidates which seem unlikely to win.
@@ -340,9 +346,10 @@ While eventually the race usally comes down to two or three, often closely split
 
 * The Wonky Math behind the Democratic Primary
 :PROPERTIES:
-:RSS_PERMALINK: https://www.sammystraus.com/the-wonky-math-behind-the-democratic-primary.html
+:CUSTOM_ID: the-wonky-math-behind-the-democratic-primary
+:RSS_PERMALINK: https://www.sammystraus.com/#the-wonky-math-behind-the-democratic-primary
 :PUBDATE:  2025-12-14
-:ID:       8121C16B-CBBB-4743-A134-02046740F13A
+:ID:       CA70E737-2A0A-4D8B-9E25-DFFC11590A26
 :END:
 
 Oh man, if you thought the electoral college was bad, you're in for a real treat.
@@ -361,9 +368,10 @@ https://fivethirtyeight.com/features/biden-is-the-front-runner-but-there-is-no-c
 
 * What's Going on With The Impeachment
 :PROPERTIES:
-:RSS_PERMALINK: https://www.sammystraus.com/what-s-going-on-with-the-impeachment.html
+:CUSTOM_ID: what-s-going-on-with-the-impeachment
+:RSS_PERMALINK: https://www.sammystraus.com/#what-s-going-on-with-the-impeachment
 :PUBDATE:  2025-12-14
-:ID:       EFAD19F2-0907-4A74-A989-49E8B21FE287
+:ID:       56BA3B3C-1632-4CD7-AEE8-FDDC77C20C8A
 :END:
 
 The impeachment trial, as it stands, is a little bit of a mess, with what feels like many muddled and ever-changing accusations, against a president who keeps doing new things to be accused of. Right now Nancy Pelosi orchestrated an impeachment vote in the house, but has stalled refusing to send a vote to the senate. Given all the confusion I'd like to take a step back to understand how we got here, and why it all happened the way it did.
@@ -429,9 +437,10 @@ I think going forward, the stalemate will continue. Pelosi doesn't have the vote
 
 * Treating Cancer with Chemo (Part 3)
 :PROPERTIES:
-:RSS_PERMALINK: https://www.sammystraus.com/treating-cancer-with-chemo-part-3-.html
+:CUSTOM_ID: treating-cancer-with-chemo-part-3
+:RSS_PERMALINK: https://www.sammystraus.com/#treating-cancer-with-chemo-part-3
 :PUBDATE:  2025-12-14
-:ID:       B81E31D7-8DA6-43D1-BC8F-7CCCE93F7FBD
+:ID:       DA33416A-FA6E-4DC6-91AE-7FEAB17EDC77
 :END:
   In this section, we now look at the specific drugs we would need to put the ideas in Part 2 into practice. We have a tremendous advantage here because we are not developing new chemicals. All of the drugs listed have already seen clinical use.
   What we'd like to do is, send a signal that tells all the cells in your body to start dividing, and then send a chemotherapy drug which kills any cells that are still dividing. Your body has many types of signals which tell cells when to grow and divide, 
@@ -444,9 +453,10 @@ I found the paper that has this idea https://www.ncbi.nlm.nih.gov/pubmed/8839398
   
 * Treating Cancer with Chemo (Part 2)
 :PROPERTIES:
-:RSS_PERMALINK: https://www.sammystraus.com/treating-cancer-with-chemo-part-2-.html
+:CUSTOM_ID: treating-cancer-with-chemo-part-2
+:RSS_PERMALINK: https://www.sammystraus.com/#treating-cancer-with-chemo-part-2
 :PUBDATE:  2025-12-14
-:ID:       59F41ADA-EDE2-40D0-83A7-F611B894DE23
+:ID:       102E3CDD-AE97-428F-B391-CA5194BB4E51
 :END:
   In the last section we looked into what types of cancer treatments are out there, and, from a research perspective, what areas hopefully have the most low hanging fruit. Due to cancer heterogeneity, and the problem of targeting undetectable or microscopic tumors, black-box chemotherapy methods seemed like they would yield the best results. I wrote down the definition of our "black box" and narrowed in on one property, that cancer cells divide regardless of external signaling.
 
@@ -464,9 +474,10 @@ I found the paper that has this idea https://www.ncbi.nlm.nih.gov/pubmed/8839398
 
 * Treating Cancer with Chemo (Part 1)
 :PROPERTIES:
-:RSS_PERMALINK: https://www.sammystraus.com/treating-cancer-with-chemo-part-1-.html
+:CUSTOM_ID: treating-cancer-with-chemo-part-1
+:RSS_PERMALINK: https://www.sammystraus.com/#treating-cancer-with-chemo-part-1
 :PUBDATE:  2025-12-14
-:ID:       1634AF58-103E-4DC6-B611-F13F8FD3536A
+:ID:       8CE99A79-EBDD-4D20-95C0-1A75215E17B9
 :END:
   Cancer treatment is something I've thought about a lot recently, and the more I've studied it, the more I've seen that it's an interesting and complex problem. At it's core a cancer is a group of cells whose genetic code has mutated such that they divide uncontrollably, in a way that cannot be properly regulated by the body. Cancer cells, in contrast to benign tumors, also have the ability to sustain their growth, and to invade other parts of the body. If the cancer cells grow too much, they can "crowd out" other bodily functions, by having large tumors that press against vital organs, or "replace" other healthy cells.
 
@@ -496,9 +507,10 @@ I found the paper that has this idea https://www.ncbi.nlm.nih.gov/pubmed/8839398
     
 * The Importance of Doing Nothing
 :PROPERTIES:
-:RSS_PERMALINK: https://www.sammystraus.com/the-importance-of-doing-nothing.html
+:CUSTOM_ID: the-importance-of-doing-nothing
+:RSS_PERMALINK: https://www.sammystraus.com/#the-importance-of-doing-nothing
 :PUBDATE:  2025-12-14
-:ID:       2C7F55D8-65B3-4E75-BE04-A690BD085597
+:ID:       98800E19-8353-4E9A-8ADD-1E381B4FC5B3
 :END:
   This morning I woke up, a little on the later side, and didn't have anything important to do. I didn't have work, and I didn't have chores, just had to eat breakfast, and be out the door by noon. I had 2 and a half hours, so it should have been easy.
 
@@ -516,9 +528,10 @@ I found the paper that has this idea https://www.ncbi.nlm.nih.gov/pubmed/8839398
 
 * Why I Support Citizens United
 :PROPERTIES:
-:RSS_PERMALINK: https://www.sammystraus.com/why-i-support-citizens-united.html
+:CUSTOM_ID: why-i-support-citizens-united
+:RSS_PERMALINK: https://www.sammystraus.com/#why-i-support-citizens-united
 :PUBDATE:  2025-12-14
-:ID:       772929FD-6200-47AE-B35F-64A012D29F67
+:ID:       075522C8-AC52-46C8-8D6C-8805E0FAF392
 :END:
   Most people I know really don't like Citizens United. For those who aren't familiar, Citizens United was a supreme court decision that essentially let corporations and wealthy individuals funnel unlimited amounts of money into American politics. Not only that, it let people donate to certain types of political causes with little to no transparency or oversight. The people I know who don't like it view it as letting big money buy elections and spread corruption in American politics.
 
@@ -535,9 +548,10 @@ I found the paper that has this idea https://www.ncbi.nlm.nih.gov/pubmed/8839398
   So, the question is, where do you draw the line? What's the difference between paying to broadcast an editorial piece and donating directly to a political campaign? Well, I think making sure that the broadcast isn't part of (organized by) the political campaign itself is a pretty fair place to draw the line.
 * Camera Settings
 :PROPERTIES:
-:RSS_PERMALINK: https://www.sammystraus.com/camera-settings.html
+:CUSTOM_ID: camera-settings
+:RSS_PERMALINK: https://www.sammystraus.com/#camera-settings
 :PUBDATE:  2025-12-14
-:ID:       4D578D5B-913E-45D4-A5AD-DB9542EA3DF1
+:ID:       59445EDC-B555-486A-AB1B-A575331E5620
 :END:
   When I got my first DSLR, I opened up the settings menu, and found it loaded with options: active-d lighting, vignette control, auto-bracketing, ambient lighting, and much more. It took a while to sift through all the options, but after assigning some reasonable defaults (use full resolution, turn on vibration reduction when available, etc.), I found that despite all of the options, there were really only four dials that effected the raw image. The rest were either only in post-processing, or just different ways of twisting those original four dials.
 
