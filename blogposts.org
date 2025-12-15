@@ -1,11 +1,13 @@
 #+TITLE: Sammy's Blog
+#+HTML_LINK_HOME: https://www.sammystraus.com/
+#+RSS_LINK_HOME: https://www.sammystraus.com/
 #+HTML_HEAD: <style> body {width:80%; margin-left: 10%;}</style>
 * How to Win at Wordle
 :PROPERTIES:
 :CUSTOM_ID: how-to-win-at-wordle
-:RSS_PERMALINK: https://www.sammystraus.com/#how-to-win-at-wordle
+:RSS_PERMALINK: #how-to-win-at-wordle
 :PUBDATE:  2025-12-14
-:ID:       292EC38B-FF63-4F82-B785-3FF5E7638FAF
+:ID:       59A3F135-6208-46E1-8B42-0E86486C895F
 :END:
 
 I played my first game of Wordle this week, and I got in 4!
@@ -14,7 +16,7 @@ Ok, I got a little bit lucky, but it wasn't all luck. While I was playing I had 
 
 ** Don't guess letters that are already green
 :PROPERTIES:
-:ID:       96585BA3-51D2-40DF-A09F-31DD6090DF88
+:ID:       81E51619-D781-40D7-9B49-2A5C61F7D4A0
 :END:
 
 Unless you're trying to make your final guess to win the game, you shouldn't guess the same letter in the same place. You already tried that, so doing it again doesn't give you new information.
@@ -25,7 +27,7 @@ Suppose you have B - A - _ - E - S, all green. You just need to guess the last l
 
 ** When you guess new letters, put them in places they commonly appear
 :PROPERTIES:
-:ID:       51F3B20E-F672-40C6-B0C3-DCC76170463C
+:ID:       06422413-45DF-498B-9AEB-F8EBA92B5DD3
 :END:
 
 Just for a moment, think of worlde a little bit like binary search. Your goal is to learn as much information as possible with every guess. If your guess splits the problem space in half (i.e. you eliminate half of possible words if it shows up green, and half of words if it shows up yellow), you learn (on average) the most possible information with every guess.
@@ -36,7 +38,7 @@ You learn (on average) way more about the letter 'Y' with a guess like R - A - I
 
 ** Guess common letters first
 :PROPERTIES:
-:ID:       6AC566BC-8565-48CC-8E60-55F2A20A6260
+:ID:       6E6686E5-CA34-435E-9C68-FECDF5EA7227
 :END:
 
 Basically the same logic as above. It's either one of the 5 specific letters you guessed, or it's one of the 21 other letters. You want to guess the 5 that most closely split the problem in half.
@@ -45,7 +47,7 @@ Going a step further, once you have a few lines guessed, you want to guess the m
 
 ** Think through the list of possible words at every step
 :PROPERTIES:
-:ID:       E85815A6-5856-446F-AC1D-F176A81CB02F
+:ID:       BC84053E-824F-4654-848D-B381DF4C69CB
 :END:
 
 Remember, your goal is to "divide in half" with every letter. If you have a sense of/random sample of the words in the space, it's easier to pick the letters/positions that divide that list the most precisely.
@@ -53,9 +55,9 @@ Remember, your goal is to "divide in half" with every letter. If you have a sens
 * The Power Of Habit (Book Review Pt 1)
 :PROPERTIES:
 :CUSTOM_ID: the-power-of-habit-book-review-pt-1
-:RSS_PERMALINK: https://www.sammystraus.com/#the-power-of-habit-book-review-pt-1
+:RSS_PERMALINK: #the-power-of-habit-book-review-pt-1
 :PUBDATE:  2025-12-14
-:ID:       2459B9B2-B3FC-447B-A8F4-3F62219ABCA8
+:ID:       CA27059E-BC57-4F5C-8729-5C598DCD352F
 :END:
 
 Charles Duhigg was a reporter for the New York Times, and you can feel it in his writing. This is a modern-science report that's sensational, inspirational, and often highly misleading.
@@ -75,9 +77,9 @@ Habits can be a good thing. Thinking is hard, and deciding what to do takes effo
 * Modern Monetary Theory and You
 :PROPERTIES:
 :CUSTOM_ID: modern-monetary-theory-and-you
-:RSS_PERMALINK: https://www.sammystraus.com/#modern-monetary-theory-and-you
+:RSS_PERMALINK: #modern-monetary-theory-and-you
 :PUBDATE:  2025-12-14
-:ID:       69FCB332-FD1A-45C6-B67A-F32EC2B867A5
+:ID:       EC6B9B53-15FD-44FE-878E-A1142C9F9255
 :END:
 
 Like any political agenda, modern monetary theory isn't perfectly specified, and people often tailor its definition to their own ambitions. As best I can tell it goes like this:
@@ -88,7 +90,7 @@ Some people argue that with the power of MMT, we have the money to finance all o
 
 ** The Big If
 :PROPERTIES:
-:ID:       033ACEFE-0919-4B16-9C0F-F1D75FF4F794
+:ID:       8252C9B9-B35B-4580-8233-479C1705BA6D
 :END:
 
 The thing is, that's a pretty big if. You can "prove" anything you want if you start with a false assumption. If we could print infinite money, and not cause inflation, that'd be pretty awesome, but is such a thing even possible? How did we get here, and why does anybody believe we can do this?
@@ -101,7 +103,7 @@ Fundamentally, people want money so that they can use it to buy goods and servic
 
 ** How We Got Here
 :PROPERTIES:
-:ID:       A2B96F7E-B151-493D-BAF2-126C4AAD1A34
+:ID:       52818742-EBFF-448A-8E31-AD8F84E074E2
 :END:
 
 So if America went out tommorrow, and started printing tons of money, and taking on tons of debt, we'd expect the cost of everything to go way up. We'd expect government bonds to be much less valuable, right? Right?
@@ -113,7 +115,7 @@ The world financial system is already so invested in the U.S. dollar that the U.
 The stimulus bill spurred so much economic growth that it offset inflation.
 ** The United States as a Trustworthy Institution
 :PROPERTIES:
-:ID:       E50F479D-4F41-4ABB-93EC-EFAEB27C5BEA
+:ID:       73859BEF-D79B-470A-9A8F-04521A7A175B
 :END:
 
 Ok, so, we took on a lot of debt before, and it was fine. We printed a truly wild amount of money, and people still trusted us as a stable, reliable institution. Everyone believed that the U.S. government would pay them back, and would pay them back in dollars that held value.
@@ -134,7 +136,7 @@ We can "cash in" on our current trust and influence, but once we break that trus
 
 ** Take From the Rich and Give to the Poor
 :PROPERTIES:
-:ID:       3133C057-98D6-4EF9-BA18-61D15ACBEAFF
+:ID:       AADDCE98-FB55-42CE-B36D-A09F23E5DC16
 :END:
 
 The argument goes something like this:
@@ -149,7 +151,7 @@ The people that it does hurt are the ones governed by a fixed $15 (or less) mini
 
 ** Stimulus and Economic Growth
 :PROPERTIES:
-:ID:       B2875354-AF05-4D49-9B20-87825F518827
+:ID:       EC7A53E4-5B8D-4119-8CD3-EA779D1A083B
 :END:
 
 Ok so there's a real argument here. The idea is – it's ok to print money because we can generate more goods and services. If we spend it wisely – build bridges, improve broadband, we can create jobs for people who were previously out of work. What's more, that new infrastructure and spending will spur even further economic growth.
@@ -163,9 +165,9 @@ The challenge here is it's extremely optimistic. Is your government so smart and
 * The Perfect Camera
 :PROPERTIES:
 :CUSTOM_ID: the-perfect-camera
-:RSS_PERMALINK: https://www.sammystraus.com/#the-perfect-camera
+:RSS_PERMALINK: #the-perfect-camera
 :PUBDATE:  2025-12-14
-:ID:       B60D3A2C-BEB6-49F5-9731-4E4D765D082E
+:ID:       04056E08-1438-4B99-AEB2-29934C2E34BD
 :END:
 
 Every year, sometime around the holidays, I splurge on one really nice thing for myself. Locked inside during quarantine, there hasn't been much to spend on, but I've had a great time doing landscape photography. We still haven't been to bars and restaurants, but we can drive around in a car, and we've been exploring parks in and around New Jersey.
@@ -299,9 +301,9 @@ It's a 4-year-old camera, but, weirdly I don't think it's going away for a reall
 * Camera Lenses: What's in My Bag
 :PROPERTIES:
 :CUSTOM_ID: camera-lenses-what-s-in-my-bag
-:RSS_PERMALINK: https://www.sammystraus.com/#camera-lenses-what-s-in-my-bag
+:RSS_PERMALINK: #camera-lenses-what-s-in-my-bag
 :PUBDATE:  2025-12-14
-:ID:       277F324D-BDAB-4166-813E-35171A7FDDF3
+:ID:       B502DFBF-B509-4544-AF6F-5722B688AF06
 :END:
 
 Camera lenses are expensive. If you own a DSLR, chances are your lenses cost more than the camera body itself. This is because lenses are often the bottleneck for image quality. If you're looking through a blurry window, it doesn't matter how sensitive your sensor is.
@@ -333,9 +335,9 @@ I'm gonna be honest, the only reason why I own this lens is it was half off when
 * Why Many Primary Forecasts are Wrong
 :PROPERTIES:
 :CUSTOM_ID: why-many-primary-forecasts-are-wrong
-:RSS_PERMALINK: https://www.sammystraus.com/#why-many-primary-forecasts-are-wrong
+:RSS_PERMALINK: #why-many-primary-forecasts-are-wrong
 :PUBDATE:  2025-12-14
-:ID:       B8E09A6D-7D4D-4956-89D8-35E40C59820A
+:ID:       2236584B-9A4E-44C3-841E-D2F478E61D3E
 :END:
 
 Ok, wrong might be a little bit too severe, but at the very least unfairly biased. I think most models underestimate Warren and Sander's chances of winning the primary because it evaluates the voting in every state as a single event, rather than viewing the primaries as a sequential selection process. In past elections, while the later states still matter, the early voting states have had special significance because they narrow down the pool of candidates by eliminating out candidates which seem unlikely to win.
@@ -347,9 +349,9 @@ While eventually the race usally comes down to two or three, often closely split
 * The Wonky Math behind the Democratic Primary
 :PROPERTIES:
 :CUSTOM_ID: the-wonky-math-behind-the-democratic-primary
-:RSS_PERMALINK: https://www.sammystraus.com/#the-wonky-math-behind-the-democratic-primary
+:RSS_PERMALINK: #the-wonky-math-behind-the-democratic-primary
 :PUBDATE:  2025-12-14
-:ID:       CA70E737-2A0A-4D8B-9E25-DFFC11590A26
+:ID:       4D452D6B-1CCB-49E8-962D-F73D6955688F
 :END:
 
 Oh man, if you thought the electoral college was bad, you're in for a real treat.
@@ -369,9 +371,9 @@ https://fivethirtyeight.com/features/biden-is-the-front-runner-but-there-is-no-c
 * What's Going on With The Impeachment
 :PROPERTIES:
 :CUSTOM_ID: what-s-going-on-with-the-impeachment
-:RSS_PERMALINK: https://www.sammystraus.com/#what-s-going-on-with-the-impeachment
+:RSS_PERMALINK: #what-s-going-on-with-the-impeachment
 :PUBDATE:  2025-12-14
-:ID:       56BA3B3C-1632-4CD7-AEE8-FDDC77C20C8A
+:ID:       35CCC064-9539-4756-8A6F-A30D5806DD6B
 :END:
 
 The impeachment trial, as it stands, is a little bit of a mess, with what feels like many muddled and ever-changing accusations, against a president who keeps doing new things to be accused of. Right now Nancy Pelosi orchestrated an impeachment vote in the house, but has stalled refusing to send a vote to the senate. Given all the confusion I'd like to take a step back to understand how we got here, and why it all happened the way it did.
@@ -438,10 +440,11 @@ I think going forward, the stalemate will continue. Pelosi doesn't have the vote
 * Treating Cancer with Chemo (Part 3)
 :PROPERTIES:
 :CUSTOM_ID: treating-cancer-with-chemo-part-3
-:RSS_PERMALINK: https://www.sammystraus.com/#treating-cancer-with-chemo-part-3
+:RSS_PERMALINK: #treating-cancer-with-chemo-part-3
 :PUBDATE:  2025-12-14
-:ID:       DA33416A-FA6E-4DC6-91AE-7FEAB17EDC77
+:ID:       3ECEEE62-2DDA-4770-8ED0-5E17AC7372F2
 :END:
+
   In this section, we now look at the specific drugs we would need to put the ideas in Part 2 into practice. We have a tremendous advantage here because we are not developing new chemicals. All of the drugs listed have already seen clinical use.
   What we'd like to do is, send a signal that tells all the cells in your body to start dividing, and then send a chemotherapy drug which kills any cells that are still dividing. Your body has many types of signals which tell cells when to grow and divide, 
 
@@ -454,9 +457,9 @@ I found the paper that has this idea https://www.ncbi.nlm.nih.gov/pubmed/8839398
 * Treating Cancer with Chemo (Part 2)
 :PROPERTIES:
 :CUSTOM_ID: treating-cancer-with-chemo-part-2
-:RSS_PERMALINK: https://www.sammystraus.com/#treating-cancer-with-chemo-part-2
+:RSS_PERMALINK: #treating-cancer-with-chemo-part-2
 :PUBDATE:  2025-12-14
-:ID:       102E3CDD-AE97-428F-B391-CA5194BB4E51
+:ID:       DA90CDF9-38CA-4742-8979-171B52E0F16B
 :END:
   In the last section we looked into what types of cancer treatments are out there, and, from a research perspective, what areas hopefully have the most low hanging fruit. Due to cancer heterogeneity, and the problem of targeting undetectable or microscopic tumors, black-box chemotherapy methods seemed like they would yield the best results. I wrote down the definition of our "black box" and narrowed in on one property, that cancer cells divide regardless of external signaling.
 
@@ -475,9 +478,9 @@ I found the paper that has this idea https://www.ncbi.nlm.nih.gov/pubmed/8839398
 * Treating Cancer with Chemo (Part 1)
 :PROPERTIES:
 :CUSTOM_ID: treating-cancer-with-chemo-part-1
-:RSS_PERMALINK: https://www.sammystraus.com/#treating-cancer-with-chemo-part-1
+:RSS_PERMALINK: #treating-cancer-with-chemo-part-1
 :PUBDATE:  2025-12-14
-:ID:       8CE99A79-EBDD-4D20-95C0-1A75215E17B9
+:ID:       83434157-24D1-4EE8-92E1-9EBD49B7FF45
 :END:
   Cancer treatment is something I've thought about a lot recently, and the more I've studied it, the more I've seen that it's an interesting and complex problem. At it's core a cancer is a group of cells whose genetic code has mutated such that they divide uncontrollably, in a way that cannot be properly regulated by the body. Cancer cells, in contrast to benign tumors, also have the ability to sustain their growth, and to invade other parts of the body. If the cancer cells grow too much, they can "crowd out" other bodily functions, by having large tumors that press against vital organs, or "replace" other healthy cells.
 
@@ -508,9 +511,9 @@ I found the paper that has this idea https://www.ncbi.nlm.nih.gov/pubmed/8839398
 * The Importance of Doing Nothing
 :PROPERTIES:
 :CUSTOM_ID: the-importance-of-doing-nothing
-:RSS_PERMALINK: https://www.sammystraus.com/#the-importance-of-doing-nothing
+:RSS_PERMALINK: #the-importance-of-doing-nothing
 :PUBDATE:  2025-12-14
-:ID:       98800E19-8353-4E9A-8ADD-1E381B4FC5B3
+:ID:       CF8B7FD0-A150-42DC-BB88-D3D2043E916D
 :END:
   This morning I woke up, a little on the later side, and didn't have anything important to do. I didn't have work, and I didn't have chores, just had to eat breakfast, and be out the door by noon. I had 2 and a half hours, so it should have been easy.
 
@@ -529,9 +532,9 @@ I found the paper that has this idea https://www.ncbi.nlm.nih.gov/pubmed/8839398
 * Why I Support Citizens United
 :PROPERTIES:
 :CUSTOM_ID: why-i-support-citizens-united
-:RSS_PERMALINK: https://www.sammystraus.com/#why-i-support-citizens-united
+:RSS_PERMALINK: #why-i-support-citizens-united
 :PUBDATE:  2025-12-14
-:ID:       075522C8-AC52-46C8-8D6C-8805E0FAF392
+:ID:       003478E0-5EC3-45E5-8094-466AE12337DF
 :END:
   Most people I know really don't like Citizens United. For those who aren't familiar, Citizens United was a supreme court decision that essentially let corporations and wealthy individuals funnel unlimited amounts of money into American politics. Not only that, it let people donate to certain types of political causes with little to no transparency or oversight. The people I know who don't like it view it as letting big money buy elections and spread corruption in American politics.
 
@@ -549,9 +552,9 @@ I found the paper that has this idea https://www.ncbi.nlm.nih.gov/pubmed/8839398
 * Camera Settings
 :PROPERTIES:
 :CUSTOM_ID: camera-settings
-:RSS_PERMALINK: https://www.sammystraus.com/#camera-settings
+:RSS_PERMALINK: #camera-settings
 :PUBDATE:  2025-12-14
-:ID:       59445EDC-B555-486A-AB1B-A575331E5620
+:ID:       B2242E83-C459-48ED-8046-EEF72E69B051
 :END:
   When I got my first DSLR, I opened up the settings menu, and found it loaded with options: active-d lighting, vignette control, auto-bracketing, ambient lighting, and much more. It took a while to sift through all the options, but after assigning some reasonable defaults (use full resolution, turn on vibration reduction when available, etc.), I found that despite all of the options, there were really only four dials that effected the raw image. The rest were either only in post-processing, or just different ways of twisting those original four dials.
 
@@ -577,3 +580,4 @@ I found the paper that has this idea https://www.ncbi.nlm.nih.gov/pubmed/8839398
 So why do cameras have so many other options? Well, taking photos in the real world it isn't always easy to quickly and accurately adjust these four dials to set up for the shot you want. Want to get that monkey in focus? The one that's swinging across the jungle? Good luck twisting your focus knob and trying to keep up with it. You'll probably want your camera's autofocus tracking. Want to take many photos in a row, with different levels of exposure? There's a setting for that. It's not enough to just have access to those dials, you also want convenience tools that let you quickly choose how and when to take a photo.
 
 In addition, even though it doesn't effect the raw image, many cameras have built-in post-processing to adjust for things like ambient lighting. While for more serious shots, you'll probably edit the raw files in a program on your computer like photoshop or lightroom, it is convenient, visually to get quick feedback on what the image might look like, and for those of us that are lazy out there, can be a quick way to produce reasonable quality images.
+
