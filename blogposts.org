@@ -1,7 +1,8 @@
 #+TITLE: Sammy's Blog
-#+HTML_LINK_HOME: https://www.sammystraus.com/
 #+RSS_LINK_HOME: https://www.sammystraus.com/
 #+HTML_HEAD: <style> body {width:80%; margin-left: 10%;}</style>
+#+OPTIONS:  toc:1
+#+HTML: <div class="rss-link"><a href="feed.xml">rss</a></div>
 * How to Win at Wordle
 :PROPERTIES:
 :CUSTOM_ID: how-to-win-at-wordle
