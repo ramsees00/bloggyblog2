@@ -3,6 +3,18 @@
 #+HTML_HEAD: <style> body {width:80%; margin-left: 10%;}</style>
 #+OPTIONS:  toc:1
 #+HTML: <div class="rss-link"><a href="feed.xml">rss</a></div>
+# use org-export-blog to export the blog to html and rss
+# and then git push origin master to publish it
+* My Blog is Now on RSS
+:PROPERTIES:
+:CUSTOM_ID: my-blog-is-now-on-rss
+:RSS_PERMALINK: #my-blog-is-now-on-rss
+:PUBDATE:  2026-01-08
+:ID:       027097A5-FF3F-4A2E-8A2B-287037706F14
+:END:
+if ur reading this i can publish to my blog w/rss.
+
+im using org-rss-export-to-rss with some very simiple tooling. i thought about using hugo but idk it seemed too heavy and i kinda like the minimalist feel. im optimistic that hugo will be better when i set it up right, and i will probably need some of its features eventually, but thats a battle for another day.
 * How to Win at Wordle
 :PROPERTIES:
 :CUSTOM_ID: how-to-win-at-wordle
