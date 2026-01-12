@@ -17,8 +17,8 @@ Today I'm releasing deft! It's a library that replaces clojure's existing class 
 It took me about 6 months to really think it through all the way, and get the design just right, so it feels good to finally publish it.
 
 The library: https://github.com/sstraust/deft
-Video Tutorial: <link coming soon>
-On Hackernews: <link coming soon>
+Video Tutorial: https://www.youtube.com/watch?v=dlW6YzwUZ-M
+On Hackernews: https://news.ycombinator.com/item?id=46590958
 (plz star the repo!)
 
 Synopsis:

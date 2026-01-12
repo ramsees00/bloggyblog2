@@ -14,8 +14,8 @@
   <link>https://www.sammystraus.com/</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Mon, 12 Jan 2026 11:41:52 -0500</pubDate>
-  <lastBuildDate>Mon, 12 Jan 2026 11:41:52 -0500</lastBuildDate>
+  <pubDate>Mon, 12 Jan 2026 11:48:25 -0500</pubDate>
+  <lastBuildDate>Mon, 12 Jan 2026 11:48:25 -0500</lastBuildDate>
   <generator>Emacs 29.1 Org-mode 9.6.6</generator>
   <webMaster>sam@Mac (sam)</webMaster>
   <image>
@@ -65,10 +65,10 @@
 
     <p>
     The library: <a href="https://github.com/sstraust/deft">https://github.com/sstraust/deft</a>
-    Video Tutorial: &lt;link coming soon&gt;
-    On Hackernews: &lt;link coming soon&gt;
+    Video Tutorial: <a href="https://www.youtube.com/watch?v=dlW6YzwUZ-M">https://www.youtube.com/watch?v=dlW6YzwUZ-M</a>
+    On Hackernews: <a href="https://news.ycombinator.com/item?id=46590958">https://news.ycombinator.com/item?id=46590958</a>
+    (plz star the repo!)
     </p>
-
 
     <p>
     Synopsis:
@@ -126,8 +126,8 @@
     Ok, I got a little bit lucky, but it wasn't all luck. While I was playing I had a chance to think through some of the strategies, and saw some pitfalls I think others might have missed.
     </p>
 
-    <div id="outline-container-org06f7599" class="outline-3">
-    <h3 id="org06f7599"><span class="section-number-3">3.1.</span> Don't guess letters that are already green</h3>
+    <div id="outline-container-orgc75e415" class="outline-3">
+    <h3 id="orgc75e415"><span class="section-number-3">3.1.</span> Don't guess letters that are already green</h3>
     <div class="outline-text-3" id="text-3-1">
     <p>
     Unless you're trying to make your final guess to win the game, you shouldn't guess the same letter in the same place. You already tried that, so doing it again doesn't give you new information.
@@ -143,8 +143,8 @@
     </div>
     </div>
 
-    <div id="outline-container-org84e4c1f" class="outline-3">
-    <h3 id="org84e4c1f"><span class="section-number-3">3.2.</span> When you guess new letters, put them in places they commonly appear</h3>
+    <div id="outline-container-org3f13866" class="outline-3">
+    <h3 id="org3f13866"><span class="section-number-3">3.2.</span> When you guess new letters, put them in places they commonly appear</h3>
     <div class="outline-text-3" id="text-3-2">
     <p>
     Just for a moment, think of worlde a little bit like binary search. Your goal is to learn as much information as possible with every guess. If your guess splits the problem space in half (i.e. you eliminate half of possible words if it shows up green, and half of words if it shows up yellow), you learn (on average) the most possible information with every guess.
@@ -160,8 +160,8 @@
     </div>
     </div>
 
-    <div id="outline-container-org8f05b19" class="outline-3">
-    <h3 id="org8f05b19"><span class="section-number-3">3.3.</span> Guess common letters first</h3>
+    <div id="outline-container-org1e61378" class="outline-3">
+    <h3 id="org1e61378"><span class="section-number-3">3.3.</span> Guess common letters first</h3>
     <div class="outline-text-3" id="text-3-3">
     <p>
     Basically the same logic as above. It's either one of the 5 specific letters you guessed, or it's one of the 21 other letters. You want to guess the 5 that most closely split the problem in half.
@@ -173,8 +173,8 @@
     </div>
     </div>
 
-    <div id="outline-container-orge4163be" class="outline-3">
-    <h3 id="orge4163be"><span class="section-number-3">3.4.</span> Think through the list of possible words at every step</h3>
+    <div id="outline-container-org35e07f9" class="outline-3">
+    <h3 id="org35e07f9"><span class="section-number-3">3.4.</span> Think through the list of possible words at every step</h3>
     <div class="outline-text-3" id="text-3-4">
     <p>
     Remember, your goal is to "divide in half" with every letter. If you have a sense of/random sample of the words in the space, it's easier to pick the letters/positions that divide that list the most precisely.
@@ -236,8 +236,8 @@
     Some people argue that with the power of MMT, we have the money to finance all of our wildest hopes and dreams, if somebody would just have the courage to turn on the money printer. Free college, loan reimbursement, free housing, we could pay for everything with a click of a button, and no negative long-term reprecussions. As long as we don't cause inflation, there really isn't anything to worry about.
     </p>
 
-    <div id="outline-container-org5a494a6" class="outline-3">
-    <h3 id="org5a494a6"><span class="section-number-3">5.1.</span> The Big If</h3>
+    <div id="outline-container-org3b01838" class="outline-3">
+    <h3 id="org3b01838"><span class="section-number-3">5.1.</span> The Big If</h3>
     <div class="outline-text-3" id="text-5-1">
     <p>
     The thing is, that's a pretty big if. You can "prove" anything you want if you start with a false assumption. If we could print infinite money, and not cause inflation, that'd be pretty awesome, but is such a thing even possible? How did we get here, and why does anybody believe we can do this?
@@ -257,8 +257,8 @@
     </div>
     </div>
 
-    <div id="outline-container-orgfa2d347" class="outline-3">
-    <h3 id="orgfa2d347"><span class="section-number-3">5.2.</span> How We Got Here</h3>
+    <div id="outline-container-orgfbd9d26" class="outline-3">
+    <h3 id="orgfbd9d26"><span class="section-number-3">5.2.</span> How We Got Here</h3>
     <div class="outline-text-3" id="text-5-2">
     <p>
     So if America went out tommorrow, and started printing tons of money, and taking on tons of debt, we'd expect the cost of everything to go way up. We'd expect government bonds to be much less valuable, right? Right?
@@ -275,8 +275,8 @@
     </p>
     </div>
     </div>
-    <div id="outline-container-orga29b2e0" class="outline-3">
-    <h3 id="orga29b2e0"><span class="section-number-3">5.3.</span> The United States as a Trustworthy Institution</h3>
+    <div id="outline-container-org2a896c9" class="outline-3">
+    <h3 id="org2a896c9"><span class="section-number-3">5.3.</span> The United States as a Trustworthy Institution</h3>
     <div class="outline-text-3" id="text-5-3">
     <p>
     Ok, so, we took on a lot of debt before, and it was fine. We printed a truly wild amount of money, and people still trusted us as a stable, reliable institution. Everyone believed that the U.S. government would pay them back, and would pay them back in dollars that held value.
@@ -312,8 +312,8 @@
     </div>
     </div>
 
-    <div id="outline-container-org938843d" class="outline-3">
-    <h3 id="org938843d"><span class="section-number-3">5.4.</span> Take From the Rich and Give to the Poor</h3>
+    <div id="outline-container-org285147e" class="outline-3">
+    <h3 id="org285147e"><span class="section-number-3">5.4.</span> Take From the Rich and Give to the Poor</h3>
     <div class="outline-text-3" id="text-5-4">
     <p>
     The argument goes something like this:
@@ -337,8 +337,8 @@
     </div>
     </div>
 
-    <div id="outline-container-orgde2d005" class="outline-3">
-    <h3 id="orgde2d005"><span class="section-number-3">5.5.</span> Stimulus and Economic Growth</h3>
+    <div id="outline-container-orga44d090" class="outline-3">
+    <h3 id="orga44d090"><span class="section-number-3">5.5.</span> Stimulus and Economic Growth</h3>
     <div class="outline-text-3" id="text-5-5">
     <p>
     Ok so there's a real argument here. The idea is – it's ok to print money because we can generate more goods and services. If we spend it wisely – build bridges, improve broadband, we can create jobs for people who were previously out of work. What's more, that new infrastructure and spending will spur even further economic growth.
