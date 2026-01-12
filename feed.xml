@@ -14,8 +14,8 @@
   <link>https://www.sammystraus.com/</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Thu, 08 Jan 2026 22:50:44 -0500</pubDate>
-  <lastBuildDate>Thu, 08 Jan 2026 22:50:44 -0500</lastBuildDate>
+  <pubDate>Mon, 12 Jan 2026 11:41:52 -0500</pubDate>
+  <lastBuildDate>Mon, 12 Jan 2026 11:41:52 -0500</lastBuildDate>
   <generator>Emacs 29.1 Org-mode 9.6.6</generator>
   <webMaster>sam@Mac (sam)</webMaster>
   <image>
@@ -28,25 +28,73 @@
     <h2>Table of Contents</h2>
     <div id="text-table-of-contents" role="doc-toc">
       <ul>
-	<li><a href="#my-blog-is-now-on-rss">1. My Blog is Now on RSS</a></li>
-	<li><a href="#how-to-win-at-wordle">2. How to Win at Wordle</a></li>
-	<li><a href="#the-power-of-habit-book-review-pt-1">3. The Power Of Habit (Book Review Pt 1)</a></li>
-	<li><a href="#modern-monetary-theory-and-you">4. Modern Monetary Theory and You</a></li>
-	<li><a href="#the-perfect-camera">5. The Perfect Camera</a></li>
-	<li><a href="#camera-lenses-what-s-in-my-bag">6. Camera Lenses: What's in My Bag</a></li>
-	<li><a href="#why-many-primary-forecasts-are-wrong">7. Why Many Primary Forecasts are Wrong</a></li>
-	<li><a href="#the-wonky-math-behind-the-democratic-primary">8. The Wonky Math behind the Democratic Primary</a></li>
-	<li><a href="#what-s-going-on-with-the-impeachment">9. What's Going on With The Impeachment</a></li>
-	<li><a href="#treating-cancer-with-chemo-part-3">10. Treating Cancer with Chemo (Part 3)</a></li>
-	<li><a href="#treating-cancer-with-chemo-part-2">11. Treating Cancer with Chemo (Part 2)</a></li>
-	<li><a href="#treating-cancer-with-chemo-part-1">12. Treating Cancer with Chemo (Part 1)</a></li>
-	<li><a href="#the-importance-of-doing-nothing">13. The Importance of Doing Nothing</a></li>
-	<li><a href="#why-i-support-citizens-united">14. Why I Support Citizens United</a></li>
-	<li><a href="#camera-settings">15. Camera Settings</a></li>
+	<li><a href="#announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript">1. Announcing Deft: A class and interface system for Clojure and ClojureScript</a></li>
+	<li><a href="#my-blog-is-now-on-rss">2. My Blog is Now on RSS</a></li>
+	<li><a href="#how-to-win-at-wordle">3. How to Win at Wordle</a></li>
+	<li><a href="#the-power-of-habit-book-review-pt-1">4. The Power Of Habit (Book Review Pt 1)</a></li>
+	<li><a href="#modern-monetary-theory-and-you">5. Modern Monetary Theory and You</a></li>
+	<li><a href="#the-perfect-camera">6. The Perfect Camera</a></li>
+	<li><a href="#camera-lenses-what-s-in-my-bag">7. Camera Lenses: What's in My Bag</a></li>
+	<li><a href="#why-many-primary-forecasts-are-wrong">8. Why Many Primary Forecasts are Wrong</a></li>
+	<li><a href="#the-wonky-math-behind-the-democratic-primary">9. The Wonky Math behind the Democratic Primary</a></li>
+	<li><a href="#what-s-going-on-with-the-impeachment">10. What's Going on With The Impeachment</a></li>
+	<li><a href="#treating-cancer-with-chemo-part-3">11. Treating Cancer with Chemo (Part 3)</a></li>
+	<li><a href="#treating-cancer-with-chemo-part-2">12. Treating Cancer with Chemo (Part 2)</a></li>
+	<li><a href="#treating-cancer-with-chemo-part-1">13. Treating Cancer with Chemo (Part 1)</a></li>
+	<li><a href="#the-importance-of-doing-nothing">14. The Importance of Doing Nothing</a></li>
+	<li><a href="#why-i-support-citizens-united">15. Why I Support Citizens United</a></li>
+	<li><a href="#camera-settings">16. Camera Settings</a></li>
       </ul>
     </div>
   </div>
   <div class="rss-link"><a href="feed.xml">rss</a></div>
+  <item>
+    <title>Announcing Deft: A class and interface system for Clojure and ClojureScript</title>
+    <link>https://www.sammystraus.com/#announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript</link>
+    <author>sam@Mac (sam)</author>
+    <guid isPermaLink="false">https://www.sammystraus.com/#announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript</guid>
+    <pubDate>Mon, 12 Jan 2026 00:00:00 -0500</pubDate>
+
+    <description><![CDATA[<p>
+    Today I'm releasing deft! It's a library that replaces clojure's existing class system with plain maps and Malli schema.
+    </p>
+
+    <p>
+    It took me about 6 months to really think it through all the way, and get the design just right, so it feels good to finally publish it.
+    </p>
+
+    <p>
+    The library: <a href="https://github.com/sstraust/deft">https://github.com/sstraust/deft</a>
+    Video Tutorial: &lt;link coming soon&gt;
+    On Hackernews: &lt;link coming soon&gt;
+    </p>
+
+
+    <p>
+    Synopsis:
+    This library came out of out frustrations with Clojure's existing type ecosystem. Both defrecord/defprotocol, and plain maps+multimethods, the way they are currently used, make Clojure programs fundamentally difficult to organize and refactor.
+    </p>
+
+    <p>
+    The problem is that:
+    </p>
+    <ul class="org-ul">
+    <li>Clojure records use single-colon (unnamespaced) keyword access to lookup record fields</li>
+    <li>Clojure records do not allow you to define abstract classes, or things that rely on complex dispatch behavior.</li>
+    <li>Clojure maps are extremely difficult to nail down and make stable. Even with libraries like Malli, it's hard to declare interfaces that explain "what can I do with this thing?"</li>
+    <li>Unless you are extremely regimented about defining Malli schemas for every single use case, it's easy for things to get disconnected during destructuring, because missed field lookups return nil</li>
+    </ul>
+
+
+    <p>
+    The goal is to give something that's still enjoyable to work with, but lets you really nail down the behavior when you want to (and still keeps it ergonomic and fun).
+    </p>
+
+    <p>
+    A secondary goal was to make something that is reliable and stable, and is (hopefully) easy to adopt in existing codebases. check it out!
+    </p>
+    ]]></description>
+  </item>
   <item>
     <title>My Blog is Now on RSS</title>
     <link>https://www.sammystraus.com/#my-blog-is-now-on-rss</link>
@@ -78,9 +126,9 @@
     Ok, I got a little bit lucky, but it wasn't all luck. While I was playing I had a chance to think through some of the strategies, and saw some pitfalls I think others might have missed.
     </p>
 
-    <div id="outline-container-org719d514" class="outline-3">
-    <h3 id="org719d514"><span class="section-number-3">2.1.</span> Don't guess letters that are already green</h3>
-    <div class="outline-text-3" id="text-2-1">
+    <div id="outline-container-org06f7599" class="outline-3">
+    <h3 id="org06f7599"><span class="section-number-3">3.1.</span> Don't guess letters that are already green</h3>
+    <div class="outline-text-3" id="text-3-1">
     <p>
     Unless you're trying to make your final guess to win the game, you shouldn't guess the same letter in the same place. You already tried that, so doing it again doesn't give you new information.
     </p>
@@ -95,9 +143,9 @@
     </div>
     </div>
 
-    <div id="outline-container-orgf9e033c" class="outline-3">
-    <h3 id="orgf9e033c"><span class="section-number-3">2.2.</span> When you guess new letters, put them in places they commonly appear</h3>
-    <div class="outline-text-3" id="text-2-2">
+    <div id="outline-container-org84e4c1f" class="outline-3">
+    <h3 id="org84e4c1f"><span class="section-number-3">3.2.</span> When you guess new letters, put them in places they commonly appear</h3>
+    <div class="outline-text-3" id="text-3-2">
     <p>
     Just for a moment, think of worlde a little bit like binary search. Your goal is to learn as much information as possible with every guess. If your guess splits the problem space in half (i.e. you eliminate half of possible words if it shows up green, and half of words if it shows up yellow), you learn (on average) the most possible information with every guess.
     </p>
@@ -112,9 +160,9 @@
     </div>
     </div>
 
-    <div id="outline-container-org701dbc5" class="outline-3">
-    <h3 id="org701dbc5"><span class="section-number-3">2.3.</span> Guess common letters first</h3>
-    <div class="outline-text-3" id="text-2-3">
+    <div id="outline-container-org8f05b19" class="outline-3">
+    <h3 id="org8f05b19"><span class="section-number-3">3.3.</span> Guess common letters first</h3>
+    <div class="outline-text-3" id="text-3-3">
     <p>
     Basically the same logic as above. It's either one of the 5 specific letters you guessed, or it's one of the 21 other letters. You want to guess the 5 that most closely split the problem in half.
     </p>
@@ -125,9 +173,9 @@
     </div>
     </div>
 
-    <div id="outline-container-org593f1bd" class="outline-3">
-    <h3 id="org593f1bd"><span class="section-number-3">2.4.</span> Think through the list of possible words at every step</h3>
-    <div class="outline-text-3" id="text-2-4">
+    <div id="outline-container-orge4163be" class="outline-3">
+    <h3 id="orge4163be"><span class="section-number-3">3.4.</span> Think through the list of possible words at every step</h3>
+    <div class="outline-text-3" id="text-3-4">
     <p>
     Remember, your goal is to "divide in half" with every letter. If you have a sense of/random sample of the words in the space, it's easier to pick the letters/positions that divide that list the most precisely.
     </p>
@@ -188,9 +236,9 @@
     Some people argue that with the power of MMT, we have the money to finance all of our wildest hopes and dreams, if somebody would just have the courage to turn on the money printer. Free college, loan reimbursement, free housing, we could pay for everything with a click of a button, and no negative long-term reprecussions. As long as we don't cause inflation, there really isn't anything to worry about.
     </p>
 
-    <div id="outline-container-org699db9e" class="outline-3">
-    <h3 id="org699db9e"><span class="section-number-3">4.1.</span> The Big If</h3>
-    <div class="outline-text-3" id="text-4-1">
+    <div id="outline-container-org5a494a6" class="outline-3">
+    <h3 id="org5a494a6"><span class="section-number-3">5.1.</span> The Big If</h3>
+    <div class="outline-text-3" id="text-5-1">
     <p>
     The thing is, that's a pretty big if. You can "prove" anything you want if you start with a false assumption. If we could print infinite money, and not cause inflation, that'd be pretty awesome, but is such a thing even possible? How did we get here, and why does anybody believe we can do this?
     </p>
@@ -209,9 +257,9 @@
     </div>
     </div>
 
-    <div id="outline-container-orgc64030e" class="outline-3">
-    <h3 id="orgc64030e"><span class="section-number-3">4.2.</span> How We Got Here</h3>
-    <div class="outline-text-3" id="text-4-2">
+    <div id="outline-container-orgfa2d347" class="outline-3">
+    <h3 id="orgfa2d347"><span class="section-number-3">5.2.</span> How We Got Here</h3>
+    <div class="outline-text-3" id="text-5-2">
     <p>
     So if America went out tommorrow, and started printing tons of money, and taking on tons of debt, we'd expect the cost of everything to go way up. We'd expect government bonds to be much less valuable, right? Right?
     </p>
@@ -227,9 +275,9 @@
     </p>
     </div>
     </div>
-    <div id="outline-container-orged4aa26" class="outline-3">
-    <h3 id="orged4aa26"><span class="section-number-3">4.3.</span> The United States as a Trustworthy Institution</h3>
-    <div class="outline-text-3" id="text-4-3">
+    <div id="outline-container-orga29b2e0" class="outline-3">
+    <h3 id="orga29b2e0"><span class="section-number-3">5.3.</span> The United States as a Trustworthy Institution</h3>
+    <div class="outline-text-3" id="text-5-3">
     <p>
     Ok, so, we took on a lot of debt before, and it was fine. We printed a truly wild amount of money, and people still trusted us as a stable, reliable institution. Everyone believed that the U.S. government would pay them back, and would pay them back in dollars that held value.
     </p>
@@ -264,9 +312,9 @@
     </div>
     </div>
 
-    <div id="outline-container-orgce0290e" class="outline-3">
-    <h3 id="orgce0290e"><span class="section-number-3">4.4.</span> Take From the Rich and Give to the Poor</h3>
-    <div class="outline-text-3" id="text-4-4">
+    <div id="outline-container-org938843d" class="outline-3">
+    <h3 id="org938843d"><span class="section-number-3">5.4.</span> Take From the Rich and Give to the Poor</h3>
+    <div class="outline-text-3" id="text-5-4">
     <p>
     The argument goes something like this:
     </p>
@@ -289,9 +337,9 @@
     </div>
     </div>
 
-    <div id="outline-container-org395d9d4" class="outline-3">
-    <h3 id="org395d9d4"><span class="section-number-3">4.5.</span> Stimulus and Economic Growth</h3>
-    <div class="outline-text-3" id="text-4-5">
+    <div id="outline-container-orgde2d005" class="outline-3">
+    <h3 id="orgde2d005"><span class="section-number-3">5.5.</span> Stimulus and Economic Growth</h3>
+    <div class="outline-text-3" id="text-5-5">
     <p>
     Ok so there's a real argument here. The idea is – it's ok to print money because we can generate more goods and services. If we spend it wisely – build bridges, improve broadband, we can create jobs for people who were previously out of work. What's more, that new infrastructure and spending will spur even further economic growth.
     </p>

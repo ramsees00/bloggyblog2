@@ -5,6 +5,35 @@
 #+HTML: <div class="rss-link"><a href="feed.xml">rss</a></div>
 # use org-export-blog to export the blog to html and rss
 # and then git push origin master to publish it
+* Announcing Deft: A class and interface system for Clojure and ClojureScript
+:PROPERTIES:
+:CUSTOM_ID: announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript
+:RSS_PERMALINK: #announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript
+:PUBDATE:  2026-01-12
+:ID:       F80E917B-3484-4CEC-84A7-E908A82EDCC9
+:END:
+Today I'm releasing deft! It's a library that replaces clojure's existing class system with plain maps and Malli schema.
+
+It took me about 6 months to really think it through all the way, and get the design just right, so it feels good to finally publish it.
+
+The library: https://github.com/sstraust/deft
+Video Tutorial: <link coming soon>
+On Hackernews: <link coming soon>
+
+
+Synopsis:
+This library came out of out frustrations with Clojure's existing type ecosystem. Both defrecord/defprotocol, and plain maps+multimethods, the way they are currently used, make Clojure programs fundamentally difficult to organize and refactor.
+
+The problem is that:
+- Clojure records use single-colon (unnamespaced) keyword access to lookup record fields
+- Clojure records do not allow you to define abstract classes, or things that rely on complex dispatch behavior.
+- Clojure maps are extremely difficult to nail down and make stable. Even with libraries like Malli, it's hard to declare interfaces that explain "what can I do with this thing?"
+- Unless you are extremely regimented about defining Malli schemas for every single use case, it's easy for things to get disconnected during destructuring, because missed field lookups return nil
+
+
+The goal is to give something that's still enjoyable to work with, but lets you really nail down the behavior when you want to (and still keeps it ergonomic and fun).
+
+A secondary goal was to make something that is reliable and stable, and is (hopefully) easy to adopt in existing codebases. check it out!
 * My Blog is Now on RSS
 :PROPERTIES:
 :CUSTOM_ID: my-blog-is-now-on-rss
