@@ -19,7 +19,7 @@ It took me about 6 months to really think it through all the way, and get the de
 The library: https://github.com/sstraust/deft
 Video Tutorial: <link coming soon>
 On Hackernews: <link coming soon>
-
+(plz star the repo!)
 
 Synopsis:
 This library came out of out frustrations with Clojure's existing type ecosystem. Both defrecord/defprotocol, and plain maps+multimethods, the way they are currently used, make Clojure programs fundamentally difficult to organize and refactor.
