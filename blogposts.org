@@ -5,6 +5,155 @@
 #+HTML: <div class="rss-link"><a href="feed.xml">rss</a></div>
 # use org-export-blog to export the blog to html and rss
 # and then git push origin master to publish it
+* Building Chess in about 350 lines of Clojure
+:PROPERTIES:
+:CUSTOM_ID: building-chess-in-about-350-lines-of-clojure
+:RSS_PERMALINK: #building-chess-in-about-350-lines-of-clojure
+:PUBDATE:  2026-02-11
+:ID:       C57E09F1-C89D-4EC5-BA95-729DD04FF03E
+:END:
+I recently released [deft](https://github.com/sstraust/deft), a new library for managing type and protocol defs, and so, to take it for a spin, I decided to write the game of chess in Clojure.
+
+Chess is a good trial run for any class and interface system, because it's reasonably small and self-contained (and has some pretty obvious choice for classes), but it also comes with some of the messiness of a real application, in that, you want to write something concise, but you still have to handle edge-cases, like castling and en passant.
+
+I hand-drew all of the pieces, and used this little reagent snippet
+#+begin_src clojurescript
+  [:h-box
+   (doall (for [x (range (count tiles))]
+		  ^{:key x}
+		  [:v-box
+		   (doall (for [y (reverse (range (count (nth tiles x))))]
+		     ^{:key y}
+		     [:p {:style {:background-color (cond
+						      (= [x y] @currently-selected-location)  "yellow"
+						      (= (mod (+ x y) 2) 1) "white"
+						      :else "black")
+				  :height "4rem"
+				  :width "4rem"
+				  }
+			   :on-click (fn [] (move-selected-piece
+						    game-board-atom
+						    currently-selected-location
+						    [x y]))}
+
+		      (if (not (nil? (get-in tiles [x y])))
+			[:img {:src (image-path (::piece-type (get-in tiles [x y])))
+			       :style {:height "100%"
+				       :width "100%"
+				       :filter (when (= (::color (get-in tiles [x y])) ::black)
+						 "invert()")}}]
+			"")]))]))]
+#+end_src
+to render the display, but kind of the interesting bit is how to represent the board state and all of its pieces.
+
+I did sort of the obvious thing, and defined types representing a chess piece, and then a board, as a 8x8 grid of pieces
+#+begin_src clojurescript
+(deft ChessPiece [color piece-type])
+
+
+(deft ChessBoard [tiles - [:vector [:vector [:or :nil ChessPiece]]]
+                  curr-move - [:enum ::white ::black]
+                  move-history - [:vector ChessMove]])
+#+end_src
+
+and then for the piece behavior, I made protocols that define how a piece is displayed, and how it can move.
+#+begin_src
+(defp PieceType
+  (image-path [this]))
+
+(defp MovablePiece
+  (is-valid-move-for-piece? [this game-board start-location end-location]))
+#+end_src
+
+here is an example for the knight:
+#+begin_src clojurescript
+(deft Knight []
+  PieceType
+  (image-path [this] (image-asset "knight_white.png"))
+  MovablePiece
+  (is-valid-move-for-piece?
+   [this game-board start-location end-location]
+   (and
+    (let [direction (map abs (map - end-location start-location))]
+      (or (and (= (first direction) 1) (= (second direction) 2))
+          (and (= (first direction) 2) (= (second direction) 1))))
+    (is-valid-end-location? game-board start-location end-location))))
+#+end_src
+
+is-valid-move-for-piece?, which returns a true-false value of "can my piece move to this square", works great for most pieces, but is insufficient for more complicated moves, like castling, where several pieces move at the same time. To handle this, we use another multimethod
+
+#+begin_src
+(defmulti special-move-for-piece (fn [x & args] (:type x)))
+#+end_src
+
+that is defined only for special moves, and returns the actual state of the modified gameboard.
+
+so for pawns, it would look something like this:
+#+begin_src clojurescript
+(defmethod special-move-for-piece ::Pawn
+  [this game-board start-location end-location]
+  (let [curr-piece-color (::color (get-in (::tiles game-board) start-location))
+        move-direction (into [] (map - end-location start-location))
+        prev-move (last (::move-history game-board))]
+    (cond
+      ;; en passant
+      (and (= (second move-direction)
+              (if (= curr-piece-color ::white)
+                1 -1))
+           (= (abs (first move-direction)) 1)
+         (= (:type (::piece-type (::piece prev-move))) ::Pawn)
+         (= (apply max (map abs (map - (::end-location prev-move) (::start-location prev-move)))) 2)
+         (= end-location
+            (into []
+                  (map +
+                       (map (fn [x] (/ x 2 )) (map - (::end-location prev-move) (::start-location prev-move)))
+                       (::start-location prev-move)))))
+      (-> game-board
+          (update ::tiles assoc-in start-location nil)
+          (update ::tiles assoc-in end-location
+                  (get-in (::tiles game-board) start-location))
+          (update ::tiles assoc-in (::end-location prev-move)
+                  nil))
+
+      (and (is-valid-move-for-piece? this game-board start-location end-location)
+           (or (= (second end-location) 0)
+               (= (second end-location) 7)))
+      (-> game-board
+          (update ::tiles assoc-in start-location nil)
+          (update ::tiles assoc-in end-location
+                  (assoc (get-in (::tiles game-board) start-location)
+                         ::piece-type (>Queen))))
+      :else nil)))
+#+end_src
+
+I'm not going to write it all out here in the post, but it was pretty straightforward to define relevant methods for all the different pieces types and special-cases, and I'm pretty happy with how the code turned out. When you're reading this code, it really looks like somebody just wrote down all the rules for the game of chess, and that's what makes me feel good, and feel like we've done things in a way that's well organized.
+
+
+But now, sort of the most important question (for me) is:
+
+is this library actually helping? did deft make our lives better?
+
+
+I think it did, for the following reasons:
+- because deft gives us features from both the protocols/records ecosystem and the multimethods/plain-maps ecosystem, we didn't need to *decide* which tool was right for our use-case. this removes just like a lot of cognitive load, because we can use one tool, and trust that it can do everything pretty well.
+- in particular, it was nice to be able to define :default method dispatch for our protocols, and it was extremely nice to be able to reload protocol method defs from the repl without having to re-instantiate the entire chessboard (and clear the current position)
+- it was really nice to be able to enforce when I wanted method defs to be defined for a particular type, and it was really nice to have an easy way to add Malli schema
+
+
+Overall, I'm pretty happy with how it all turned out, and I'd say the test of our library was a success.
+
+You can find the entire code for
+
+the game here: https://github.com/sstraust/deft/blob/master/examples/src/examples/chess.cljs
+the library here: https://github.com/sstraust/deft
+and the detailed video explanation here: https://www.youtube.com/watch?v=lrofmFI1UJY
+
+
+
+
+
+
+
 * Announcing Deft: A class and interface system for Clojure and ClojureScript
 :PROPERTIES:
 :CUSTOM_ID: announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript
