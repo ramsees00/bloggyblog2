@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2026-01-12 Mon 11:48 -->
+<!-- 2026-02-11 Wed 21:13 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Sammy's Blog</title>
@@ -202,28 +202,227 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript">1. Announcing Deft: A class and interface system for Clojure and ClojureScript</a></li>
-<li><a href="#my-blog-is-now-on-rss">2. My Blog is Now on RSS</a></li>
-<li><a href="#how-to-win-at-wordle">3. How to Win at Wordle</a></li>
-<li><a href="#the-power-of-habit-book-review-pt-1">4. The Power Of Habit (Book Review Pt 1)</a></li>
-<li><a href="#modern-monetary-theory-and-you">5. Modern Monetary Theory and You</a></li>
-<li><a href="#the-perfect-camera">6. The Perfect Camera</a></li>
-<li><a href="#camera-lenses-what-s-in-my-bag">7. Camera Lenses: What's in My Bag</a></li>
-<li><a href="#why-many-primary-forecasts-are-wrong">8. Why Many Primary Forecasts are Wrong</a></li>
-<li><a href="#the-wonky-math-behind-the-democratic-primary">9. The Wonky Math behind the Democratic Primary</a></li>
-<li><a href="#what-s-going-on-with-the-impeachment">10. What's Going on With The Impeachment</a></li>
-<li><a href="#treating-cancer-with-chemo-part-3">11. Treating Cancer with Chemo (Part 3)</a></li>
-<li><a href="#treating-cancer-with-chemo-part-2">12. Treating Cancer with Chemo (Part 2)</a></li>
-<li><a href="#treating-cancer-with-chemo-part-1">13. Treating Cancer with Chemo (Part 1)</a></li>
-<li><a href="#the-importance-of-doing-nothing">14. The Importance of Doing Nothing</a></li>
-<li><a href="#why-i-support-citizens-united">15. Why I Support Citizens United</a></li>
-<li><a href="#camera-settings">16. Camera Settings</a></li>
+<li><a href="#building-chess-in-about-350-lines-of-clojure">1. Building Chess in about 350 lines of Clojure</a></li>
+<li><a href="#announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript">2. Announcing Deft: A class and interface system for Clojure and ClojureScript</a></li>
+<li><a href="#my-blog-is-now-on-rss">3. My Blog is Now on RSS</a></li>
+<li><a href="#how-to-win-at-wordle">4. How to Win at Wordle</a></li>
+<li><a href="#the-power-of-habit-book-review-pt-1">5. The Power Of Habit (Book Review Pt 1)</a></li>
+<li><a href="#modern-monetary-theory-and-you">6. Modern Monetary Theory and You</a></li>
+<li><a href="#the-perfect-camera">7. The Perfect Camera</a></li>
+<li><a href="#camera-lenses-what-s-in-my-bag">8. Camera Lenses: What's in My Bag</a></li>
+<li><a href="#why-many-primary-forecasts-are-wrong">9. Why Many Primary Forecasts are Wrong</a></li>
+<li><a href="#the-wonky-math-behind-the-democratic-primary">10. The Wonky Math behind the Democratic Primary</a></li>
+<li><a href="#what-s-going-on-with-the-impeachment">11. What's Going on With The Impeachment</a></li>
+<li><a href="#treating-cancer-with-chemo-part-3">12. Treating Cancer with Chemo (Part 3)</a></li>
+<li><a href="#treating-cancer-with-chemo-part-2">13. Treating Cancer with Chemo (Part 2)</a></li>
+<li><a href="#treating-cancer-with-chemo-part-1">14. Treating Cancer with Chemo (Part 1)</a></li>
+<li><a href="#the-importance-of-doing-nothing">15. The Importance of Doing Nothing</a></li>
+<li><a href="#why-i-support-citizens-united">16. Why I Support Citizens United</a></li>
+<li><a href="#camera-settings">17. Camera Settings</a></li>
 </ul>
 </div>
 </div>
 <div class="rss-link"><a href="feed.xml">rss</a></div>
+<div id="outline-container-building-chess-in-about-350-lines-of-clojure" class="outline-2">
+<h2 id="building-chess-in-about-350-lines-of-clojure"><span class="section-number-2">1.</span> Building Chess in about 350 lines of Clojure</h2>
+<div class="outline-text-2" id="text-building-chess-in-about-350-lines-of-clojure">
+<p>
+I recently released <a href="https://github.com/sstraust/deft">deft</a>, a Clojure library that defines types and protocols using plain maps, and so, to take it for a spin, I wrote the game of chess in Clojure.
+</p>
+
+<p>
+Chess is a good trial run for any class and interface system, because it's reasonably small and self-contained (and has some pretty obvious choice for classes), but it also comes with some of the messiness of a real application, in that, you want to write something concise, but you still have to handle edge-cases, like castling and en passant.
+</p>
+
+<p>
+I hand-drew all of the pieces, and used this little reagent snippet to render the display,
+</p>
+<div class="org-src-container">
+<pre class="src src-clojurescript">[:h-box
+ (doall (for [x (range (count tiles))]
+                ^{:key x}
+                [:v-box
+                 (doall (for [y (reverse (range (count (nth tiles x))))]
+                   ^{:key y}
+                   [:p {:style {:background-color (cond
+                                                    (= [x y] @currently-selected-location)  "yellow"
+                                                    (= (mod (+ x y) 2) 1) "white"
+                                                    :else "black")
+                                :height "4rem"
+                                :width "4rem"
+                                }
+                         :on-click (fn [] (move-selected-piece
+                                                  game-board-atom
+                                                  currently-selected-location
+                                                  [x y]))}
+
+                    (if (not (nil? (get-in tiles [x y])))
+                      [:img {:src (image-path (::piece-type (get-in tiles [x y])))
+                             :style {:height "100%"
+                                     :width "100%"
+                                     :filter (when (= (::color (get-in tiles [x y])) ::black)
+                                               "invert()")}}]
+                      "")]))]))]
+</pre>
+</div>
+<p>
+but kind of the interesting bit is how to represent the board state and all of its pieces.
+</p>
+
+<p>
+I did sort of the obvious thing, and defined types representing a chess piece, and then a board, as a 8x8 grid of pieces
+</p>
+<div class="org-src-container">
+<pre class="src src-clojurescript">(deft ChessPiece [color piece-type])
+
+
+(deft ChessBoard [tiles - [:vector [:vector [:or :nil ChessPiece]]]
+                  curr-move - [:enum ::white ::black]
+                  move-history - [:vector ChessMove]])
+</pre>
+</div>
+
+<p>
+and then for the piece behavior, I made protocols that define how a piece is displayed, and how it can move.
+</p>
+<pre class="example">
+(defp PieceType
+  (image-path [this]))
+
+(defp MovablePiece
+  (is-valid-move-for-piece? [this game-board start-location end-location]))
+</pre>
+
+<p>
+here is an example for the knight:
+</p>
+<div class="org-src-container">
+<pre class="src src-clojurescript">(deft Knight []
+  PieceType
+  (image-path [this] (image-asset "knight_white.png"))
+  MovablePiece
+  (is-valid-move-for-piece?
+   [this game-board start-location end-location]
+   (and
+    (let [direction (map abs (map - end-location start-location))]
+      (or (and (= (first direction) 1) (= (second direction) 2))
+          (and (= (first direction) 2) (= (second direction) 1))))
+    (is-valid-end-location? game-board start-location end-location))))
+</pre>
+</div>
+
+<p>
+is-valid-move-for-piece? returns a true-false value of "can my piece move to this square".
+</p>
+
+
+<p>
+This works great for most pieces, but is insufficient for more complicated moves, like castling, where several pieces move at the same time. To handle this, we use another multimethod
+</p>
+
+<pre class="example">
+(defmulti special-move-for-piece (fn [x &amp; args] (:type x)))
+</pre>
+
+<p>
+that is defined only for special moves, and returns the actual state of the modified gameboard.
+</p>
+
+<p>
+so for pawns, it would look something like this:
+</p>
+<div class="org-src-container">
+<pre class="src src-clojurescript">(defmethod special-move-for-piece ::Pawn
+  [this game-board start-location end-location]
+  (let [curr-piece-color (::color (get-in (::tiles game-board) start-location))
+        move-direction (into [] (map - end-location start-location))
+        prev-move (last (::move-history game-board))]
+    (cond
+      ;; en passant
+      (and (= (second move-direction)
+              (if (= curr-piece-color ::white)
+                1 -1))
+           (= (abs (first move-direction)) 1)
+         (= (:type (::piece-type (::piece prev-move))) ::Pawn)
+         (= (apply max (map abs (map - (::end-location prev-move) (::start-location prev-move)))) 2)
+         (= end-location
+            (into []
+                  (map +
+                       (map (fn [x] (/ x 2 )) (map - (::end-location prev-move) (::start-location prev-move)))
+                       (::start-location prev-move)))))
+      (-&gt; game-board
+          (update ::tiles assoc-in start-location nil)
+          (update ::tiles assoc-in end-location
+                  (get-in (::tiles game-board) start-location))
+          (update ::tiles assoc-in (::end-location prev-move)
+                  nil))
+
+      (and (is-valid-move-for-piece? this game-board start-location end-location)
+           (or (= (second end-location) 0)
+               (= (second end-location) 7)))
+      (-&gt; game-board
+          (update ::tiles assoc-in start-location nil)
+          (update ::tiles assoc-in end-location
+                  (assoc (get-in (::tiles game-board) start-location)
+                         ::piece-type (&gt;Queen))))
+      :else nil)))
+</pre>
+</div>
+
+<p>
+I'm not going to copy-paste the movesets for every piece in this post, but it was pretty straightforward to define relevant methods for all the different piece types and special-cases, and I'm pretty happy with how the code turned out. When you're reading this code, it really looks like somebody just wrote down all the rules for the game of chess, and that's what makes me feel good, and feel like we've done things in a way that's well organized.
+</p>
+
+
+<p>
+But now, sort of the most important question (for me) is:
+</p>
+
+<p>
+is this library actually helping? did deft make our lives better?
+</p>
+
+
+<p>
+I think it did, for the following reasons:
+</p>
+<ul class="org-ul">
+<li>deft gives us the features from both protocols/records and multimethods/plain-maps, so we didn't need to <i>decide</i> which tool was right for our use-case. this removes just like a lot of cognitive load, because we can use one tool, and trust that it can do everything pretty well.</li>
+<li>in particular, it was nice to be able to define :default method dispatch for our protocols, and it was extremely nice to be able to reload protocol method defs from the repl without having to re-instantiate the entire chessboard (and clear the current position)</li>
+<li>it was really nice to be able to enforce when I wanted method defs to be defined for a particular type, and it was really nice to have an easy way to add Malli schema</li>
+</ul>
+
+
+<p>
+Overall, I'm pretty happy with how it all turned out, and I'd say the test of our library was a success.
+</p>
+
+<p>
+You can find the entire code for
+</p>
+
+<p>
+the game here: <a href="https://github.com/sstraust/deft/blob/master/examples/src/examples/chess.cljs">https://github.com/sstraust/deft/blob/master/examples/src/examples/chess.cljs</a>
+</p>
+
+<p>
+the library here: <a href="https://github.com/sstraust/deft">https://github.com/sstraust/deft</a>
+</p>
+
+<p>
+and the detailed video explanation here: <a href="https://www.youtube.com/watch?v=lrofmFI1UJY">https://www.youtube.com/watch?v=lrofmFI1UJY</a>
+</p>
+</div>
+</div>
+
+
+
+
+
+
+
 <div id="outline-container-announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript" class="outline-2">
-<h2 id="announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript"><span class="section-number-2">1.</span> Announcing Deft: A class and interface system for Clojure and ClojureScript</h2>
+<h2 id="announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript"><span class="section-number-2">2.</span> Announcing Deft: A class and interface system for Clojure and ClojureScript</h2>
 <div class="outline-text-2" id="text-announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript">
 <p>
 Today I'm releasing deft! It's a library that replaces clojure's existing class system with plain maps and Malli schema.
@@ -266,7 +465,7 @@ A secondary goal was to make something that is reliable and stable, and is (hope
 </div>
 </div>
 <div id="outline-container-my-blog-is-now-on-rss" class="outline-2">
-<h2 id="my-blog-is-now-on-rss"><span class="section-number-2">2.</span> My Blog is Now on RSS</h2>
+<h2 id="my-blog-is-now-on-rss"><span class="section-number-2">3.</span> My Blog is Now on RSS</h2>
 <div class="outline-text-2" id="text-my-blog-is-now-on-rss">
 <p>
 if ur reading this i can publish to my blog w/rss.
@@ -278,7 +477,7 @@ im using org-rss-export-to-rss with some very simiple tooling. i thought about u
 </div>
 </div>
 <div id="outline-container-how-to-win-at-wordle" class="outline-2">
-<h2 id="how-to-win-at-wordle"><span class="section-number-2">3.</span> How to Win at Wordle</h2>
+<h2 id="how-to-win-at-wordle"><span class="section-number-2">4.</span> How to Win at Wordle</h2>
 <div class="outline-text-2" id="text-how-to-win-at-wordle">
 <p>
 I played my first game of Wordle this week, and I got in 4!
@@ -289,9 +488,9 @@ Ok, I got a little bit lucky, but it wasn't all luck. While I was playing I had 
 </p>
 </div>
 
-<div id="outline-container-orgfe3aa51" class="outline-3">
-<h3 id="orgfe3aa51"><span class="section-number-3">3.1.</span> Don't guess letters that are already green</h3>
-<div class="outline-text-3" id="text-3-1">
+<div id="outline-container-org2b76d09" class="outline-3">
+<h3 id="org2b76d09"><span class="section-number-3">4.1.</span> Don't guess letters that are already green</h3>
+<div class="outline-text-3" id="text-4-1">
 <p>
 Unless you're trying to make your final guess to win the game, you shouldn't guess the same letter in the same place. You already tried that, so doing it again doesn't give you new information.
 </p>
@@ -306,9 +505,9 @@ Suppose you have B - A - _ - E - S, all green. You just need to guess the last l
 </div>
 </div>
 
-<div id="outline-container-org31be542" class="outline-3">
-<h3 id="org31be542"><span class="section-number-3">3.2.</span> When you guess new letters, put them in places they commonly appear</h3>
-<div class="outline-text-3" id="text-3-2">
+<div id="outline-container-org3c9fc9f" class="outline-3">
+<h3 id="org3c9fc9f"><span class="section-number-3">4.2.</span> When you guess new letters, put them in places they commonly appear</h3>
+<div class="outline-text-3" id="text-4-2">
 <p>
 Just for a moment, think of worlde a little bit like binary search. Your goal is to learn as much information as possible with every guess. If your guess splits the problem space in half (i.e. you eliminate half of possible words if it shows up green, and half of words if it shows up yellow), you learn (on average) the most possible information with every guess.
 </p>
@@ -323,9 +522,9 @@ You learn (on average) way more about the letter 'Y' with a guess like R - A - I
 </div>
 </div>
 
-<div id="outline-container-orgc8ebeb4" class="outline-3">
-<h3 id="orgc8ebeb4"><span class="section-number-3">3.3.</span> Guess common letters first</h3>
-<div class="outline-text-3" id="text-3-3">
+<div id="outline-container-org9da475e" class="outline-3">
+<h3 id="org9da475e"><span class="section-number-3">4.3.</span> Guess common letters first</h3>
+<div class="outline-text-3" id="text-4-3">
 <p>
 Basically the same logic as above. It's either one of the 5 specific letters you guessed, or it's one of the 21 other letters. You want to guess the 5 that most closely split the problem in half.
 </p>
@@ -336,9 +535,9 @@ Going a step further, once you have a few lines guessed, you want to guess the m
 </div>
 </div>
 
-<div id="outline-container-orgce297ac" class="outline-3">
-<h3 id="orgce297ac"><span class="section-number-3">3.4.</span> Think through the list of possible words at every step</h3>
-<div class="outline-text-3" id="text-3-4">
+<div id="outline-container-org1a0f82d" class="outline-3">
+<h3 id="org1a0f82d"><span class="section-number-3">4.4.</span> Think through the list of possible words at every step</h3>
+<div class="outline-text-3" id="text-4-4">
 <p>
 Remember, your goal is to "divide in half" with every letter. If you have a sense of/random sample of the words in the space, it's easier to pick the letters/positions that divide that list the most precisely.
 </p>
@@ -347,7 +546,7 @@ Remember, your goal is to "divide in half" with every letter. If you have a sens
 </div>
 
 <div id="outline-container-the-power-of-habit-book-review-pt-1" class="outline-2">
-<h2 id="the-power-of-habit-book-review-pt-1"><span class="section-number-2">4.</span> The Power Of Habit (Book Review Pt 1)</h2>
+<h2 id="the-power-of-habit-book-review-pt-1"><span class="section-number-2">5.</span> The Power Of Habit (Book Review Pt 1)</h2>
 <div class="outline-text-2" id="text-the-power-of-habit-book-review-pt-1">
 <p>
 Charles Duhigg was a reporter for the New York Times, and you can feel it in his writing. This is a modern-science report that's sensational, inspirational, and often highly misleading.
@@ -376,7 +575,7 @@ Habits can be a good thing. Thinking is hard, and deciding what to do takes effo
 </div>
 </div>
 <div id="outline-container-modern-monetary-theory-and-you" class="outline-2">
-<h2 id="modern-monetary-theory-and-you"><span class="section-number-2">5.</span> Modern Monetary Theory and You</h2>
+<h2 id="modern-monetary-theory-and-you"><span class="section-number-2">6.</span> Modern Monetary Theory and You</h2>
 <div class="outline-text-2" id="text-modern-monetary-theory-and-you">
 <p>
 Like any political agenda, modern monetary theory isn't perfectly specified, and people often tailor its definition to their own ambitions. As best I can tell it goes like this:
@@ -391,9 +590,9 @@ Some people argue that with the power of MMT, we have the money to finance all o
 </p>
 </div>
 
-<div id="outline-container-org9d30e8a" class="outline-3">
-<h3 id="org9d30e8a"><span class="section-number-3">5.1.</span> The Big If</h3>
-<div class="outline-text-3" id="text-5-1">
+<div id="outline-container-org5690e49" class="outline-3">
+<h3 id="org5690e49"><span class="section-number-3">6.1.</span> The Big If</h3>
+<div class="outline-text-3" id="text-6-1">
 <p>
 The thing is, that's a pretty big if. You can "prove" anything you want if you start with a false assumption. If we could print infinite money, and not cause inflation, that'd be pretty awesome, but is such a thing even possible? How did we get here, and why does anybody believe we can do this?
 </p>
@@ -412,9 +611,9 @@ Fundamentally, people want money so that they can use it to buy goods and servic
 </div>
 </div>
 
-<div id="outline-container-orgb117613" class="outline-3">
-<h3 id="orgb117613"><span class="section-number-3">5.2.</span> How We Got Here</h3>
-<div class="outline-text-3" id="text-5-2">
+<div id="outline-container-orgc41be76" class="outline-3">
+<h3 id="orgc41be76"><span class="section-number-3">6.2.</span> How We Got Here</h3>
+<div class="outline-text-3" id="text-6-2">
 <p>
 So if America went out tommorrow, and started printing tons of money, and taking on tons of debt, we'd expect the cost of everything to go way up. We'd expect government bonds to be much less valuable, right? Right?
 </p>
@@ -430,9 +629,9 @@ The stimulus bill spurred so much economic growth that it offset inflation.
 </p>
 </div>
 </div>
-<div id="outline-container-org8c17e2c" class="outline-3">
-<h3 id="org8c17e2c"><span class="section-number-3">5.3.</span> The United States as a Trustworthy Institution</h3>
-<div class="outline-text-3" id="text-5-3">
+<div id="outline-container-orgb059e1d" class="outline-3">
+<h3 id="orgb059e1d"><span class="section-number-3">6.3.</span> The United States as a Trustworthy Institution</h3>
+<div class="outline-text-3" id="text-6-3">
 <p>
 Ok, so, we took on a lot of debt before, and it was fine. We printed a truly wild amount of money, and people still trusted us as a stable, reliable institution. Everyone believed that the U.S. government would pay them back, and would pay them back in dollars that held value.
 </p>
@@ -467,9 +666,9 @@ We can "cash in" on our current trust and influence, but once we break that trus
 </div>
 </div>
 
-<div id="outline-container-orgc3a9628" class="outline-3">
-<h3 id="orgc3a9628"><span class="section-number-3">5.4.</span> Take From the Rich and Give to the Poor</h3>
-<div class="outline-text-3" id="text-5-4">
+<div id="outline-container-orgdfe192a" class="outline-3">
+<h3 id="orgdfe192a"><span class="section-number-3">6.4.</span> Take From the Rich and Give to the Poor</h3>
+<div class="outline-text-3" id="text-6-4">
 <p>
 The argument goes something like this:
 </p>
@@ -492,9 +691,9 @@ The people that it does hurt are the ones governed by a fixed $15 (or less) mini
 </div>
 </div>
 
-<div id="outline-container-orge8ea2b9" class="outline-3">
-<h3 id="orge8ea2b9"><span class="section-number-3">5.5.</span> Stimulus and Economic Growth</h3>
-<div class="outline-text-3" id="text-5-5">
+<div id="outline-container-org8d1f305" class="outline-3">
+<h3 id="org8d1f305"><span class="section-number-3">6.5.</span> Stimulus and Economic Growth</h3>
+<div class="outline-text-3" id="text-6-5">
 <p>
 Ok so there's a real argument here. The idea is – it's ok to print money because we can generate more goods and services. If we spend it wisely – build bridges, improve broadband, we can create jobs for people who were previously out of work. What's more, that new infrastructure and spending will spur even further economic growth.
 </p>
@@ -515,7 +714,7 @@ The challenge here is it's extremely optimistic. Is your government so smart and
 </div>
 
 <div id="outline-container-the-perfect-camera" class="outline-2">
-<h2 id="the-perfect-camera"><span class="section-number-2">6.</span> The Perfect Camera</h2>
+<h2 id="the-perfect-camera"><span class="section-number-2">7.</span> The Perfect Camera</h2>
 <div class="outline-text-2" id="text-the-perfect-camera">
 <p>
 Every year, sometime around the holidays, I splurge on one really nice thing for myself. Locked inside during quarantine, there hasn't been much to spend on, but I've had a great time doing landscape photography. We still haven't been to bars and restaurants, but we can drive around in a car, and we've been exploring parks in and around New Jersey.
@@ -766,7 +965,7 @@ It's a 4-year-old camera, but, weirdly I don't think it's going away for a reall
 </div>
 
 <div id="outline-container-camera-lenses-what-s-in-my-bag" class="outline-2">
-<h2 id="camera-lenses-what-s-in-my-bag"><span class="section-number-2">7.</span> Camera Lenses: What's in My Bag</h2>
+<h2 id="camera-lenses-what-s-in-my-bag"><span class="section-number-2">8.</span> Camera Lenses: What's in My Bag</h2>
 <div class="outline-text-2" id="text-camera-lenses-what-s-in-my-bag">
 <p>
 Camera lenses are expensive. If you own a DSLR, chances are your lenses cost more than the camera body itself. This is because lenses are often the bottleneck for image quality. If you're looking through a blurry window, it doesn't matter how sensitive your sensor is.
@@ -823,7 +1022,7 @@ I'm gonna be honest, the only reason why I own this lens is it was half off when
 </div>
 
 <div id="outline-container-why-many-primary-forecasts-are-wrong" class="outline-2">
-<h2 id="why-many-primary-forecasts-are-wrong"><span class="section-number-2">8.</span> Why Many Primary Forecasts are Wrong</h2>
+<h2 id="why-many-primary-forecasts-are-wrong"><span class="section-number-2">9.</span> Why Many Primary Forecasts are Wrong</h2>
 <div class="outline-text-2" id="text-why-many-primary-forecasts-are-wrong">
 <p>
 Ok, wrong might be a little bit too severe, but at the very least unfairly biased. I think most models underestimate Warren and Sander's chances of winning the primary because it evaluates the voting in every state as a single event, rather than viewing the primaries as a sequential selection process. In past elections, while the later states still matter, the early voting states have had special significance because they narrow down the pool of candidates by eliminating out candidates which seem unlikely to win.
@@ -840,7 +1039,7 @@ While eventually the race usally comes down to two or three, often closely split
 </div>
 
 <div id="outline-container-the-wonky-math-behind-the-democratic-primary" class="outline-2">
-<h2 id="the-wonky-math-behind-the-democratic-primary"><span class="section-number-2">9.</span> The Wonky Math behind the Democratic Primary</h2>
+<h2 id="the-wonky-math-behind-the-democratic-primary"><span class="section-number-2">10.</span> The Wonky Math behind the Democratic Primary</h2>
 <div class="outline-text-2" id="text-the-wonky-math-behind-the-democratic-primary">
 <p>
 Oh man, if you thought the electoral college was bad, you're in for a real treat.
@@ -873,7 +1072,7 @@ By contrast, take a look at the best states for Bernie Sanders: Vermont, Utah, W
 </div>
 
 <div id="outline-container-what-s-going-on-with-the-impeachment" class="outline-2">
-<h2 id="what-s-going-on-with-the-impeachment"><span class="section-number-2">10.</span> What's Going on With The Impeachment</h2>
+<h2 id="what-s-going-on-with-the-impeachment"><span class="section-number-2">11.</span> What's Going on With The Impeachment</h2>
 <div class="outline-text-2" id="text-what-s-going-on-with-the-impeachment">
 <p>
 The impeachment trial, as it stands, is a little bit of a mess, with what feels like many muddled and ever-changing accusations, against a president who keeps doing new things to be accused of. Right now Nancy Pelosi orchestrated an impeachment vote in the house, but has stalled refusing to send a vote to the senate. Given all the confusion I'd like to take a step back to understand how we got here, and why it all happened the way it did.
@@ -999,7 +1198,7 @@ I think going forward, the stalemate will continue. Pelosi doesn't have the vote
 
 
 <div id="outline-container-treating-cancer-with-chemo-part-3" class="outline-2">
-<h2 id="treating-cancer-with-chemo-part-3"><span class="section-number-2">11.</span> Treating Cancer with Chemo (Part 3)</h2>
+<h2 id="treating-cancer-with-chemo-part-3"><span class="section-number-2">12.</span> Treating Cancer with Chemo (Part 3)</h2>
 <div class="outline-text-2" id="text-treating-cancer-with-chemo-part-3">
 <p>
 In this section, we now look at the specific drugs we would need to put the ideas in Part 2 into practice. We have a tremendous advantage here because we are not developing new chemicals. All of the drugs listed have already seen clinical use.
@@ -1019,7 +1218,7 @@ I found the paper that has this idea <a href="https://www.ncbi.nlm.nih.gov/pubme
 
 
 <div id="outline-container-treating-cancer-with-chemo-part-2" class="outline-2">
-<h2 id="treating-cancer-with-chemo-part-2"><span class="section-number-2">12.</span> Treating Cancer with Chemo (Part 2)</h2>
+<h2 id="treating-cancer-with-chemo-part-2"><span class="section-number-2">13.</span> Treating Cancer with Chemo (Part 2)</h2>
 <div class="outline-text-2" id="text-treating-cancer-with-chemo-part-2">
 <p>
 In the last section we looked into what types of cancer treatments are out there, and, from a research perspective, what areas hopefully have the most low hanging fruit. Due to cancer heterogeneity, and the problem of targeting undetectable or microscopic tumors, black-box chemotherapy methods seemed like they would yield the best results. I wrote down the definition of our "black box" and narrowed in on one property, that cancer cells divide regardless of external signaling.
@@ -1052,7 +1251,7 @@ In the same way that we treat hair loss, we can tell the cells in your bone marr
 </div>
 
 <div id="outline-container-treating-cancer-with-chemo-part-1" class="outline-2">
-<h2 id="treating-cancer-with-chemo-part-1"><span class="section-number-2">13.</span> Treating Cancer with Chemo (Part 1)</h2>
+<h2 id="treating-cancer-with-chemo-part-1"><span class="section-number-2">14.</span> Treating Cancer with Chemo (Part 1)</h2>
 <div class="outline-text-2" id="text-treating-cancer-with-chemo-part-1">
 <p>
 Cancer treatment is something I've thought about a lot recently, and the more I've studied it, the more I've seen that it's an interesting and complex problem. At it's core a cancer is a group of cells whose genetic code has mutated such that they divide uncontrollably, in a way that cannot be properly regulated by the body. Cancer cells, in contrast to benign tumors, also have the ability to sustain their growth, and to invade other parts of the body. If the cancer cells grow too much, they can "crowd out" other bodily functions, by having large tumors that press against vital organs, or "replace" other healthy cells.
@@ -1105,7 +1304,7 @@ I'd say 2 is almost impossible to go after as a black box, since you can't ask a
 </div>
 
 <div id="outline-container-the-importance-of-doing-nothing" class="outline-2">
-<h2 id="the-importance-of-doing-nothing"><span class="section-number-2">14.</span> The Importance of Doing Nothing</h2>
+<h2 id="the-importance-of-doing-nothing"><span class="section-number-2">15.</span> The Importance of Doing Nothing</h2>
 <div class="outline-text-2" id="text-the-importance-of-doing-nothing">
 <p>
 This morning I woke up, a little on the later side, and didn't have anything important to do. I didn't have work, and I didn't have chores, just had to eat breakfast, and be out the door by noon. I had 2 and a half hours, so it should have been easy.
@@ -1138,7 +1337,7 @@ Maybe the videos made me feel happy for a half hour or so. Maybe I even learned 
 </div>
 
 <div id="outline-container-why-i-support-citizens-united" class="outline-2">
-<h2 id="why-i-support-citizens-united"><span class="section-number-2">15.</span> Why I Support Citizens United</h2>
+<h2 id="why-i-support-citizens-united"><span class="section-number-2">16.</span> Why I Support Citizens United</h2>
 <div class="outline-text-2" id="text-why-i-support-citizens-united">
 <p>
 Most people I know really don't like Citizens United. For those who aren't familiar, Citizens United was a supreme court decision that essentially let corporations and wealthy individuals funnel unlimited amounts of money into American politics. Not only that, it let people donate to certain types of political causes with little to no transparency or oversight. The people I know who don't like it view it as letting big money buy elections and spread corruption in American politics.
@@ -1170,7 +1369,7 @@ So, the question is, where do you draw the line? What's the difference between p
 </div>
 </div>
 <div id="outline-container-camera-settings" class="outline-2">
-<h2 id="camera-settings"><span class="section-number-2">16.</span> Camera Settings</h2>
+<h2 id="camera-settings"><span class="section-number-2">17.</span> Camera Settings</h2>
 <div class="outline-text-2" id="text-camera-settings">
 <p>
 When I got my first DSLR, I opened up the settings menu, and found it loaded with options: active-d lighting, vignette control, auto-bracketing, ambient lighting, and much more. It took a while to sift through all the options, but after assigning some reasonable defaults (use full resolution, turn on vibration reduction when available, etc.), I found that despite all of the options, there were really only four dials that effected the raw image. The rest were either only in post-processing, or just different ways of twisting those original four dials.
@@ -1231,7 +1430,7 @@ In addition, even though it doesn't effect the raw image, many cameras have buil
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: sam</p>
-<p class="date">Created: 2026-01-12 Mon 11:48</p>
+<p class="date">Created: 2026-02-11 Wed 21:13</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
