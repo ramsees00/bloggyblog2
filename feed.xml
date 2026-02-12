@@ -14,8 +14,8 @@
   <link>https://www.sammystraus.com/</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Wed, 11 Feb 2026 21:00:55 -0500</pubDate>
-  <lastBuildDate>Wed, 11 Feb 2026 21:00:55 -0500</lastBuildDate>
+  <pubDate>Wed, 11 Feb 2026 21:13:36 -0500</pubDate>
+  <lastBuildDate>Wed, 11 Feb 2026 21:13:36 -0500</lastBuildDate>
   <generator>Emacs 29.1 Org-mode 9.6.6</generator>
   <webMaster>sam@Mac (sam)</webMaster>
   <image>
@@ -57,7 +57,7 @@
     <pubDate>Wed, 11 Feb 2026 00:00:00 -0500</pubDate>
 
     <description><![CDATA[<p>
-    I recently released [deft](<a href="https://github.com/sstraust/deft">https://github.com/sstraust/deft</a>), a new library for managing type and protocol defs, and so, to take it for a spin, I decided to write the game of chess in Clojure.
+    I recently released <a href="https://github.com/sstraust/deft">deft</a>, a Clojure library that defines types and protocols using plain maps, and so, to take it for a spin, I wrote the game of chess in Clojure.
     </p>
 
     <p>
@@ -65,7 +65,7 @@
     </p>
 
     <p>
-    I hand-drew all of the pieces, and used this little reagent snippet
+    I hand-drew all of the pieces, and used this little reagent snippet to render the display,
     </p>
     <div class="org-src-container">
     <pre class="src src-clojurescript">[:h-box
@@ -96,7 +96,7 @@
     </pre>
     </div>
     <p>
-    to render the display, but kind of the interesting bit is how to represent the board state and all of its pieces.
+    but kind of the interesting bit is how to represent the board state and all of its pieces.
     </p>
 
     <p>
@@ -142,7 +142,12 @@
     </div>
 
     <p>
-    is-valid-move-for-piece?, which returns a true-false value of "can my piece move to this square", works great for most pieces, but is insufficient for more complicated moves, like castling, where several pieces move at the same time. To handle this, we use another multimethod
+    is-valid-move-for-piece? returns a true-false value of "can my piece move to this square".
+    </p>
+
+
+    <p>
+    This works great for most pieces, but is insufficient for more complicated moves, like castling, where several pieces move at the same time. To handle this, we use another multimethod
     </p>
 
     <pre class="example">
@@ -195,7 +200,7 @@
     </div>
 
     <p>
-    I'm not going to write it all out here in the post, but it was pretty straightforward to define relevant methods for all the different pieces types and special-cases, and I'm pretty happy with how the code turned out. When you're reading this code, it really looks like somebody just wrote down all the rules for the game of chess, and that's what makes me feel good, and feel like we've done things in a way that's well organized.
+    I'm not going to copy-paste the movesets for every piece in this post, but it was pretty straightforward to define relevant methods for all the different piece types and special-cases, and I'm pretty happy with how the code turned out. When you're reading this code, it really looks like somebody just wrote down all the rules for the game of chess, and that's what makes me feel good, and feel like we've done things in a way that's well organized.
     </p>
 
 
@@ -212,7 +217,7 @@
     I think it did, for the following reasons:
     </p>
     <ul class="org-ul">
-    <li>because deft gives us features from both the protocols/records ecosystem and the multimethods/plain-maps ecosystem, we didn't need to <b>decide</b> which tool was right for our use-case. this removes just like a lot of cognitive load, because we can use one tool, and trust that it can do everything pretty well.</li>
+    <li>deft gives us the features from both protocols/records and multimethods/plain-maps, so we didn't need to <i>decide</i> which tool was right for our use-case. this removes just like a lot of cognitive load, because we can use one tool, and trust that it can do everything pretty well.</li>
     <li>in particular, it was nice to be able to define :default method dispatch for our protocols, and it was extremely nice to be able to reload protocol method defs from the repl without having to re-instantiate the entire chessboard (and clear the current position)</li>
     <li>it was really nice to be able to enforce when I wanted method defs to be defined for a particular type, and it was really nice to have an easy way to add Malli schema</li>
     </ul>
@@ -228,7 +233,13 @@
 
     <p>
     the game here: <a href="https://github.com/sstraust/deft/blob/master/examples/src/examples/chess.cljs">https://github.com/sstraust/deft/blob/master/examples/src/examples/chess.cljs</a>
+    </p>
+
+    <p>
     the library here: <a href="https://github.com/sstraust/deft">https://github.com/sstraust/deft</a>
+    </p>
+
+    <p>
     and the detailed video explanation here: <a href="https://www.youtube.com/watch?v=lrofmFI1UJY">https://www.youtube.com/watch?v=lrofmFI1UJY</a>
     </p>
     ]]></description>
@@ -318,8 +329,8 @@
   Ok, I got a little bit lucky, but it wasn't all luck. While I was playing I had a chance to think through some of the strategies, and saw some pitfalls I think others might have missed.
   </p>
 
-  <div id="outline-container-org5c4a502" class="outline-3">
-  <h3 id="org5c4a502"><span class="section-number-3">4.1.</span> Don't guess letters that are already green</h3>
+  <div id="outline-container-org408567a" class="outline-3">
+  <h3 id="org408567a"><span class="section-number-3">4.1.</span> Don't guess letters that are already green</h3>
   <div class="outline-text-3" id="text-4-1">
   <p>
   Unless you're trying to make your final guess to win the game, you shouldn't guess the same letter in the same place. You already tried that, so doing it again doesn't give you new information.
@@ -335,8 +346,8 @@
   </div>
   </div>
 
-  <div id="outline-container-orgbac1572" class="outline-3">
-  <h3 id="orgbac1572"><span class="section-number-3">4.2.</span> When you guess new letters, put them in places they commonly appear</h3>
+  <div id="outline-container-org9e697dd" class="outline-3">
+  <h3 id="org9e697dd"><span class="section-number-3">4.2.</span> When you guess new letters, put them in places they commonly appear</h3>
   <div class="outline-text-3" id="text-4-2">
   <p>
   Just for a moment, think of worlde a little bit like binary search. Your goal is to learn as much information as possible with every guess. If your guess splits the problem space in half (i.e. you eliminate half of possible words if it shows up green, and half of words if it shows up yellow), you learn (on average) the most possible information with every guess.
@@ -352,8 +363,8 @@
   </div>
   </div>
 
-  <div id="outline-container-org114736e" class="outline-3">
-  <h3 id="org114736e"><span class="section-number-3">4.3.</span> Guess common letters first</h3>
+  <div id="outline-container-orge59716a" class="outline-3">
+  <h3 id="orge59716a"><span class="section-number-3">4.3.</span> Guess common letters first</h3>
   <div class="outline-text-3" id="text-4-3">
   <p>
   Basically the same logic as above. It's either one of the 5 specific letters you guessed, or it's one of the 21 other letters. You want to guess the 5 that most closely split the problem in half.
@@ -365,8 +376,8 @@
   </div>
   </div>
 
-  <div id="outline-container-orgbbee1ca" class="outline-3">
-  <h3 id="orgbbee1ca"><span class="section-number-3">4.4.</span> Think through the list of possible words at every step</h3>
+  <div id="outline-container-org850b1e6" class="outline-3">
+  <h3 id="org850b1e6"><span class="section-number-3">4.4.</span> Think through the list of possible words at every step</h3>
   <div class="outline-text-3" id="text-4-4">
   <p>
   Remember, your goal is to "divide in half" with every letter. If you have a sense of/random sample of the words in the space, it's easier to pick the letters/positions that divide that list the most precisely.
@@ -428,8 +439,8 @@
   Some people argue that with the power of MMT, we have the money to finance all of our wildest hopes and dreams, if somebody would just have the courage to turn on the money printer. Free college, loan reimbursement, free housing, we could pay for everything with a click of a button, and no negative long-term reprecussions. As long as we don't cause inflation, there really isn't anything to worry about.
   </p>
 
-  <div id="outline-container-org32d0125" class="outline-3">
-  <h3 id="org32d0125"><span class="section-number-3">6.1.</span> The Big If</h3>
+  <div id="outline-container-org225671f" class="outline-3">
+  <h3 id="org225671f"><span class="section-number-3">6.1.</span> The Big If</h3>
   <div class="outline-text-3" id="text-6-1">
   <p>
   The thing is, that's a pretty big if. You can "prove" anything you want if you start with a false assumption. If we could print infinite money, and not cause inflation, that'd be pretty awesome, but is such a thing even possible? How did we get here, and why does anybody believe we can do this?
@@ -449,8 +460,8 @@
   </div>
   </div>
 
-  <div id="outline-container-orgfa54643" class="outline-3">
-  <h3 id="orgfa54643"><span class="section-number-3">6.2.</span> How We Got Here</h3>
+  <div id="outline-container-org3f05163" class="outline-3">
+  <h3 id="org3f05163"><span class="section-number-3">6.2.</span> How We Got Here</h3>
   <div class="outline-text-3" id="text-6-2">
   <p>
   So if America went out tommorrow, and started printing tons of money, and taking on tons of debt, we'd expect the cost of everything to go way up. We'd expect government bonds to be much less valuable, right? Right?
@@ -467,8 +478,8 @@
   </p>
   </div>
   </div>
-  <div id="outline-container-orgd4e60de" class="outline-3">
-  <h3 id="orgd4e60de"><span class="section-number-3">6.3.</span> The United States as a Trustworthy Institution</h3>
+  <div id="outline-container-orgd0d1866" class="outline-3">
+  <h3 id="orgd0d1866"><span class="section-number-3">6.3.</span> The United States as a Trustworthy Institution</h3>
   <div class="outline-text-3" id="text-6-3">
   <p>
   Ok, so, we took on a lot of debt before, and it was fine. We printed a truly wild amount of money, and people still trusted us as a stable, reliable institution. Everyone believed that the U.S. government would pay them back, and would pay them back in dollars that held value.
@@ -504,8 +515,8 @@
   </div>
   </div>
 
-  <div id="outline-container-orge888477" class="outline-3">
-  <h3 id="orge888477"><span class="section-number-3">6.4.</span> Take From the Rich and Give to the Poor</h3>
+  <div id="outline-container-org942028e" class="outline-3">
+  <h3 id="org942028e"><span class="section-number-3">6.4.</span> Take From the Rich and Give to the Poor</h3>
   <div class="outline-text-3" id="text-6-4">
   <p>
   The argument goes something like this:
@@ -529,8 +540,8 @@
   </div>
   </div>
 
-  <div id="outline-container-org9127aa6" class="outline-3">
-  <h3 id="org9127aa6"><span class="section-number-3">6.5.</span> Stimulus and Economic Growth</h3>
+  <div id="outline-container-org5b6d91e" class="outline-3">
+  <h3 id="org5b6d91e"><span class="section-number-3">6.5.</span> Stimulus and Economic Growth</h3>
   <div class="outline-text-3" id="text-6-5">
   <p>
   Ok so there's a real argument here. The idea is – it's ok to print money because we can generate more goods and services. If we spend it wisely – build bridges, improve broadband, we can create jobs for people who were previously out of work. What's more, that new infrastructure and spending will spur even further economic growth.

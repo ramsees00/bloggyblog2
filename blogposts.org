@@ -12,11 +12,11 @@
 :PUBDATE:  2026-02-11
 :ID:       C57E09F1-C89D-4EC5-BA95-729DD04FF03E
 :END:
-I recently released [deft](https://github.com/sstraust/deft), a new library for managing type and protocol defs, and so, to take it for a spin, I decided to write the game of chess in Clojure.
+I recently released [[https://github.com/sstraust/deft][deft]], a Clojure library that defines types and protocols using plain maps, and so, to take it for a spin, I wrote the game of chess in Clojure.
 
 Chess is a good trial run for any class and interface system, because it's reasonably small and self-contained (and has some pretty obvious choice for classes), but it also comes with some of the messiness of a real application, in that, you want to write something concise, but you still have to handle edge-cases, like castling and en passant.
 
-I hand-drew all of the pieces, and used this little reagent snippet
+I hand-drew all of the pieces, and used this little reagent snippet to render the display,
 #+begin_src clojurescript
   [:h-box
    (doall (for [x (range (count tiles))]
@@ -44,7 +44,7 @@ I hand-drew all of the pieces, and used this little reagent snippet
 						 "invert()")}}]
 			"")]))]))]
 #+end_src
-to render the display, but kind of the interesting bit is how to represent the board state and all of its pieces.
+but kind of the interesting bit is how to represent the board state and all of its pieces.
 
 I did sort of the obvious thing, and defined types representing a chess piece, and then a board, as a 8x8 grid of pieces
 #+begin_src clojurescript
@@ -80,7 +80,10 @@ here is an example for the knight:
     (is-valid-end-location? game-board start-location end-location))))
 #+end_src
 
-is-valid-move-for-piece?, which returns a true-false value of "can my piece move to this square", works great for most pieces, but is insufficient for more complicated moves, like castling, where several pieces move at the same time. To handle this, we use another multimethod
+is-valid-move-for-piece? returns a true-false value of "can my piece move to this square".
+
+
+This works great for most pieces, but is insufficient for more complicated moves, like castling, where several pieces move at the same time. To handle this, we use another multimethod
 
 #+begin_src
 (defmulti special-move-for-piece (fn [x & args] (:type x)))
@@ -126,7 +129,7 @@ so for pawns, it would look something like this:
       :else nil)))
 #+end_src
 
-I'm not going to write it all out here in the post, but it was pretty straightforward to define relevant methods for all the different pieces types and special-cases, and I'm pretty happy with how the code turned out. When you're reading this code, it really looks like somebody just wrote down all the rules for the game of chess, and that's what makes me feel good, and feel like we've done things in a way that's well organized.
+I'm not going to copy-paste the movesets for every piece in this post, but it was pretty straightforward to define relevant methods for all the different piece types and special-cases, and I'm pretty happy with how the code turned out. When you're reading this code, it really looks like somebody just wrote down all the rules for the game of chess, and that's what makes me feel good, and feel like we've done things in a way that's well organized.
 
 
 But now, sort of the most important question (for me) is:
@@ -135,7 +138,7 @@ is this library actually helping? did deft make our lives better?
 
 
 I think it did, for the following reasons:
-- because deft gives us features from both the protocols/records ecosystem and the multimethods/plain-maps ecosystem, we didn't need to *decide* which tool was right for our use-case. this removes just like a lot of cognitive load, because we can use one tool, and trust that it can do everything pretty well.
+- deft gives us the features from both protocols/records and multimethods/plain-maps, so we didn't need to /decide/ which tool was right for our use-case. this removes just like a lot of cognitive load, because we can use one tool, and trust that it can do everything pretty well.
 - in particular, it was nice to be able to define :default method dispatch for our protocols, and it was extremely nice to be able to reload protocol method defs from the repl without having to re-instantiate the entire chessboard (and clear the current position)
 - it was really nice to be able to enforce when I wanted method defs to be defined for a particular type, and it was really nice to have an easy way to add Malli schema
 
@@ -145,7 +148,9 @@ Overall, I'm pretty happy with how it all turned out, and I'd say the test of ou
 You can find the entire code for
 
 the game here: https://github.com/sstraust/deft/blob/master/examples/src/examples/chess.cljs
+
 the library here: https://github.com/sstraust/deft
+
 and the detailed video explanation here: https://www.youtube.com/watch?v=lrofmFI1UJY
 
 
