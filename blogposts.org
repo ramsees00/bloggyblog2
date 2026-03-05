@@ -28,7 +28,7 @@ p.p.s.
 i'm skeptical and believe a lot of the praise is /written/ by llms, so that explains why there's so much volume of it.
 
 
-my github https://github.com/sstraust/shannonmax (with some cool open source projects)
+my github https://github.com/sstraust (with some cool open source projects)
 * Building Chess in about 350 lines of Clojure
 :PROPERTIES:
 :CUSTOM_ID: building-chess-in-about-350-lines-of-clojure
