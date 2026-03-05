@@ -5,6 +5,30 @@
 #+HTML: <div class="rss-link"><a href="feed.xml">rss</a></div>
 # use org-export-blog to export the blog to html and rss
 # and then git push origin master to publish it
+* [Satire] Claude Code build my Entire open source project in 5 minutes
+:PROPERTIES:
+:CUSTOM_ID: satire-claude-code-build-my-entire-open-source-project-in-5-minutes
+:RSS_PERMALINK: #satire-claude-code-build-my-entire-open-source-project-in-5-minutes
+:PUBDATE:  2026-03-04
+:ID:       7F3304A1-7841-42EF-94B0-A9343FFF3BA4
+:END:
+It's unbelievable! I spent months, years even, writing my open source project. Carefully crafting the code, writing specs, unit tests, doing good software design.
+
+And then one morning, on a whim, in the back of the afternoon even. I was walking back to my desk from my midday coffee break, I open claude code and put in my open source project and see if it can handle it. I gave it just some specs, and a loose description of what I wanted to accomplish, and let it chunk on through on the cloud as I walked back to my desk.
+
+When I got back to my computer I was /stunned/. Couldn't believe my eyes. In just 5 minutes, Claude code had managed to produce a working version of my /entire/ project. Not a few lines, not some silly little script. In 5 minutes, Claude produced word for word, the entire project I had written.
+
+I am blown away. I never thought that it would be like this. All the work, all the years, all the time I put in, it was no match for just 5 minutes on Claude Code. We are all cooked. Completely and utterly cooked. I thought AGI would be 20 years in the future, but we are all living it today.
+
+
+p.s.
+on a serious note, i think llms have some legitimate uses, but i think some of the claims made recently are a little biased or overblown. it is a breakthrough technology, and we should put it to use for the good of the world, but as good data-scientists, we also need to be extremely careful not to pollute our test data in our training set.
+
+p.p.s.
+i'm skeptical and believe a lot of the praise is /written/ by llms, so that explains why there's so much volume of it.
+
+
+my github https://github.com/sstraust/shannonmax (with some cool open source projects)
 * Building Chess in about 350 lines of Clojure
 :PROPERTIES:
 :CUSTOM_ID: building-chess-in-about-350-lines-of-clojure
