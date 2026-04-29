@@ -1,10 +1,36 @@
 #+TITLE: Sammy's Blog
 #+RSS_LINK_HOME: https://www.sammystraus.com/
-#+HTML_HEAD: <style> body {width:80%; margin-left: 10%;}</style>
+#+HTML_HEAD: <style> body {width:80%; margin: auto; max-width:38rem}</style>
 #+OPTIONS:  toc:1
 #+HTML: <div class="rss-link"><a href="feed.xml">rss</a></div>
 # use org-export-blog to export the blog to html and rss
 # and then git push origin master to publish it
+* How much LLMs is too much LLMs?
+:PROPERTIES:
+:CUSTOM_ID: how-much-llms-is-too-much-llms
+:RSS_PERMALINK: #how-much-llms-is-too-much-llms
+:PUBDATE:  2026-04-29
+:ID:       4402BC1D-600D-4AE0-8B3A-87C146D3CB4E
+:END:
+I finished reading /On the Edge/ last week, and it was bad. Not that I don't respect Nate Silver. I respect him a lot. So when his seminal text on gambling and risk taking was a rambling mess, I was suprised and disappointed. Nevertheless, a completionist at heart, I trudged on, to the very end, where I was greeted with this message:
+
+"ChatGPT was a significant help in writing this book, serving as a creative muse when coming up with things like chapter subheadings, metaphors, and analogies, and for refining my understanding of technical topics that are likely to be well represented in its corpus."
+
+/Technically/ he wrote the book by hand, and /technically/ he typed the letters onto his keyboard, but you know, did he really? Did he put his whole thought and mind and being into every word on the page? Maybe. I'm reminded of the absolute classic [Simple Made Easy](https://www.youtube.com/watch?v=SxdOUGdseq4), a video where so much of the core lecture is built on defining precise language, and saying exactly what you mean. When you offload that work, you don't just skip word choices, you skip that thinking, and you miss out on that organization and mental clarity.
+
+In reading Nate's book, there's a real and noticeable difference between the language that feels baked into the organizational fabric of Nate's mentality, and the bits that were added on as an afterthought. The later chapters especially felt like they lacked that sort of mental compactification that cohesifies everything under one vision. I'm sad because this could have been a phenominal work, and it's clear that a lot of effort was made, especially into interviews and data collection, and it feels like it's just lacking that one last missing piece of insight to bring it all the way home.
+
+So how much LLMs is too much LLMs? Well, when it comes to human connection, I'd say the answer is near zero. I don't want to read your AI generated e-mails, and I certainly don't want to read your AI generated essays. I'd much rather read your prompt instead, because I care about what /you/, yes, /you/ personally think about, and I want to understand what /you/ wanted to communicate.
+
+Don't get me wrong, I love LLMs for the right purpose. I'd love to use LLMs on doctor's notes to build models that predict whether the flu is spreading. But when it comes to writing, especially this kind of writing, it just feels so unnecessary, because when you write down your thoughts, I already have exactly what I wanted, and it just feels so silly to add an extra stop in between.
+
+As a poker player and game theorist, I'm sure Nate would appreciate the phrase "If you couldn't be bothered to write it, then I can't be bothered to read it". And you know, despite a belief that art can live separately from the artist, deep down for me this claim rings true. Not that the same words produced by a person are inherently different than the same words from an LLM, but it throws off my little Bayesian estimator a little.
+
+If the smartest person I know spent 10,000 hours writing, editing, polishing, and publishing a 500 page novel, it tells me not just that the smartest person I know had some thoughts on a topic, but it tells me that they decided to spend 10,000 hours of /their/ precious time, and of /their/ precious energy to communicate this idea to me. It feels good that the time it took me to read it is porportional (and usually less than) the time it took you to write it, because it shows me that you care about the time and energy of creating this exchange.
+
+And it's not just fully AI generated slop that hits this barrier. When you incorporate LLMs into your writing, even a little bit, you miss out on the ability to process your thoughts and create human connection.
+
+
 * [Satire] Claude Code build my Entire open source project in 5 minutes
 :PROPERTIES:
 :CUSTOM_ID: satire-claude-code-build-my-entire-open-source-project-in-5-minutes
@@ -26,6 +52,8 @@ on a serious note, i think llms have some legitimate uses, but i think some of t
 
 p.p.s.
 i'm skeptical and believe a lot of the praise is /written/ by llms, so that explains why there's so much volume of it.
+
+to be clear this is not a critique of anthropic, but of the claims made on test-polluted datasets
 
 
 my github https://github.com/sstraust (with some cool open source projects)

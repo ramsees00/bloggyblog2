@@ -14,10 +14,10 @@
   <link>https://www.sammystraus.com/</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Thu, 05 Mar 2026 06:09:28 -0500</pubDate>
-  <lastBuildDate>Thu, 05 Mar 2026 06:09:28 -0500</lastBuildDate>
+  <pubDate>Wed, 29 Apr 2026 06:40:04 -0400</pubDate>
+  <lastBuildDate>Wed, 29 Apr 2026 06:40:04 -0400</lastBuildDate>
   <generator>Emacs 30.2 Org-mode 9.7.11</generator>
-  <webMaster>sam@Mac (sam)</webMaster>
+  <webMaster>sam@sams-MacBook-Pro.local (sam)</webMaster>
   <image>
     <url>https://orgmode.org/img/org-mode-unicorn-logo.png</url>
     <title>Sammy's Blog</title>
@@ -28,269 +28,318 @@
     <h2>Table of Contents</h2>
     <div id="text-table-of-contents" role="doc-toc">
       <ul>
-	<li><a href="#satire-claude-code-build-my-entire-open-source-project-in-5-minutes">1. [Satire] Claude Code build my Entire open source project in 5 minutes</a></li>
-	<li><a href="#building-chess-in-about-350-lines-of-clojure">2. Building Chess in about 350 lines of Clojure</a></li>
-	<li><a href="#announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript">3. Announcing Deft: A class and interface system for Clojure and ClojureScript</a></li>
-	<li><a href="#my-blog-is-now-on-rss">4. My Blog is Now on RSS</a></li>
-	<li><a href="#how-to-win-at-wordle">5. How to Win at Wordle</a></li>
-	<li><a href="#the-power-of-habit-book-review-pt-1">6. The Power Of Habit (Book Review Pt 1)</a></li>
-	<li><a href="#modern-monetary-theory-and-you">7. Modern Monetary Theory and You</a></li>
-	<li><a href="#the-perfect-camera">8. The Perfect Camera</a></li>
-	<li><a href="#camera-lenses-what-s-in-my-bag">9. Camera Lenses: What's in My Bag</a></li>
-	<li><a href="#why-many-primary-forecasts-are-wrong">10. Why Many Primary Forecasts are Wrong</a></li>
-	<li><a href="#the-wonky-math-behind-the-democratic-primary">11. The Wonky Math behind the Democratic Primary</a></li>
-	<li><a href="#what-s-going-on-with-the-impeachment">12. What's Going on With The Impeachment</a></li>
-	<li><a href="#treating-cancer-with-chemo-part-3">13. Treating Cancer with Chemo (Part 3)</a></li>
-	<li><a href="#treating-cancer-with-chemo-part-2">14. Treating Cancer with Chemo (Part 2)</a></li>
-	<li><a href="#treating-cancer-with-chemo-part-1">15. Treating Cancer with Chemo (Part 1)</a></li>
-	<li><a href="#the-importance-of-doing-nothing">16. The Importance of Doing Nothing</a></li>
-	<li><a href="#why-i-support-citizens-united">17. Why I Support Citizens United</a></li>
-	<li><a href="#camera-settings">18. Camera Settings</a></li>
+	<li><a href="#how-much-llms-is-too-much-llms">1. How much LLMs is too much LLMs?</a></li>
+	<li><a href="#satire-claude-code-build-my-entire-open-source-project-in-5-minutes">2. [Satire] Claude Code build my Entire open source project in 5 minutes</a></li>
+	<li><a href="#building-chess-in-about-350-lines-of-clojure">3. Building Chess in about 350 lines of Clojure</a></li>
+	<li><a href="#announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript">4. Announcing Deft: A class and interface system for Clojure and ClojureScript</a></li>
+	<li><a href="#my-blog-is-now-on-rss">5. My Blog is Now on RSS</a></li>
+	<li><a href="#how-to-win-at-wordle">6. How to Win at Wordle</a></li>
+	<li><a href="#the-power-of-habit-book-review-pt-1">7. The Power Of Habit (Book Review Pt 1)</a></li>
+	<li><a href="#modern-monetary-theory-and-you">8. Modern Monetary Theory and You</a></li>
+	<li><a href="#the-perfect-camera">9. The Perfect Camera</a></li>
+	<li><a href="#camera-lenses-what-s-in-my-bag">10. Camera Lenses: What's in My Bag</a></li>
+	<li><a href="#why-many-primary-forecasts-are-wrong">11. Why Many Primary Forecasts are Wrong</a></li>
+	<li><a href="#the-wonky-math-behind-the-democratic-primary">12. The Wonky Math behind the Democratic Primary</a></li>
+	<li><a href="#what-s-going-on-with-the-impeachment">13. What's Going on With The Impeachment</a></li>
+	<li><a href="#treating-cancer-with-chemo-part-3">14. Treating Cancer with Chemo (Part 3)</a></li>
+	<li><a href="#treating-cancer-with-chemo-part-2">15. Treating Cancer with Chemo (Part 2)</a></li>
+	<li><a href="#treating-cancer-with-chemo-part-1">16. Treating Cancer with Chemo (Part 1)</a></li>
+	<li><a href="#the-importance-of-doing-nothing">17. The Importance of Doing Nothing</a></li>
+	<li><a href="#why-i-support-citizens-united">18. Why I Support Citizens United</a></li>
+	<li><a href="#camera-settings">19. Camera Settings</a></li>
       </ul>
     </div>
   </div>
   <div class="rss-link"><a href="feed.xml">rss</a></div>
   <item>
-    <title>[Satire] Claude Code build my Entire open source project in 5 minutes</title>
-    <link>https://www.sammystraus.com/#satire-claude-code-build-my-entire-open-source-project-in-5-minutes</link>
-    <author>sam@Mac (sam)</author>
-    <guid isPermaLink="false">https://www.sammystraus.com/#satire-claude-code-build-my-entire-open-source-project-in-5-minutes</guid>
-    <pubDate>Wed, 04 Mar 2026 00:00:00 -0500</pubDate>
+    <title>How much LLMs is too much LLMs?</title>
+    <link>https://www.sammystraus.com/#how-much-llms-is-too-much-llms</link>
+    <author>sam@sams-MacBook-Pro.local (sam)</author>
+    <guid isPermaLink="false">https://www.sammystraus.com/#how-much-llms-is-too-much-llms</guid>
+    <pubDate>Wed, 29 Apr 2026 00:00:00 -0400</pubDate>
 
     <description><![CDATA[<p>
-    It's unbelievable! I spent months, years even, writing my open source project. Carefully crafting the code, writing specs, unit tests, doing good software design.
+    I finished reading <i>On the Edge</i> last week, and it was bad. Not that I don't respect Nate Silver. I respect him a lot. So when his seminal text on gambling and risk taking was a rambling mess, I was suprised and disappointed. Nevertheless, a completionist at heart, I trudged on, to the very end, where I was greeted with this message:
     </p>
 
     <p>
-    And then one morning, on a whim, in the back of the afternoon even. I was walking back to my desk from my midday coffee break, I open claude code and put in my open source project and see if it can handle it. I gave it just some specs, and a loose description of what I wanted to accomplish, and let it chunk on through on the cloud as I walked back to my desk.
+    "ChatGPT was a significant help in writing this book, serving as a creative muse when coming up with things like chapter subheadings, metaphors, and analogies, and for refining my understanding of technical topics that are likely to be well represented in its corpus."
     </p>
 
     <p>
-    When I got back to my computer I was <i>stunned</i>. Couldn't believe my eyes. In just 5 minutes, Claude code had managed to produce a working version of my <i>entire</i> project. Not a few lines, not some silly little script. In 5 minutes, Claude produced word for word, the entire project I had written.
+    <i>Technically</i> he wrote the book by hand, and <i>technically</i> he typed the letters onto his keyboard, but you know, did he really? Did he put his whole thought and mind and being into every word on the page? Maybe. I'm reminded of the absolute classic [Simple Made Easy](<a href="https://www.youtube.com/watch?v=SxdOUGdseq4">https://www.youtube.com/watch?v=SxdOUGdseq4</a>), a video where so much of the core lecture is built on defining precise language, and saying exactly what you mean. When you offload that work, you don't just skip word choices, you skip that thinking, and you miss out on that organization and mental clarity.
     </p>
 
     <p>
-    I am blown away. I never thought that it would be like this. All the work, all the years, all the time I put in, it was no match for just 5 minutes on Claude Code. We are all cooked. Completely and utterly cooked. I thought AGI would be 20 years in the future, but we are all living it today.
-    </p>
-
-
-    <p>
-    p.s.
-    on a serious note, i think llms have some legitimate uses, but i think some of the claims made recently are a little biased or overblown. it is a breakthrough technology, and we should put it to use for the good of the world, but as good data-scientists, we also need to be extremely careful not to pollute our test data in our training set.
+    In reading Nate's book, there's a real and noticeable difference between the language that feels baked into the organizational fabric of Nate's mentality, and the bits that were added on as an afterthought. The later chapters especially felt like they lacked that sort of mental compactification that cohesifies everything under one vision. I'm sad because this could have been a phenominal work, and it's clear that a lot of effort was made, especially into interviews and data collection, and it feels like it's just lacking that one last missing piece of insight to bring it all the way home.
     </p>
 
     <p>
-    p.p.s.
-    i'm skeptical and believe a lot of the praise is <i>written</i> by llms, so that explains why there's so much volume of it.
-    </p>
-
-
-    <p>
-    my github <a href="https://github.com/sstraust">https://github.com/sstraust</a> (with some cool open source projects)
-    </p>
-    ]]></description>
-  </item>
-  <item>
-    <title>Building Chess in about 350 lines of Clojure</title>
-    <link>https://www.sammystraus.com/#building-chess-in-about-350-lines-of-clojure</link>
-    <author>sam@Mac (sam)</author>
-    <guid isPermaLink="false">https://www.sammystraus.com/#building-chess-in-about-350-lines-of-clojure</guid>
-    <pubDate>Wed, 11 Feb 2026 00:00:00 -0500</pubDate>
-
-    <description><![CDATA[<p>
-    I recently released <a href="https://github.com/sstraust/deft">deft</a>, a Clojure library that defines types and protocols using plain maps, and so, to take it for a spin, I wrote the game of chess in Clojure.
+    So how much LLMs is too much LLMs? Well, when it comes to human connection, I'd say the answer is near zero. I don't want to read your AI generated e-mails, and I certainly don't want to read your AI generated essays. I'd much rather read your prompt instead, because I care about what <i>you</i>, yes, <i>you</i> personally think about, and I want to understand what <i>you</i> wanted to communicate.
     </p>
 
     <p>
-    Chess is a good trial run for any class and interface system, because it's reasonably small and self-contained (and has some pretty obvious choice for classes), but it also comes with some of the messiness of a real application, in that, you want to write something concise, but you still have to handle edge-cases, like castling and en passant.
+    Don't get me wrong, I love LLMs for the right purpose. I'd love to use LLMs on doctor's notes to build models that predict whether the flu is spreading. But when it comes to writing, especially this kind of writing, it just feels so unnecessary, because when you write down your thoughts, I already have exactly what I wanted, and it just feels so silly to add an extra stop in between.
     </p>
 
     <p>
-    I hand-drew all of the pieces, and used this little reagent snippet to render the display,
-    </p>
-    <div class="org-src-container">
-    <pre class="src src-clojurescript">[<span style="color: #7fffd4;">:h-box</span>
-    (<span style="color: #00ffff;">doall</span> (<span style="color: #00ffff;">for</span> [x (range (count tiles))]
-    ^{<span style="color: #7fffd4;">:key</span> x}
-    [<span style="color: #7fffd4;">:v-box</span>
-    (<span style="color: #00ffff;">doall</span> (<span style="color: #00ffff;">for</span> [y (reverse (range (count (nth tiles x))))]
-    ^{<span style="color: #7fffd4;">:key</span> y}
-    [<span style="color: #7fffd4;">:p</span> {<span style="color: #7fffd4;">:style</span> {<span style="color: #7fffd4;">:background-color</span> (<span style="color: #00ffff;">cond</span>
-    (= [x y] @currently-selected-location)  <span style="color: #9999FF;">"yellow"</span>
-    (= (mod (+ x y) 2) 1) <span style="color: #9999FF;">"white"</span>
-    <span style="color: #7fffd4;">:else</span> <span style="color: #9999FF;">"black"</span>)
-    <span style="color: #7fffd4;">:height</span> <span style="color: #9999FF;">"4rem"</span>
-    <span style="color: #7fffd4;">:width</span> <span style="color: #9999FF;">"4rem"</span>
-    }
-    <span style="color: #7fffd4;">:on-click</span> (<span style="color: #00ffff;">fn</span> [] (move-selected-piece
-    game-board-atom
-    currently-selected-location
-    [x y]))}
-
-    (<span style="color: #00ffff;">if</span> (not (nil? (get-in tiles [x y])))
-    [<span style="color: #7fffd4;">:img</span> {<span style="color: #7fffd4;">:src</span> (image-path (<span style="color: #7fffd4;">::piece-type</span> (get-in tiles [x y])))
-    <span style="color: #7fffd4;">:style</span> {<span style="color: #7fffd4;">:height</span> <span style="color: #9999FF;">"100%"</span>
-    <span style="color: #7fffd4;">:width</span> <span style="color: #9999FF;">"100%"</span>
-    <span style="color: #7fffd4;">:filter</span> (<span style="color: #00ffff;">when</span> (= (<span style="color: #7fffd4;">::color</span> (get-in tiles [x y])) <span style="color: #7fffd4;">::black</span>)
-    <span style="color: #9999FF;">"invert()"</span>)}}]
-    <span style="color: #9999FF;">""</span>)]))]))]
-    </pre>
-    </div>
-    <p>
-    but kind of the interesting bit is how to represent the board state and all of its pieces.
+    As a poker player and game theorist, I'm sure Nate would appreciate the phrase "If you couldn't be bothered to write it, then I can't be bothered to read it". And you know, despite a belief that art can live separately from the artist, deep down for me this claim rings true. Not that the same words produced by a person are inherently different than the same words from an LLM, but it throws off my little Bayesian estimator a little.
     </p>
 
     <p>
-    I did sort of the obvious thing, and defined types representing a chess piece, and then a board, as a 8x8 grid of pieces
-    </p>
-    <div class="org-src-container">
-    <pre class="src src-clojurescript">(deft ChessPiece [color piece-type])
-
-
-    (deft ChessBoard [tiles - [<span style="color: #7fffd4;">:vector</span> [<span style="color: #7fffd4;">:vector</span> [<span style="color: #7fffd4;">:or</span> <span style="color: #7fffd4;">:nil</span> ChessPiece]]]
-    curr-move - [<span style="color: #7fffd4;">:enum</span> <span style="color: #7fffd4;">::white</span> <span style="color: #7fffd4;">::black</span>]
-    move-history - [<span style="color: #7fffd4;">:vector</span> ChessMove]])
-    </pre>
-    </div>
-
-    <p>
-    and then for the piece behavior, I made protocols that define how a piece is displayed, and how it can move.
-    </p>
-    <div class="org-src-container">
-    <pre class="src src-nil">(defp PieceType
-    (image-path [this]))
-
-    (defp MovablePiece
-    (is-valid-move-for-piece? [this game-board start-location end-location]))
-    </pre>
-    </div>
-
-    <p>
-    here is an example for the knight:
-    </p>
-    <div class="org-src-container">
-    <pre class="src src-clojurescript">(deft Knight []
-    PieceType
-    (image-path [this] (image-asset <span style="color: #9999FF;">"knight_white.png"</span>))
-    MovablePiece
-    (is-valid-move-for-piece?
-    [this game-board start-location end-location]
-    (<span style="color: #00ffff;">and</span>
-    (<span style="color: #00ffff;">let</span> [direction (map abs (map - end-location start-location))]
-    (<span style="color: #00ffff;">or</span> (<span style="color: #00ffff;">and</span> (= (first direction) 1) (= (second direction) 2))
-    (<span style="color: #00ffff;">and</span> (= (first direction) 2) (= (second direction) 1))))
-    (is-valid-end-location? game-board start-location end-location))))
-    </pre>
-    </div>
-
-    <p>
-    is-valid-move-for-piece? returns a true-false value of "can my piece move to this square".
-    </p>
-
-
-    <p>
-    This works great for most pieces, but is insufficient for more complicated moves, like castling, where several pieces move at the same time. To handle this, we use another multimethod
-    </p>
-
-    <div class="org-src-container">
-    <pre class="src src-nil">(defmulti special-move-for-piece (fn [x &amp; args] (:type x)))
-    </pre>
-    </div>
-
-    <p>
-    that is defined only for special moves, and returns the actual state of the modified gameboard.
+    If the smartest person I know spent 10,000 hours writing, editing, polishing, and publishing a 500 page novel, it tells me not just that the smartest person I know had some thoughts on a topic, but it tells me that they decided to spend 10,000 hours of <i>their</i> precious time, and of <i>their</i> precious energy to communicate this idea to me. It feels good that the time it took me to read it is porportional (and usually less than) the time it took you to write it, because it shows me that you care about the time and energy of creating this exchange.
     </p>
 
     <p>
-    so for pawns, it would look something like this:
-    </p>
-    <div class="org-src-container">
-    <pre class="src src-clojurescript">(<span style="color: #00ffff;">defmethod</span> <span style="color: #87cefa;">special-move-for-piece</span> <span style="color: #7fffd4;">::Pawn</span>
-    [this game-board start-location end-location]
-    (<span style="color: #00ffff;">let</span> [curr-piece-color (<span style="color: #7fffd4;">::color</span> (get-in (<span style="color: #7fffd4;">::tiles</span> game-board) start-location))
-    move-direction (into [] (map - end-location start-location))
-    prev-move (last (<span style="color: #7fffd4;">::move-history</span> game-board))]
-    (<span style="color: #00ffff;">cond</span>
-    <span style="color: #bebebe;">;; </span><span style="color: #575757;">en passant
-    </span>      (<span style="color: #00ffff;">and</span> (= (second move-direction)
-    (<span style="color: #00ffff;">if</span> (= curr-piece-color <span style="color: #7fffd4;">::white</span>)
-    1 -1))
-    (= (abs (first move-direction)) 1)
-    (= (<span style="color: #7fffd4;">:type</span> (<span style="color: #7fffd4;">::piece-type</span> (<span style="color: #7fffd4;">::piece</span> prev-move))) <span style="color: #7fffd4;">::Pawn</span>)
-    (= (apply max (map abs (map - (<span style="color: #7fffd4;">::end-location</span> prev-move) (<span style="color: #7fffd4;">::start-location</span> prev-move)))) 2)
-    (= end-location
-    (into []
-    (map +
-    (map (<span style="color: #00ffff;">fn</span> [x] (/ x 2 )) (map - (<span style="color: #7fffd4;">::end-location</span> prev-move) (<span style="color: #7fffd4;">::start-location</span> prev-move)))
-    (<span style="color: #7fffd4;">::start-location</span> prev-move)))))
-    (<span style="color: #00ffff;">-&gt;</span> game-board
-    (update <span style="color: #7fffd4;">::tiles</span> assoc-in start-location <span style="color: #7fffd4;">nil</span>)
-    (update <span style="color: #7fffd4;">::tiles</span> assoc-in end-location
-    (get-in (<span style="color: #7fffd4;">::tiles</span> game-board) start-location))
-    (update <span style="color: #7fffd4;">::tiles</span> assoc-in (<span style="color: #7fffd4;">::end-location</span> prev-move)
-    <span style="color: #7fffd4;">nil</span>))
-
-    (<span style="color: #00ffff;">and</span> (is-valid-move-for-piece? this game-board start-location end-location)
-    (<span style="color: #00ffff;">or</span> (= (second end-location) 0)
-    (= (second end-location) 7)))
-    (<span style="color: #00ffff;">-&gt;</span> game-board
-    (update <span style="color: #7fffd4;">::tiles</span> assoc-in start-location <span style="color: #7fffd4;">nil</span>)
-    (update <span style="color: #7fffd4;">::tiles</span> assoc-in end-location
-    (assoc (get-in (<span style="color: #7fffd4;">::tiles</span> game-board) start-location)
-    <span style="color: #7fffd4;">::piece-type</span> (&gt;Queen))))
-    <span style="color: #7fffd4;">:else</span> <span style="color: #7fffd4;">nil</span>)))
-    </pre>
-    </div>
-
-    <p>
-    I'm not going to copy-paste the movesets for every piece in this post, but it was pretty straightforward to define relevant methods for all the different piece types and special-cases, and I'm pretty happy with how the code turned out. When you're reading this code, it really looks like somebody just wrote down all the rules for the game of chess, and that's what makes me feel good, and feel like we've done things in a way that's well organized.
-    </p>
-
-
-    <p>
-    But now, sort of the most important question (for me) is:
-    </p>
-
-    <p>
-    is this library actually helping? did deft make our lives better?
-    </p>
-
-
-    <p>
-    I think it did, for the following reasons:
-    </p>
-    <ul class="org-ul">
-    <li>deft gives us the features from both protocols/records and multimethods/plain-maps, so we didn't need to <i>decide</i> which tool was right for our use-case. this removes just like a lot of cognitive load, because we can use one tool, and trust that it can do everything pretty well.</li>
-    <li>in particular, it was nice to be able to define :default method dispatch for our protocols, and it was extremely nice to be able to reload protocol method defs from the repl without having to re-instantiate the entire chessboard (and clear the current position)</li>
-    <li>it was really nice to be able to enforce when I wanted method defs to be defined for a particular type, and it was really nice to have an easy way to add Malli schema</li>
-    </ul>
-
-
-    <p>
-    Overall, I'm pretty happy with how it all turned out, and I'd say the test of our library was a success.
-    </p>
-
-    <p>
-    You can find the entire code for
-    </p>
-
-    <p>
-    the game here: <a href="https://github.com/sstraust/deft/blob/master/examples/src/examples/chess.cljs">https://github.com/sstraust/deft/blob/master/examples/src/examples/chess.cljs</a>
-    </p>
-
-    <p>
-    the library here: <a href="https://github.com/sstraust/deft">https://github.com/sstraust/deft</a>
-    </p>
-
-    <p>
-    and the detailed video explanation here: <a href="https://www.youtube.com/watch?v=lrofmFI1UJY">https://www.youtube.com/watch?v=lrofmFI1UJY</a>
+    And it's not just fully AI generated slop that hits this barrier. When you incorporate LLMs into your writing, even a little bit, you miss out on the ability to process your thoughts and create human connection.
     </p>
     ]]></description>
 </item>
 <item>
+  <title>[Satire] Claude Code build my Entire open source project in 5 minutes</title>
+  <link>https://www.sammystraus.com/#satire-claude-code-build-my-entire-open-source-project-in-5-minutes</link>
+  <author>sam@sams-MacBook-Pro.local (sam)</author>
+  <guid isPermaLink="false">https://www.sammystraus.com/#satire-claude-code-build-my-entire-open-source-project-in-5-minutes</guid>
+  <pubDate>Wed, 04 Mar 2026 00:00:00 -0500</pubDate>
+
+  <description><![CDATA[<p>
+  It's unbelievable! I spent months, years even, writing my open source project. Carefully crafting the code, writing specs, unit tests, doing good software design.
+  </p>
+
+  <p>
+  And then one morning, on a whim, in the back of the afternoon even. I was walking back to my desk from my midday coffee break, I open claude code and put in my open source project and see if it can handle it. I gave it just some specs, and a loose description of what I wanted to accomplish, and let it chunk on through on the cloud as I walked back to my desk.
+  </p>
+
+  <p>
+  When I got back to my computer I was <i>stunned</i>. Couldn't believe my eyes. In just 5 minutes, Claude code had managed to produce a working version of my <i>entire</i> project. Not a few lines, not some silly little script. In 5 minutes, Claude produced word for word, the entire project I had written.
+  </p>
+
+  <p>
+  I am blown away. I never thought that it would be like this. All the work, all the years, all the time I put in, it was no match for just 5 minutes on Claude Code. We are all cooked. Completely and utterly cooked. I thought AGI would be 20 years in the future, but we are all living it today.
+  </p>
+
+
+  <p>
+  p.s.
+  on a serious note, i think llms have some legitimate uses, but i think some of the claims made recently are a little biased or overblown. it is a breakthrough technology, and we should put it to use for the good of the world, but as good data-scientists, we also need to be extremely careful not to pollute our test data in our training set.
+  </p>
+
+  <p>
+  p.p.s.
+  i'm skeptical and believe a lot of the praise is <i>written</i> by llms, so that explains why there's so much volume of it.
+  </p>
+
+  <p>
+  to be clear this is not a critique of anthropic, but of the claims made on test-polluted datasets
+  </p>
+
+
+  <p>
+  my github <a href="https://github.com/sstraust">https://github.com/sstraust</a> (with some cool open source projects)
+  </p>
+  ]]></description>
+</item>
+<item>
+  <title>Building Chess in about 350 lines of Clojure</title>
+  <link>https://www.sammystraus.com/#building-chess-in-about-350-lines-of-clojure</link>
+  <author>sam@sams-MacBook-Pro.local (sam)</author>
+  <guid isPermaLink="false">https://www.sammystraus.com/#building-chess-in-about-350-lines-of-clojure</guid>
+  <pubDate>Wed, 11 Feb 2026 00:00:00 -0500</pubDate>
+
+  <description><![CDATA[<p>
+  I recently released <a href="https://github.com/sstraust/deft">deft</a>, a Clojure library that defines types and protocols using plain maps, and so, to take it for a spin, I wrote the game of chess in Clojure.
+  </p>
+
+  <p>
+  Chess is a good trial run for any class and interface system, because it's reasonably small and self-contained (and has some pretty obvious choice for classes), but it also comes with some of the messiness of a real application, in that, you want to write something concise, but you still have to handle edge-cases, like castling and en passant.
+  </p>
+
+  <p>
+  I hand-drew all of the pieces, and used this little reagent snippet to render the display,
+  </p>
+  <div class="org-src-container">
+  <pre class="src src-clojurescript">[<span style="color: #7fffd4;">:h-box</span>
+  (<span style="color: #00ffff;">doall</span> (<span style="color: #00ffff;">for</span> [x (range (count tiles))]
+  ^{<span style="color: #7fffd4;">:key</span> x}
+  [<span style="color: #7fffd4;">:v-box</span>
+  (<span style="color: #00ffff;">doall</span> (<span style="color: #00ffff;">for</span> [y (reverse (range (count (nth tiles x))))]
+  ^{<span style="color: #7fffd4;">:key</span> y}
+  [<span style="color: #7fffd4;">:p</span> {<span style="color: #7fffd4;">:style</span> {<span style="color: #7fffd4;">:background-color</span> (<span style="color: #00ffff;">cond</span>
+  (= [x y] @currently-selected-location)  <span style="color: #9999FF;">"yellow"</span>
+  (= (mod (+ x y) 2) 1) <span style="color: #9999FF;">"white"</span>
+  <span style="color: #7fffd4;">:else</span> <span style="color: #9999FF;">"black"</span>)
+  <span style="color: #7fffd4;">:height</span> <span style="color: #9999FF;">"4rem"</span>
+  <span style="color: #7fffd4;">:width</span> <span style="color: #9999FF;">"4rem"</span>
+  }
+  <span style="color: #7fffd4;">:on-click</span> (<span style="color: #00ffff;">fn</span> [] (move-selected-piece
+  game-board-atom
+  currently-selected-location
+  [x y]))}
+
+  (<span style="color: #00ffff;">if</span> (not (nil? (get-in tiles [x y])))
+  [<span style="color: #7fffd4;">:img</span> {<span style="color: #7fffd4;">:src</span> (image-path (<span style="color: #7fffd4;">::piece-type</span> (get-in tiles [x y])))
+  <span style="color: #7fffd4;">:style</span> {<span style="color: #7fffd4;">:height</span> <span style="color: #9999FF;">"100%"</span>
+  <span style="color: #7fffd4;">:width</span> <span style="color: #9999FF;">"100%"</span>
+  <span style="color: #7fffd4;">:filter</span> (<span style="color: #00ffff;">when</span> (= (<span style="color: #7fffd4;">::color</span> (get-in tiles [x y])) <span style="color: #7fffd4;">::black</span>)
+  <span style="color: #9999FF;">"invert()"</span>)}}]
+  <span style="color: #9999FF;">""</span>)]))]))]
+  </pre>
+  </div>
+  <p>
+  but kind of the interesting bit is how to represent the board state and all of its pieces.
+  </p>
+
+  <p>
+  I did sort of the obvious thing, and defined types representing a chess piece, and then a board, as a 8x8 grid of pieces
+  </p>
+  <div class="org-src-container">
+  <pre class="src src-clojurescript">(deft ChessPiece [color piece-type])
+
+
+  (deft ChessBoard [tiles - [<span style="color: #7fffd4;">:vector</span> [<span style="color: #7fffd4;">:vector</span> [<span style="color: #7fffd4;">:or</span> <span style="color: #7fffd4;">:nil</span> ChessPiece]]]
+  curr-move - [<span style="color: #7fffd4;">:enum</span> <span style="color: #7fffd4;">::white</span> <span style="color: #7fffd4;">::black</span>]
+  move-history - [<span style="color: #7fffd4;">:vector</span> ChessMove]])
+  </pre>
+  </div>
+
+  <p>
+  and then for the piece behavior, I made protocols that define how a piece is displayed, and how it can move.
+  </p>
+  <div class="org-src-container">
+  <pre class="src src-nil">(defp PieceType
+  (image-path [this]))
+
+  (defp MovablePiece
+  (is-valid-move-for-piece? [this game-board start-location end-location]))
+  </pre>
+  </div>
+
+  <p>
+  here is an example for the knight:
+  </p>
+  <div class="org-src-container">
+  <pre class="src src-clojurescript">(deft Knight []
+  PieceType
+  (image-path [this] (image-asset <span style="color: #9999FF;">"knight_white.png"</span>))
+  MovablePiece
+  (is-valid-move-for-piece?
+  [this game-board start-location end-location]
+  (<span style="color: #00ffff;">and</span>
+  (<span style="color: #00ffff;">let</span> [direction (map abs (map - end-location start-location))]
+  (<span style="color: #00ffff;">or</span> (<span style="color: #00ffff;">and</span> (= (first direction) 1) (= (second direction) 2))
+  (<span style="color: #00ffff;">and</span> (= (first direction) 2) (= (second direction) 1))))
+  (is-valid-end-location? game-board start-location end-location))))
+  </pre>
+  </div>
+
+  <p>
+  is-valid-move-for-piece? returns a true-false value of "can my piece move to this square".
+  </p>
+
+
+  <p>
+  This works great for most pieces, but is insufficient for more complicated moves, like castling, where several pieces move at the same time. To handle this, we use another multimethod
+  </p>
+
+  <div class="org-src-container">
+  <pre class="src src-nil">(defmulti special-move-for-piece (fn [x &amp; args] (:type x)))
+  </pre>
+  </div>
+
+  <p>
+  that is defined only for special moves, and returns the actual state of the modified gameboard.
+  </p>
+
+  <p>
+  so for pawns, it would look something like this:
+  </p>
+  <div class="org-src-container">
+  <pre class="src src-clojurescript">(<span style="color: #00ffff;">defmethod</span> <span style="color: #87cefa;">special-move-for-piece</span> <span style="color: #7fffd4;">::Pawn</span>
+  [this game-board start-location end-location]
+  (<span style="color: #00ffff;">let</span> [curr-piece-color (<span style="color: #7fffd4;">::color</span> (get-in (<span style="color: #7fffd4;">::tiles</span> game-board) start-location))
+  move-direction (into [] (map - end-location start-location))
+  prev-move (last (<span style="color: #7fffd4;">::move-history</span> game-board))]
+  (<span style="color: #00ffff;">cond</span>
+  <span style="color: #bebebe;">;; </span><span style="color: #575757;">en passant
+  </span>      (<span style="color: #00ffff;">and</span> (= (second move-direction)
+  (<span style="color: #00ffff;">if</span> (= curr-piece-color <span style="color: #7fffd4;">::white</span>)
+  1 -1))
+  (= (abs (first move-direction)) 1)
+  (= (<span style="color: #7fffd4;">:type</span> (<span style="color: #7fffd4;">::piece-type</span> (<span style="color: #7fffd4;">::piece</span> prev-move))) <span style="color: #7fffd4;">::Pawn</span>)
+  (= (apply max (map abs (map - (<span style="color: #7fffd4;">::end-location</span> prev-move) (<span style="color: #7fffd4;">::start-location</span> prev-move)))) 2)
+  (= end-location
+  (into []
+  (map +
+  (map (<span style="color: #00ffff;">fn</span> [x] (/ x 2 )) (map - (<span style="color: #7fffd4;">::end-location</span> prev-move) (<span style="color: #7fffd4;">::start-location</span> prev-move)))
+  (<span style="color: #7fffd4;">::start-location</span> prev-move)))))
+  (<span style="color: #00ffff;">-&gt;</span> game-board
+  (update <span style="color: #7fffd4;">::tiles</span> assoc-in start-location <span style="color: #7fffd4;">nil</span>)
+  (update <span style="color: #7fffd4;">::tiles</span> assoc-in end-location
+  (get-in (<span style="color: #7fffd4;">::tiles</span> game-board) start-location))
+  (update <span style="color: #7fffd4;">::tiles</span> assoc-in (<span style="color: #7fffd4;">::end-location</span> prev-move)
+  <span style="color: #7fffd4;">nil</span>))
+
+  (<span style="color: #00ffff;">and</span> (is-valid-move-for-piece? this game-board start-location end-location)
+  (<span style="color: #00ffff;">or</span> (= (second end-location) 0)
+  (= (second end-location) 7)))
+  (<span style="color: #00ffff;">-&gt;</span> game-board
+  (update <span style="color: #7fffd4;">::tiles</span> assoc-in start-location <span style="color: #7fffd4;">nil</span>)
+  (update <span style="color: #7fffd4;">::tiles</span> assoc-in end-location
+  (assoc (get-in (<span style="color: #7fffd4;">::tiles</span> game-board) start-location)
+  <span style="color: #7fffd4;">::piece-type</span> (&gt;Queen))))
+  <span style="color: #7fffd4;">:else</span> <span style="color: #7fffd4;">nil</span>)))
+  </pre>
+  </div>
+
+  <p>
+  I'm not going to copy-paste the movesets for every piece in this post, but it was pretty straightforward to define relevant methods for all the different piece types and special-cases, and I'm pretty happy with how the code turned out. When you're reading this code, it really looks like somebody just wrote down all the rules for the game of chess, and that's what makes me feel good, and feel like we've done things in a way that's well organized.
+  </p>
+
+
+  <p>
+  But now, sort of the most important question (for me) is:
+  </p>
+
+  <p>
+  is this library actually helping? did deft make our lives better?
+  </p>
+
+
+  <p>
+  I think it did, for the following reasons:
+  </p>
+  <ul class="org-ul">
+  <li>deft gives us the features from both protocols/records and multimethods/plain-maps, so we didn't need to <i>decide</i> which tool was right for our use-case. this removes just like a lot of cognitive load, because we can use one tool, and trust that it can do everything pretty well.</li>
+  <li>in particular, it was nice to be able to define :default method dispatch for our protocols, and it was extremely nice to be able to reload protocol method defs from the repl without having to re-instantiate the entire chessboard (and clear the current position)</li>
+  <li>it was really nice to be able to enforce when I wanted method defs to be defined for a particular type, and it was really nice to have an easy way to add Malli schema</li>
+  </ul>
+
+
+  <p>
+  Overall, I'm pretty happy with how it all turned out, and I'd say the test of our library was a success.
+  </p>
+
+  <p>
+  You can find the entire code for
+  </p>
+
+  <p>
+  the game here: <a href="https://github.com/sstraust/deft/blob/master/examples/src/examples/chess.cljs">https://github.com/sstraust/deft/blob/master/examples/src/examples/chess.cljs</a>
+  </p>
+
+  <p>
+  the library here: <a href="https://github.com/sstraust/deft">https://github.com/sstraust/deft</a>
+  </p>
+
+  <p>
+  and the detailed video explanation here: <a href="https://www.youtube.com/watch?v=lrofmFI1UJY">https://www.youtube.com/watch?v=lrofmFI1UJY</a>
+  </p>
+  ]]></description>
+</item>
+<item>
   <title>Announcing Deft: A class and interface system for Clojure and ClojureScript</title>
   <link>https://www.sammystraus.com/#announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript</link>
-  <author>sam@Mac (sam)</author>
+  <author>sam@sams-MacBook-Pro.local (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript</guid>
   <pubDate>Mon, 12 Jan 2026 00:00:00 -0500</pubDate>
 
@@ -337,7 +386,7 @@
 <item>
   <title>My Blog is Now on RSS</title>
   <link>https://www.sammystraus.com/#my-blog-is-now-on-rss</link>
-  <author>sam@Mac (sam)</author>
+  <author>sam@sams-MacBook-Pro.local (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#my-blog-is-now-on-rss</guid>
   <pubDate>Thu, 08 Jan 2026 00:00:00 -0500</pubDate>
 
@@ -353,7 +402,7 @@
 <item>
   <title>How to Win at Wordle</title>
   <link>https://www.sammystraus.com/#how-to-win-at-wordle</link>
-  <author>sam@Mac (sam)</author>
+  <author>sam@sams-MacBook-Pro.local (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#how-to-win-at-wordle</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -365,8 +414,8 @@
   Ok, I got a little bit lucky, but it wasn't all luck. While I was playing I had a chance to think through some of the strategies, and saw some pitfalls I think others might have missed.
   </p>
   <div id="outline-container-ID-81E51619-D781-40D7-9B49-2A5C61F7D4A0" class="outline-3">
-  <h3 id="ID-81E51619-D781-40D7-9B49-2A5C61F7D4A0"><span class="section-number-3">5.1.</span> Don't guess letters that are already green</h3>
-  <div class="outline-text-3" id="text-5-1">
+  <h3 id="ID-81E51619-D781-40D7-9B49-2A5C61F7D4A0"><span class="section-number-3">6.1.</span> Don't guess letters that are already green</h3>
+  <div class="outline-text-3" id="text-6-1">
   <p>
   Unless you're trying to make your final guess to win the game, you shouldn't guess the same letter in the same place. You already tried that, so doing it again doesn't give you new information.
   </p>
@@ -381,8 +430,8 @@
   </div>
   </div>
   <div id="outline-container-ID-06422413-45DF-498B-9AEB-F8EBA92B5DD3" class="outline-3">
-  <h3 id="ID-06422413-45DF-498B-9AEB-F8EBA92B5DD3"><span class="section-number-3">5.2.</span> When you guess new letters, put them in places they commonly appear</h3>
-  <div class="outline-text-3" id="text-5-2">
+  <h3 id="ID-06422413-45DF-498B-9AEB-F8EBA92B5DD3"><span class="section-number-3">6.2.</span> When you guess new letters, put them in places they commonly appear</h3>
+  <div class="outline-text-3" id="text-6-2">
   <p>
   Just for a moment, think of worlde a little bit like binary search. Your goal is to learn as much information as possible with every guess. If your guess splits the problem space in half (i.e. you eliminate half of possible words if it shows up green, and half of words if it shows up yellow), you learn (on average) the most possible information with every guess.
   </p>
@@ -397,8 +446,8 @@
   </div>
   </div>
   <div id="outline-container-ID-6E6686E5-CA34-435E-9C68-FECDF5EA7227" class="outline-3">
-  <h3 id="ID-6E6686E5-CA34-435E-9C68-FECDF5EA7227"><span class="section-number-3">5.3.</span> Guess common letters first</h3>
-  <div class="outline-text-3" id="text-5-3">
+  <h3 id="ID-6E6686E5-CA34-435E-9C68-FECDF5EA7227"><span class="section-number-3">6.3.</span> Guess common letters first</h3>
+  <div class="outline-text-3" id="text-6-3">
   <p>
   Basically the same logic as above. It's either one of the 5 specific letters you guessed, or it's one of the 21 other letters. You want to guess the 5 that most closely split the problem in half.
   </p>
@@ -409,8 +458,8 @@
   </div>
   </div>
   <div id="outline-container-ID-BC84053E-824F-4654-848D-B381DF4C69CB" class="outline-3">
-  <h3 id="ID-BC84053E-824F-4654-848D-B381DF4C69CB"><span class="section-number-3">5.4.</span> Think through the list of possible words at every step</h3>
-  <div class="outline-text-3" id="text-5-4">
+  <h3 id="ID-BC84053E-824F-4654-848D-B381DF4C69CB"><span class="section-number-3">6.4.</span> Think through the list of possible words at every step</h3>
+  <div class="outline-text-3" id="text-6-4">
   <p>
   Remember, your goal is to "divide in half" with every letter. If you have a sense of/random sample of the words in the space, it's easier to pick the letters/positions that divide that list the most precisely.
   </p>
@@ -421,7 +470,7 @@
 <item>
   <title>The Power Of Habit (Book Review Pt 1)</title>
   <link>https://www.sammystraus.com/#the-power-of-habit-book-review-pt-1</link>
-  <author>sam@Mac (sam)</author>
+  <author>sam@sams-MacBook-Pro.local (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#the-power-of-habit-book-review-pt-1</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -454,7 +503,7 @@
 <item>
   <title>Modern Monetary Theory and You</title>
   <link>https://www.sammystraus.com/#modern-monetary-theory-and-you</link>
-  <author>sam@Mac (sam)</author>
+  <author>sam@sams-MacBook-Pro.local (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#modern-monetary-theory-and-you</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -470,8 +519,8 @@
   Some people argue that with the power of MMT, we have the money to finance all of our wildest hopes and dreams, if somebody would just have the courage to turn on the money printer. Free college, loan reimbursement, free housing, we could pay for everything with a click of a button, and no negative long-term reprecussions. As long as we don't cause inflation, there really isn't anything to worry about.
   </p>
   <div id="outline-container-ID-8252C9B9-B35B-4580-8233-479C1705BA6D" class="outline-3">
-  <h3 id="ID-8252C9B9-B35B-4580-8233-479C1705BA6D"><span class="section-number-3">7.1.</span> The Big If</h3>
-  <div class="outline-text-3" id="text-7-1">
+  <h3 id="ID-8252C9B9-B35B-4580-8233-479C1705BA6D"><span class="section-number-3">8.1.</span> The Big If</h3>
+  <div class="outline-text-3" id="text-8-1">
   <p>
   The thing is, that's a pretty big if. You can "prove" anything you want if you start with a false assumption. If we could print infinite money, and not cause inflation, that'd be pretty awesome, but is such a thing even possible? How did we get here, and why does anybody believe we can do this?
   </p>
@@ -490,8 +539,8 @@
   </div>
   </div>
   <div id="outline-container-ID-52818742-EBFF-448A-8E31-AD8F84E074E2" class="outline-3">
-  <h3 id="ID-52818742-EBFF-448A-8E31-AD8F84E074E2"><span class="section-number-3">7.2.</span> How We Got Here</h3>
-  <div class="outline-text-3" id="text-7-2">
+  <h3 id="ID-52818742-EBFF-448A-8E31-AD8F84E074E2"><span class="section-number-3">8.2.</span> How We Got Here</h3>
+  <div class="outline-text-3" id="text-8-2">
   <p>
   So if America went out tommorrow, and started printing tons of money, and taking on tons of debt, we'd expect the cost of everything to go way up. We'd expect government bonds to be much less valuable, right? Right?
   </p>
@@ -508,8 +557,8 @@
   </div>
   </div>
   <div id="outline-container-ID-73859BEF-D79B-470A-9A8F-04521A7A175B" class="outline-3">
-  <h3 id="ID-73859BEF-D79B-470A-9A8F-04521A7A175B"><span class="section-number-3">7.3.</span> The United States as a Trustworthy Institution</h3>
-  <div class="outline-text-3" id="text-7-3">
+  <h3 id="ID-73859BEF-D79B-470A-9A8F-04521A7A175B"><span class="section-number-3">8.3.</span> The United States as a Trustworthy Institution</h3>
+  <div class="outline-text-3" id="text-8-3">
   <p>
   Ok, so, we took on a lot of debt before, and it was fine. We printed a truly wild amount of money, and people still trusted us as a stable, reliable institution. Everyone believed that the U.S. government would pay them back, and would pay them back in dollars that held value.
   </p>
@@ -544,8 +593,8 @@
   </div>
   </div>
   <div id="outline-container-ID-AADDCE98-FB55-42CE-B36D-A09F23E5DC16" class="outline-3">
-  <h3 id="ID-AADDCE98-FB55-42CE-B36D-A09F23E5DC16"><span class="section-number-3">7.4.</span> Take From the Rich and Give to the Poor</h3>
-  <div class="outline-text-3" id="text-7-4">
+  <h3 id="ID-AADDCE98-FB55-42CE-B36D-A09F23E5DC16"><span class="section-number-3">8.4.</span> Take From the Rich and Give to the Poor</h3>
+  <div class="outline-text-3" id="text-8-4">
   <p>
   The argument goes something like this:
   </p>
@@ -568,8 +617,8 @@
   </div>
   </div>
   <div id="outline-container-ID-EC7A53E4-5B8D-4119-8CD3-EA779D1A083B" class="outline-3">
-  <h3 id="ID-EC7A53E4-5B8D-4119-8CD3-EA779D1A083B"><span class="section-number-3">7.5.</span> Stimulus and Economic Growth</h3>
-  <div class="outline-text-3" id="text-7-5">
+  <h3 id="ID-EC7A53E4-5B8D-4119-8CD3-EA779D1A083B"><span class="section-number-3">8.5.</span> Stimulus and Economic Growth</h3>
+  <div class="outline-text-3" id="text-8-5">
   <p>
   Ok so there's a real argument here. The idea is – it's ok to print money because we can generate more goods and services. If we spend it wisely – build bridges, improve broadband, we can create jobs for people who were previously out of work. What's more, that new infrastructure and spending will spur even further economic growth.
   </p>
@@ -592,7 +641,7 @@
 <item>
   <title>The Perfect Camera</title>
   <link>https://www.sammystraus.com/#the-perfect-camera</link>
-  <author>sam@Mac (sam)</author>
+  <author>sam@sams-MacBook-Pro.local (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#the-perfect-camera</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -846,7 +895,7 @@
 <item>
   <title>Camera Lenses: What's in My Bag</title>
   <link>https://www.sammystraus.com/#camera-lenses-what-s-in-my-bag</link>
-  <author>sam@Mac (sam)</author>
+  <author>sam@sams-MacBook-Pro.local (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#camera-lenses-what-s-in-my-bag</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -906,7 +955,7 @@
 <item>
   <title>Why Many Primary Forecasts are Wrong</title>
   <link>https://www.sammystraus.com/#why-many-primary-forecasts-are-wrong</link>
-  <author>sam@Mac (sam)</author>
+  <author>sam@sams-MacBook-Pro.local (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#why-many-primary-forecasts-are-wrong</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -926,7 +975,7 @@
 <item>
   <title>The Wonky Math behind the Democratic Primary</title>
   <link>https://www.sammystraus.com/#the-wonky-math-behind-the-democratic-primary</link>
-  <author>sam@Mac (sam)</author>
+  <author>sam@sams-MacBook-Pro.local (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#the-wonky-math-behind-the-democratic-primary</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -962,7 +1011,7 @@
 <item>
   <title>What's Going on With The Impeachment</title>
   <link>https://www.sammystraus.com/#what-s-going-on-with-the-impeachment</link>
-  <author>sam@Mac (sam)</author>
+  <author>sam@sams-MacBook-Pro.local (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#what-s-going-on-with-the-impeachment</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -1090,7 +1139,7 @@
 <item>
   <title>Treating Cancer with Chemo (Part 3)</title>
   <link>https://www.sammystraus.com/#treating-cancer-with-chemo-part-3</link>
-  <author>sam@Mac (sam)</author>
+  <author>sam@sams-MacBook-Pro.local (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#treating-cancer-with-chemo-part-3</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -1112,7 +1161,7 @@
 <item>
   <title>Treating Cancer with Chemo (Part 2)</title>
   <link>https://www.sammystraus.com/#treating-cancer-with-chemo-part-2</link>
-  <author>sam@Mac (sam)</author>
+  <author>sam@sams-MacBook-Pro.local (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#treating-cancer-with-chemo-part-2</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -1148,7 +1197,7 @@
 <item>
   <title>Treating Cancer with Chemo (Part 1)</title>
   <link>https://www.sammystraus.com/#treating-cancer-with-chemo-part-1</link>
-  <author>sam@Mac (sam)</author>
+  <author>sam@sams-MacBook-Pro.local (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#treating-cancer-with-chemo-part-1</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -1204,7 +1253,7 @@
 <item>
   <title>The Importance of Doing Nothing</title>
   <link>https://www.sammystraus.com/#the-importance-of-doing-nothing</link>
-  <author>sam@Mac (sam)</author>
+  <author>sam@sams-MacBook-Pro.local (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#the-importance-of-doing-nothing</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -1240,7 +1289,7 @@
 <item>
   <title>Why I Support Citizens United</title>
   <link>https://www.sammystraus.com/#why-i-support-citizens-united</link>
-  <author>sam@Mac (sam)</author>
+  <author>sam@sams-MacBook-Pro.local (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#why-i-support-citizens-united</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -1276,7 +1325,7 @@
 <item>
   <title>Camera Settings</title>
   <link>https://www.sammystraus.com/#camera-settings</link>
-  <author>sam@Mac (sam)</author>
+  <author>sam@sams-MacBook-Pro.local (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#camera-settings</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
