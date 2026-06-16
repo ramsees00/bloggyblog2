@@ -14,8 +14,8 @@
   <link>https://www.sammystraus.com/</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Sat, 06 Jun 2026 10:56:37 -0400</pubDate>
-  <lastBuildDate>Sat, 06 Jun 2026 10:56:37 -0400</lastBuildDate>
+  <pubDate>Tue, 16 Jun 2026 15:45:05 -0400</pubDate>
+  <lastBuildDate>Tue, 16 Jun 2026 15:45:05 -0400</lastBuildDate>
   <generator>Emacs 30.2 Org-mode 9.7.11</generator>
   <webMaster>sam@Mac (sam)</webMaster>
   <image>
@@ -28,71 +28,146 @@
     <h2>Table of Contents</h2>
     <div id="text-table-of-contents" role="doc-toc">
       <ul>
-	<li><a href="#how-much-llms-is-too-much-llms">1. How much LLMs is too much LLMs?</a></li>
-	<li><a href="#building-chess-in-about-350-lines-of-clojure">2. Building Chess in about 350 lines of Clojure</a></li>
-	<li><a href="#announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript">3. Announcing Deft: A class and interface system for Clojure and ClojureScript</a></li>
-	<li><a href="#my-blog-is-now-on-rss">4. My Blog is Now on RSS</a></li>
-	<li><a href="#how-to-win-at-wordle">5. How to Win at Wordle</a></li>
-	<li><a href="#the-power-of-habit-book-review-pt-1">6. The Power Of Habit (Book Review Pt 1)</a></li>
-	<li><a href="#modern-monetary-theory-and-you">7. Modern Monetary Theory and You</a></li>
-	<li><a href="#the-perfect-camera">8. The Perfect Camera</a></li>
-	<li><a href="#camera-lenses-what-s-in-my-bag">9. Camera Lenses: What's in My Bag</a></li>
-	<li><a href="#why-many-primary-forecasts-are-wrong">10. Why Many Primary Forecasts are Wrong</a></li>
-	<li><a href="#the-wonky-math-behind-the-democratic-primary">11. The Wonky Math behind the Democratic Primary</a></li>
-	<li><a href="#what-s-going-on-with-the-impeachment">12. What's Going on With The Impeachment</a></li>
-	<li><a href="#treating-cancer-with-chemo-part-3">13. Treating Cancer with Chemo (Part 3)</a></li>
-	<li><a href="#treating-cancer-with-chemo-part-2">14. Treating Cancer with Chemo (Part 2)</a></li>
-	<li><a href="#treating-cancer-with-chemo-part-1">15. Treating Cancer with Chemo (Part 1)</a></li>
-	<li><a href="#the-importance-of-doing-nothing">16. The Importance of Doing Nothing</a></li>
-	<li><a href="#why-i-support-citizens-united">17. Why I Support Citizens United</a></li>
-	<li><a href="#camera-settings">18. Camera Settings</a></li>
+	<li><a href="#deft-version-0-2-0">1. Deft version 0.2.0</a></li>
+	<li><a href="#how-much-llms-is-too-much-llms">2. How much LLMs is too much LLMs?</a></li>
+	<li><a href="#building-chess-in-about-350-lines-of-clojure">3. Building Chess in about 350 lines of Clojure</a></li>
+	<li><a href="#announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript">4. Announcing Deft: A class and interface system for Clojure and ClojureScript</a></li>
+	<li><a href="#my-blog-is-now-on-rss">5. My Blog is Now on RSS</a></li>
+	<li><a href="#how-to-win-at-wordle">6. How to Win at Wordle</a></li>
+	<li><a href="#the-power-of-habit-book-review-pt-1">7. The Power Of Habit (Book Review Pt 1)</a></li>
+	<li><a href="#modern-monetary-theory-and-you">8. Modern Monetary Theory and You</a></li>
+	<li><a href="#the-perfect-camera">9. The Perfect Camera</a></li>
+	<li><a href="#camera-lenses-what-s-in-my-bag">10. Camera Lenses: What's in My Bag</a></li>
+	<li><a href="#why-many-primary-forecasts-are-wrong">11. Why Many Primary Forecasts are Wrong</a></li>
+	<li><a href="#the-wonky-math-behind-the-democratic-primary">12. The Wonky Math behind the Democratic Primary</a></li>
+	<li><a href="#what-s-going-on-with-the-impeachment">13. What's Going on With The Impeachment</a></li>
+	<li><a href="#treating-cancer-with-chemo-part-3">14. Treating Cancer with Chemo (Part 3)</a></li>
+	<li><a href="#treating-cancer-with-chemo-part-2">15. Treating Cancer with Chemo (Part 2)</a></li>
+	<li><a href="#treating-cancer-with-chemo-part-1">16. Treating Cancer with Chemo (Part 1)</a></li>
+	<li><a href="#the-importance-of-doing-nothing">17. The Importance of Doing Nothing</a></li>
+	<li><a href="#why-i-support-citizens-united">18. Why I Support Citizens United</a></li>
+	<li><a href="#camera-settings">19. Camera Settings</a></li>
       </ul>
     </div>
   </div>
   <div class="rss-link"><a href="feed.xml">rss</a></div>
   <item>
-    <title>How much LLMs is too much LLMs?</title>
-    <link>https://www.sammystraus.com/#how-much-llms-is-too-much-llms</link>
+    <title>Deft version 0.2.0</title>
+    <link>https://www.sammystraus.com/#deft-version-0-2-0</link>
     <author>sam@Mac (sam)</author>
-    <guid isPermaLink="false">https://www.sammystraus.com/#how-much-llms-is-too-much-llms</guid>
-    <pubDate>Wed, 29 Apr 2026 00:00:00 -0400</pubDate>
+    <guid isPermaLink="false">https://www.sammystraus.com/#deft-version-0-2-0</guid>
+    <pubDate>Tue, 16 Jun 2026 00:00:00 -0400</pubDate>
 
     <description><![CDATA[<p>
-    I finished reading <i>On the Edge</i> last week, and it was bad. Not that I don't respect Nate Silver. I respect him a lot. So when his seminal text on gambling and risk taking was a rambling mess, I was suprised and disappointed. Nevertheless, a completionist at heart, I trudged on, to the very end, where I was greeted with this message:
+    Now that <a href="https://github.com/sstraust/deft">deft 0.2.0</a> is released, I figure it's a good time to talk about what I built, and why I built it.
     </p>
 
     <p>
-    "ChatGPT was a significant help in writing this book, serving as a creative muse when coming up with things like chapter subheadings, metaphors, and analogies, and for refining my understanding of technical topics that are likely to be well represented in its corpus."
+    The <i>point</i> of Clojure's everything-is-a-map toolkit is that getters and setters are a waste of time. Clojure was built, in large part, in response to the crappy 2008 Java workflow, where you had to write getters, setters, and builders, and you took on all this bloat that nobody enjoyed.
     </p>
 
     <p>
-    <i>Technically</i> he wrote the book by hand, and <i>technically</i> he typed the letters onto his keyboard, but you know, did he really? Did he put his whole thought and mind and being into every word on the page? Maybe. I'm reminded of the absolute classic [Simple Made Easy](<a href="https://www.youtube.com/watch?v=SxdOUGdseq4">https://www.youtube.com/watch?v=SxdOUGdseq4</a>), a video where so much of the core lecture is built on defining precise language, and saying exactly what you mean. When you offload that work, you don't just skip word choices, you skip that thinking, and you miss out on that organization and mental clarity.
+    The <i>problem</i> is that if you want to represent your data using the built-in defprotocol and defrecord, and you want to define functions that depend on the presence of a certain field, then the only way to <i>encode</i> that information into the protocol is to add getter and setter metohds to it. icky.
     </p>
 
     <p>
-    In reading Nate's book, there's a real and noticeable difference between the language that feels baked into the organizational fabric of Nate's mentality, and the bits that were added on as an afterthought. The later chapters especially felt like they lacked that sort of mental compactification that cohesifies everything under one vision. I'm sad because this could have been a phenominal work, and it's clear that a lot of effort was made, especially into interviews and data collection, and it feels like it's just lacking that one last missing piece of insight to bring it all the way home.
+    You can also use a combination of protocol + malli schema to represent this, but then when you use it, you need to specify 'this function takes as input something that both implements this protocol <i>and</i> implements this Malli schema'. Also icky.
     </p>
 
     <p>
-    So how much LLMs is too much LLMs? Well, when it comes to human connection, I'd say the answer is near zero. I don't want to read your AI generated e-mails, and I certainly don't want to read your AI generated essays. I'd much rather read your prompt instead, because I care about what <i>you</i>, yes, <i>you</i> personally think about, and I want to understand what <i>you</i> wanted to communicate.
+    What we <i>want</i> is something we can use in the style of defprotocol and defrecord, but gives us all the getters and setters and map-like stuff by default. The key insight is that if a field exists in a record, we get all the other good stuff, so we just need to add support for protocols with required keys.
+    </p>
+
+
+    <p>
+    Deft v0.2.0 adds support for namespaced keys in type and protocol definitions. i.e., you can now do:
+    </p>
+
+    <div class="org-src-container">
+    <pre class="src src-clojure">(<span style="color: #00ffff;">defp</span> Positioned <span style="color: #7fffd4;">:required-keys</span> [<span style="color: #7fffd4;">::pos</span> - <span style="color: #7fffd4;">::Point</span>])
+    </pre>
+    </div>
+
+    <p>
+    and 
+    </p>
+    <div class="org-src-container">
+    <pre class="src src-clojure">(deft Circle [<span style="color: #7fffd4;">::</span><span style="color: #228b22;">location</span><span style="color: #ffffff; background-color: #000000;">/</span><span style="color: #7fffd4;">position</span> radius])
+
+    (&gt;Circle <span style="color: #7fffd4;">::</span><span style="color: #228b22;">location</span><span style="color: #ffffff; background-color: #000000;">/</span><span style="color: #7fffd4;">position</span> [1 2] <span style="color: #7fffd4;">:radius</span> 12)
+    </pre>
+    </div>
+
+
+    <p>
+    this is useful because you can now define methods that <i>depend on those fields being present</i> i.e.:
+    </p>
+
+
+    <div class="org-src-container">
+    <pre class="src src-clojure">(<span style="color: #00ffff;">defp</span> Gremlin <span style="color: #7fffd4;">:extends</span> [<span style="color: #228b22;">location</span>/Positioned])
+
+    (<span style="color: #00ffff;">defmethod</span> <span style="color: #87cefa;">game-object/get-hitbox</span> <span style="color: #7fffd4;">::Gremlin</span> [self]
+    (<span style="color: #228b22;">js</span>/Matter.Bodies.rectangle
+    (get-in self [<span style="color: #7fffd4;">::</span><span style="color: #228b22;">location</span><span style="color: #ffffff; background-color: #000000;">/</span><span style="color: #7fffd4;">pos</span> <span style="color: #7fffd4;">::</span><span style="color: #228b22;">location</span><span style="color: #ffffff; background-color: #000000;">/</span><span style="color: #7fffd4;">x</span>])
+    (get-in self [<span style="color: #7fffd4;">::</span><span style="color: #228b22;">location</span><span style="color: #ffffff; background-color: #000000;">/</span><span style="color: #7fffd4;">pos</span> <span style="color: #7fffd4;">::</span><span style="color: #228b22;">location</span><span style="color: #ffffff; background-color: #000000;">/</span><span style="color: #7fffd4;">y</span>])
+    15 15))
+    </pre>
+    </div>
+
+
+    <p>
+    Check it out!
     </p>
 
     <p>
-    Don't get me wrong, I love LLMs for the right purpose. I'd love to use LLMs on doctor's notes to build models that predict whether the flu is spreading. But when it comes to writing, especially this kind of writing, it just feels so unnecessary, because when you write down your thoughts, I already have exactly what I wanted, and it just feels so silly to add an extra stop in between.
-    </p>
-
-    <p>
-    As a poker player and game theorist, I'm sure Nate would appreciate the phrase "If you couldn't be bothered to write it, then I can't be bothered to read it". And you know, despite a belief that art can live separately from the artist, deep down for me this claim rings true. Not that the same words produced by a person are inherently different than the same words from an LLM, but it throws off my little Bayesian estimator a little.
-    </p>
-
-    <p>
-    If the smartest person I know spent 10,000 hours writing, editing, polishing, and publishing a 500 page novel, it tells me not just that the smartest person I know had some thoughts on a topic, but it tells me that they decided to spend 10,000 hours of <i>their</i> precious time, and of <i>their</i> precious energy to communicate this idea to me. It feels good that the time it took me to read it is porportional (and usually less than) the time it took you to write it, because it shows me that you care about the time and energy of creating this exchange.
-    </p>
-
-    <p>
-    And it's not just fully AI generated slop that hits this barrier. When you incorporate LLMs into your writing, even a little bit, you miss out on the ability to process your thoughts and create human connection.
+    <a href="https://github.com/sstraust/deft">https://github.com/sstraust/deft</a>
     </p>
     ]]></description>
+</item>
+<item>
+  <title>How much LLMs is too much LLMs?</title>
+  <link>https://www.sammystraus.com/#how-much-llms-is-too-much-llms</link>
+  <author>sam@Mac (sam)</author>
+  <guid isPermaLink="false">https://www.sammystraus.com/#how-much-llms-is-too-much-llms</guid>
+  <pubDate>Wed, 29 Apr 2026 00:00:00 -0400</pubDate>
+
+  <description><![CDATA[<p>
+  I finished reading <i>On the Edge</i> last week, and it was bad. Not that I don't respect Nate Silver. I respect him a lot. So when his seminal text on gambling and risk taking was a rambling mess, I was suprised and disappointed. Nevertheless, a completionist at heart, I trudged on, to the very end, where I was greeted with this message:
+  </p>
+
+  <p>
+  "ChatGPT was a significant help in writing this book, serving as a creative muse when coming up with things like chapter subheadings, metaphors, and analogies, and for refining my understanding of technical topics that are likely to be well represented in its corpus."
+  </p>
+
+  <p>
+  <i>Technically</i> he wrote the book by hand, and <i>technically</i> he typed the letters onto his keyboard, but you know, did he really? Did he put his whole thought and mind and being into every word on the page? Maybe. I'm reminded of the absolute classic [Simple Made Easy](<a href="https://www.youtube.com/watch?v=SxdOUGdseq4">https://www.youtube.com/watch?v=SxdOUGdseq4</a>), a video where so much of the core lecture is built on defining precise language, and saying exactly what you mean. When you offload that work, you don't just skip word choices, you skip that thinking, and you miss out on that organization and mental clarity.
+  </p>
+
+  <p>
+  In reading Nate's book, there's a real and noticeable difference between the language that feels baked into the organizational fabric of Nate's mentality, and the bits that were added on as an afterthought. The later chapters especially felt like they lacked that sort of mental compactification that cohesifies everything under one vision. I'm sad because this could have been a phenominal work, and it's clear that a lot of effort was made, especially into interviews and data collection, and it feels like it's just lacking that one last missing piece of insight to bring it all the way home.
+  </p>
+
+  <p>
+  So how much LLMs is too much LLMs? Well, when it comes to human connection, I'd say the answer is near zero. I don't want to read your AI generated e-mails, and I certainly don't want to read your AI generated essays. I'd much rather read your prompt instead, because I care about what <i>you</i>, yes, <i>you</i> personally think about, and I want to understand what <i>you</i> wanted to communicate.
+  </p>
+
+  <p>
+  Don't get me wrong, I love LLMs for the right purpose. I'd love to use LLMs on doctor's notes to build models that predict whether the flu is spreading. But when it comes to writing, especially this kind of writing, it just feels so unnecessary, because when you write down your thoughts, I already have exactly what I wanted, and it just feels so silly to add an extra stop in between.
+  </p>
+
+  <p>
+  As a poker player and game theorist, I'm sure Nate would appreciate the phrase "If you couldn't be bothered to write it, then I can't be bothered to read it". And you know, despite a belief that art can live separately from the artist, deep down for me this claim rings true. Not that the same words produced by a person are inherently different than the same words from an LLM, but it throws off my little Bayesian estimator a little.
+  </p>
+
+  <p>
+  If the smartest person I know spent 10,000 hours writing, editing, polishing, and publishing a 500 page novel, it tells me not just that the smartest person I know had some thoughts on a topic, but it tells me that they decided to spend 10,000 hours of <i>their</i> precious time, and of <i>their</i> precious energy to communicate this idea to me. It feels good that the time it took me to read it is porportional (and usually less than) the time it took you to write it, because it shows me that you care about the time and energy of creating this exchange.
+  </p>
+
+  <p>
+  And it's not just fully AI generated slop that hits this barrier. When you incorporate LLMs into your writing, even a little bit, you miss out on the ability to process your thoughts and create human connection.
+  </p>
+  ]]></description>
 </item>
 <item>
   <title>Building Chess in about 350 lines of Clojure</title>
@@ -369,8 +444,8 @@
   Ok, I got a little bit lucky, but it wasn't all luck. While I was playing I had a chance to think through some of the strategies, and saw some pitfalls I think others might have missed.
   </p>
   <div id="outline-container-ID-81E51619-D781-40D7-9B49-2A5C61F7D4A0" class="outline-3">
-  <h3 id="ID-81E51619-D781-40D7-9B49-2A5C61F7D4A0"><span class="section-number-3">5.1.</span> Don't guess letters that are already green</h3>
-  <div class="outline-text-3" id="text-5-1">
+  <h3 id="ID-81E51619-D781-40D7-9B49-2A5C61F7D4A0"><span class="section-number-3">6.1.</span> Don't guess letters that are already green</h3>
+  <div class="outline-text-3" id="text-6-1">
   <p>
   Unless you're trying to make your final guess to win the game, you shouldn't guess the same letter in the same place. You already tried that, so doing it again doesn't give you new information.
   </p>
@@ -385,8 +460,8 @@
   </div>
   </div>
   <div id="outline-container-ID-06422413-45DF-498B-9AEB-F8EBA92B5DD3" class="outline-3">
-  <h3 id="ID-06422413-45DF-498B-9AEB-F8EBA92B5DD3"><span class="section-number-3">5.2.</span> When you guess new letters, put them in places they commonly appear</h3>
-  <div class="outline-text-3" id="text-5-2">
+  <h3 id="ID-06422413-45DF-498B-9AEB-F8EBA92B5DD3"><span class="section-number-3">6.2.</span> When you guess new letters, put them in places they commonly appear</h3>
+  <div class="outline-text-3" id="text-6-2">
   <p>
   Just for a moment, think of worlde a little bit like binary search. Your goal is to learn as much information as possible with every guess. If your guess splits the problem space in half (i.e. you eliminate half of possible words if it shows up green, and half of words if it shows up yellow), you learn (on average) the most possible information with every guess.
   </p>
@@ -401,8 +476,8 @@
   </div>
   </div>
   <div id="outline-container-ID-6E6686E5-CA34-435E-9C68-FECDF5EA7227" class="outline-3">
-  <h3 id="ID-6E6686E5-CA34-435E-9C68-FECDF5EA7227"><span class="section-number-3">5.3.</span> Guess common letters first</h3>
-  <div class="outline-text-3" id="text-5-3">
+  <h3 id="ID-6E6686E5-CA34-435E-9C68-FECDF5EA7227"><span class="section-number-3">6.3.</span> Guess common letters first</h3>
+  <div class="outline-text-3" id="text-6-3">
   <p>
   Basically the same logic as above. It's either one of the 5 specific letters you guessed, or it's one of the 21 other letters. You want to guess the 5 that most closely split the problem in half.
   </p>
@@ -413,8 +488,8 @@
   </div>
   </div>
   <div id="outline-container-ID-BC84053E-824F-4654-848D-B381DF4C69CB" class="outline-3">
-  <h3 id="ID-BC84053E-824F-4654-848D-B381DF4C69CB"><span class="section-number-3">5.4.</span> Think through the list of possible words at every step</h3>
-  <div class="outline-text-3" id="text-5-4">
+  <h3 id="ID-BC84053E-824F-4654-848D-B381DF4C69CB"><span class="section-number-3">6.4.</span> Think through the list of possible words at every step</h3>
+  <div class="outline-text-3" id="text-6-4">
   <p>
   Remember, your goal is to "divide in half" with every letter. If you have a sense of/random sample of the words in the space, it's easier to pick the letters/positions that divide that list the most precisely.
   </p>
@@ -474,8 +549,8 @@
   Some people argue that with the power of MMT, we have the money to finance all of our wildest hopes and dreams, if somebody would just have the courage to turn on the money printer. Free college, loan reimbursement, free housing, we could pay for everything with a click of a button, and no negative long-term reprecussions. As long as we don't cause inflation, there really isn't anything to worry about.
   </p>
   <div id="outline-container-ID-8252C9B9-B35B-4580-8233-479C1705BA6D" class="outline-3">
-  <h3 id="ID-8252C9B9-B35B-4580-8233-479C1705BA6D"><span class="section-number-3">7.1.</span> The Big If</h3>
-  <div class="outline-text-3" id="text-7-1">
+  <h3 id="ID-8252C9B9-B35B-4580-8233-479C1705BA6D"><span class="section-number-3">8.1.</span> The Big If</h3>
+  <div class="outline-text-3" id="text-8-1">
   <p>
   The thing is, that's a pretty big if. You can "prove" anything you want if you start with a false assumption. If we could print infinite money, and not cause inflation, that'd be pretty awesome, but is such a thing even possible? How did we get here, and why does anybody believe we can do this?
   </p>
@@ -494,8 +569,8 @@
   </div>
   </div>
   <div id="outline-container-ID-52818742-EBFF-448A-8E31-AD8F84E074E2" class="outline-3">
-  <h3 id="ID-52818742-EBFF-448A-8E31-AD8F84E074E2"><span class="section-number-3">7.2.</span> How We Got Here</h3>
-  <div class="outline-text-3" id="text-7-2">
+  <h3 id="ID-52818742-EBFF-448A-8E31-AD8F84E074E2"><span class="section-number-3">8.2.</span> How We Got Here</h3>
+  <div class="outline-text-3" id="text-8-2">
   <p>
   So if America went out tommorrow, and started printing tons of money, and taking on tons of debt, we'd expect the cost of everything to go way up. We'd expect government bonds to be much less valuable, right? Right?
   </p>
@@ -512,8 +587,8 @@
   </div>
   </div>
   <div id="outline-container-ID-73859BEF-D79B-470A-9A8F-04521A7A175B" class="outline-3">
-  <h3 id="ID-73859BEF-D79B-470A-9A8F-04521A7A175B"><span class="section-number-3">7.3.</span> The United States as a Trustworthy Institution</h3>
-  <div class="outline-text-3" id="text-7-3">
+  <h3 id="ID-73859BEF-D79B-470A-9A8F-04521A7A175B"><span class="section-number-3">8.3.</span> The United States as a Trustworthy Institution</h3>
+  <div class="outline-text-3" id="text-8-3">
   <p>
   Ok, so, we took on a lot of debt before, and it was fine. We printed a truly wild amount of money, and people still trusted us as a stable, reliable institution. Everyone believed that the U.S. government would pay them back, and would pay them back in dollars that held value.
   </p>
@@ -548,8 +623,8 @@
   </div>
   </div>
   <div id="outline-container-ID-AADDCE98-FB55-42CE-B36D-A09F23E5DC16" class="outline-3">
-  <h3 id="ID-AADDCE98-FB55-42CE-B36D-A09F23E5DC16"><span class="section-number-3">7.4.</span> Take From the Rich and Give to the Poor</h3>
-  <div class="outline-text-3" id="text-7-4">
+  <h3 id="ID-AADDCE98-FB55-42CE-B36D-A09F23E5DC16"><span class="section-number-3">8.4.</span> Take From the Rich and Give to the Poor</h3>
+  <div class="outline-text-3" id="text-8-4">
   <p>
   The argument goes something like this:
   </p>
@@ -572,8 +647,8 @@
   </div>
   </div>
   <div id="outline-container-ID-EC7A53E4-5B8D-4119-8CD3-EA779D1A083B" class="outline-3">
-  <h3 id="ID-EC7A53E4-5B8D-4119-8CD3-EA779D1A083B"><span class="section-number-3">7.5.</span> Stimulus and Economic Growth</h3>
-  <div class="outline-text-3" id="text-7-5">
+  <h3 id="ID-EC7A53E4-5B8D-4119-8CD3-EA779D1A083B"><span class="section-number-3">8.5.</span> Stimulus and Economic Growth</h3>
+  <div class="outline-text-3" id="text-8-5">
   <p>
   Ok so there's a real argument here. The idea is – it's ok to print money because we can generate more goods and services. If we spend it wisely – build bridges, improve broadband, we can create jobs for people who were previously out of work. What's more, that new infrastructure and spending will spur even further economic growth.
   </p>
