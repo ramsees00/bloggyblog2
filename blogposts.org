@@ -25,12 +25,12 @@ What we /want/ is something we can use in the style of defprotocol and defrecord
 
 Deft v0.2.0 adds support for namespaced keys in type and protocol definitions. i.e., you can now do:
 
-#+begin_src clojure
+#+begin_src 
 (defp Positioned :required-keys [::pos - ::Point])
 #+end_src
 
 and 
-#+begin_src clojure
+#+begin_src 
 (deft Circle [::location/position radius])
 
 (>Circle ::location/position [1 2] :radius 12)
@@ -40,7 +40,7 @@ and
 this is useful because you can now define methods that /depend on those fields being present/ i.e.:
 
 
-#+begin_src clojure
+#+begin_src
 (defp Gremlin :extends [location/Positioned])
 
 (defmethod game-object/get-hitbox ::Gremlin [self]

@@ -14,8 +14,8 @@
   <link>https://www.sammystraus.com/</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Tue, 16 Jun 2026 15:45:05 -0400</pubDate>
-  <lastBuildDate>Tue, 16 Jun 2026 15:45:05 -0400</lastBuildDate>
+  <pubDate>Tue, 16 Jun 2026 16:00:40 -0400</pubDate>
+  <lastBuildDate>Tue, 16 Jun 2026 16:00:40 -0400</lastBuildDate>
   <generator>Emacs 30.2 Org-mode 9.7.11</generator>
   <webMaster>sam@Mac (sam)</webMaster>
   <image>
@@ -84,7 +84,7 @@
     </p>
 
     <div class="org-src-container">
-    <pre class="src src-clojure">(<span style="color: #00ffff;">defp</span> Positioned <span style="color: #7fffd4;">:required-keys</span> [<span style="color: #7fffd4;">::pos</span> - <span style="color: #7fffd4;">::Point</span>])
+    <pre class="src src-nil">(defp Positioned :required-keys [::pos - ::Point])
     </pre>
     </div>
 
@@ -92,9 +92,9 @@
     and 
     </p>
     <div class="org-src-container">
-    <pre class="src src-clojure">(deft Circle [<span style="color: #7fffd4;">::</span><span style="color: #228b22;">location</span><span style="color: #ffffff; background-color: #000000;">/</span><span style="color: #7fffd4;">position</span> radius])
+    <pre class="src src-nil">(deft Circle [::location/position radius])
 
-    (&gt;Circle <span style="color: #7fffd4;">::</span><span style="color: #228b22;">location</span><span style="color: #ffffff; background-color: #000000;">/</span><span style="color: #7fffd4;">position</span> [1 2] <span style="color: #7fffd4;">:radius</span> 12)
+    (&gt;Circle ::location/position [1 2] :radius 12)
     </pre>
     </div>
 
@@ -105,12 +105,12 @@
 
 
     <div class="org-src-container">
-    <pre class="src src-clojure">(<span style="color: #00ffff;">defp</span> Gremlin <span style="color: #7fffd4;">:extends</span> [<span style="color: #228b22;">location</span>/Positioned])
+    <pre class="src src-nil">(defp Gremlin :extends [location/Positioned])
 
-    (<span style="color: #00ffff;">defmethod</span> <span style="color: #87cefa;">game-object/get-hitbox</span> <span style="color: #7fffd4;">::Gremlin</span> [self]
-    (<span style="color: #228b22;">js</span>/Matter.Bodies.rectangle
-    (get-in self [<span style="color: #7fffd4;">::</span><span style="color: #228b22;">location</span><span style="color: #ffffff; background-color: #000000;">/</span><span style="color: #7fffd4;">pos</span> <span style="color: #7fffd4;">::</span><span style="color: #228b22;">location</span><span style="color: #ffffff; background-color: #000000;">/</span><span style="color: #7fffd4;">x</span>])
-    (get-in self [<span style="color: #7fffd4;">::</span><span style="color: #228b22;">location</span><span style="color: #ffffff; background-color: #000000;">/</span><span style="color: #7fffd4;">pos</span> <span style="color: #7fffd4;">::</span><span style="color: #228b22;">location</span><span style="color: #ffffff; background-color: #000000;">/</span><span style="color: #7fffd4;">y</span>])
+    (defmethod game-object/get-hitbox ::Gremlin [self]
+    (js/Matter.Bodies.rectangle
+    (get-in self [::location/pos ::location/x])
+    (get-in self [::location/pos ::location/y])
     15 15))
     </pre>
     </div>
@@ -124,50 +124,50 @@
     <a href="https://github.com/sstraust/deft">https://github.com/sstraust/deft</a>
     </p>
     ]]></description>
-</item>
-<item>
-  <title>How much LLMs is too much LLMs?</title>
-  <link>https://www.sammystraus.com/#how-much-llms-is-too-much-llms</link>
-  <author>sam@Mac (sam)</author>
-  <guid isPermaLink="false">https://www.sammystraus.com/#how-much-llms-is-too-much-llms</guid>
-  <pubDate>Wed, 29 Apr 2026 00:00:00 -0400</pubDate>
+  </item>
+  <item>
+    <title>How much LLMs is too much LLMs?</title>
+    <link>https://www.sammystraus.com/#how-much-llms-is-too-much-llms</link>
+    <author>sam@Mac (sam)</author>
+    <guid isPermaLink="false">https://www.sammystraus.com/#how-much-llms-is-too-much-llms</guid>
+    <pubDate>Wed, 29 Apr 2026 00:00:00 -0400</pubDate>
 
-  <description><![CDATA[<p>
-  I finished reading <i>On the Edge</i> last week, and it was bad. Not that I don't respect Nate Silver. I respect him a lot. So when his seminal text on gambling and risk taking was a rambling mess, I was suprised and disappointed. Nevertheless, a completionist at heart, I trudged on, to the very end, where I was greeted with this message:
-  </p>
+    <description><![CDATA[<p>
+    I finished reading <i>On the Edge</i> last week, and it was bad. Not that I don't respect Nate Silver. I respect him a lot. So when his seminal text on gambling and risk taking was a rambling mess, I was suprised and disappointed. Nevertheless, a completionist at heart, I trudged on, to the very end, where I was greeted with this message:
+    </p>
 
-  <p>
-  "ChatGPT was a significant help in writing this book, serving as a creative muse when coming up with things like chapter subheadings, metaphors, and analogies, and for refining my understanding of technical topics that are likely to be well represented in its corpus."
-  </p>
+    <p>
+    "ChatGPT was a significant help in writing this book, serving as a creative muse when coming up with things like chapter subheadings, metaphors, and analogies, and for refining my understanding of technical topics that are likely to be well represented in its corpus."
+    </p>
 
-  <p>
-  <i>Technically</i> he wrote the book by hand, and <i>technically</i> he typed the letters onto his keyboard, but you know, did he really? Did he put his whole thought and mind and being into every word on the page? Maybe. I'm reminded of the absolute classic [Simple Made Easy](<a href="https://www.youtube.com/watch?v=SxdOUGdseq4">https://www.youtube.com/watch?v=SxdOUGdseq4</a>), a video where so much of the core lecture is built on defining precise language, and saying exactly what you mean. When you offload that work, you don't just skip word choices, you skip that thinking, and you miss out on that organization and mental clarity.
-  </p>
+    <p>
+    <i>Technically</i> he wrote the book by hand, and <i>technically</i> he typed the letters onto his keyboard, but you know, did he really? Did he put his whole thought and mind and being into every word on the page? Maybe. I'm reminded of the absolute classic [Simple Made Easy](<a href="https://www.youtube.com/watch?v=SxdOUGdseq4">https://www.youtube.com/watch?v=SxdOUGdseq4</a>), a video where so much of the core lecture is built on defining precise language, and saying exactly what you mean. When you offload that work, you don't just skip word choices, you skip that thinking, and you miss out on that organization and mental clarity.
+    </p>
 
-  <p>
-  In reading Nate's book, there's a real and noticeable difference between the language that feels baked into the organizational fabric of Nate's mentality, and the bits that were added on as an afterthought. The later chapters especially felt like they lacked that sort of mental compactification that cohesifies everything under one vision. I'm sad because this could have been a phenominal work, and it's clear that a lot of effort was made, especially into interviews and data collection, and it feels like it's just lacking that one last missing piece of insight to bring it all the way home.
-  </p>
+    <p>
+    In reading Nate's book, there's a real and noticeable difference between the language that feels baked into the organizational fabric of Nate's mentality, and the bits that were added on as an afterthought. The later chapters especially felt like they lacked that sort of mental compactification that cohesifies everything under one vision. I'm sad because this could have been a phenominal work, and it's clear that a lot of effort was made, especially into interviews and data collection, and it feels like it's just lacking that one last missing piece of insight to bring it all the way home.
+    </p>
 
-  <p>
-  So how much LLMs is too much LLMs? Well, when it comes to human connection, I'd say the answer is near zero. I don't want to read your AI generated e-mails, and I certainly don't want to read your AI generated essays. I'd much rather read your prompt instead, because I care about what <i>you</i>, yes, <i>you</i> personally think about, and I want to understand what <i>you</i> wanted to communicate.
-  </p>
+    <p>
+    So how much LLMs is too much LLMs? Well, when it comes to human connection, I'd say the answer is near zero. I don't want to read your AI generated e-mails, and I certainly don't want to read your AI generated essays. I'd much rather read your prompt instead, because I care about what <i>you</i>, yes, <i>you</i> personally think about, and I want to understand what <i>you</i> wanted to communicate.
+    </p>
 
-  <p>
-  Don't get me wrong, I love LLMs for the right purpose. I'd love to use LLMs on doctor's notes to build models that predict whether the flu is spreading. But when it comes to writing, especially this kind of writing, it just feels so unnecessary, because when you write down your thoughts, I already have exactly what I wanted, and it just feels so silly to add an extra stop in between.
-  </p>
+    <p>
+    Don't get me wrong, I love LLMs for the right purpose. I'd love to use LLMs on doctor's notes to build models that predict whether the flu is spreading. But when it comes to writing, especially this kind of writing, it just feels so unnecessary, because when you write down your thoughts, I already have exactly what I wanted, and it just feels so silly to add an extra stop in between.
+    </p>
 
-  <p>
-  As a poker player and game theorist, I'm sure Nate would appreciate the phrase "If you couldn't be bothered to write it, then I can't be bothered to read it". And you know, despite a belief that art can live separately from the artist, deep down for me this claim rings true. Not that the same words produced by a person are inherently different than the same words from an LLM, but it throws off my little Bayesian estimator a little.
-  </p>
+    <p>
+    As a poker player and game theorist, I'm sure Nate would appreciate the phrase "If you couldn't be bothered to write it, then I can't be bothered to read it". And you know, despite a belief that art can live separately from the artist, deep down for me this claim rings true. Not that the same words produced by a person are inherently different than the same words from an LLM, but it throws off my little Bayesian estimator a little.
+    </p>
 
-  <p>
-  If the smartest person I know spent 10,000 hours writing, editing, polishing, and publishing a 500 page novel, it tells me not just that the smartest person I know had some thoughts on a topic, but it tells me that they decided to spend 10,000 hours of <i>their</i> precious time, and of <i>their</i> precious energy to communicate this idea to me. It feels good that the time it took me to read it is porportional (and usually less than) the time it took you to write it, because it shows me that you care about the time and energy of creating this exchange.
-  </p>
+    <p>
+    If the smartest person I know spent 10,000 hours writing, editing, polishing, and publishing a 500 page novel, it tells me not just that the smartest person I know had some thoughts on a topic, but it tells me that they decided to spend 10,000 hours of <i>their</i> precious time, and of <i>their</i> precious energy to communicate this idea to me. It feels good that the time it took me to read it is porportional (and usually less than) the time it took you to write it, because it shows me that you care about the time and energy of creating this exchange.
+    </p>
 
-  <p>
-  And it's not just fully AI generated slop that hits this barrier. When you incorporate LLMs into your writing, even a little bit, you miss out on the ability to process your thoughts and create human connection.
-  </p>
-  ]]></description>
+    <p>
+    And it's not just fully AI generated slop that hits this barrier. When you incorporate LLMs into your writing, even a little bit, you miss out on the ability to process your thoughts and create human connection.
+    </p>
+    ]]></description>
 </item>
 <item>
   <title>Building Chess in about 350 lines of Clojure</title>

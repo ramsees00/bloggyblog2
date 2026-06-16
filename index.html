@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2026-06-16 Tue 15:45 -->
+<!-- 2026-06-16 Tue 16:00 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Sammy's Blog</title>
@@ -254,7 +254,7 @@ Deft v0.2.0 adds support for namespaced keys in type and protocol definitions. i
 </p>
 
 <div class="org-src-container">
-<pre class="src src-clojure">(<span style="color: #00ffff;">defp</span> Positioned <span style="color: #7fffd4;">:required-keys</span> [<span style="color: #7fffd4;">::pos</span> - <span style="color: #7fffd4;">::Point</span>])
+<pre class="src src-nil">(defp Positioned :required-keys [::pos - ::Point])
 </pre>
 </div>
 
@@ -262,9 +262,9 @@ Deft v0.2.0 adds support for namespaced keys in type and protocol definitions. i
 and 
 </p>
 <div class="org-src-container">
-<pre class="src src-clojure">(deft Circle [<span style="color: #7fffd4;">::</span><span style="color: #228b22;">location</span><span style="color: #ffffff; background-color: #000000;">/</span><span style="color: #7fffd4;">position</span> radius])
+<pre class="src src-nil">(deft Circle [::location/position radius])
 
-(&gt;Circle <span style="color: #7fffd4;">::</span><span style="color: #228b22;">location</span><span style="color: #ffffff; background-color: #000000;">/</span><span style="color: #7fffd4;">position</span> [1 2] <span style="color: #7fffd4;">:radius</span> 12)
+(&gt;Circle ::location/position [1 2] :radius 12)
 </pre>
 </div>
 
@@ -275,12 +275,12 @@ this is useful because you can now define methods that <i>depend on those fields
 
 
 <div class="org-src-container">
-<pre class="src src-clojure">(<span style="color: #00ffff;">defp</span> Gremlin <span style="color: #7fffd4;">:extends</span> [<span style="color: #228b22;">location</span>/Positioned])
+<pre class="src src-nil">(defp Gremlin :extends [location/Positioned])
 
-(<span style="color: #00ffff;">defmethod</span> <span style="color: #87cefa;">game-object/get-hitbox</span> <span style="color: #7fffd4;">::Gremlin</span> [self]
-  (<span style="color: #228b22;">js</span>/Matter.Bodies.rectangle
-   (get-in self [<span style="color: #7fffd4;">::</span><span style="color: #228b22;">location</span><span style="color: #ffffff; background-color: #000000;">/</span><span style="color: #7fffd4;">pos</span> <span style="color: #7fffd4;">::</span><span style="color: #228b22;">location</span><span style="color: #ffffff; background-color: #000000;">/</span><span style="color: #7fffd4;">x</span>])
-   (get-in self [<span style="color: #7fffd4;">::</span><span style="color: #228b22;">location</span><span style="color: #ffffff; background-color: #000000;">/</span><span style="color: #7fffd4;">pos</span> <span style="color: #7fffd4;">::</span><span style="color: #228b22;">location</span><span style="color: #ffffff; background-color: #000000;">/</span><span style="color: #7fffd4;">y</span>])
+(defmethod game-object/get-hitbox ::Gremlin [self]
+  (js/Matter.Bodies.rectangle
+   (get-in self [::location/pos ::location/x])
+   (get-in self [::location/pos ::location/y])
    15 15))
 </pre>
 </div>
@@ -1516,7 +1516,7 @@ In addition, even though it doesn't effect the raw image, many cameras have buil
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: sam</p>
-<p class="date">Created: 2026-06-16 Tue 15:45</p>
+<p class="date">Created: 2026-06-16 Tue 16:00</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
