@@ -14,8 +14,8 @@
   <link>https://www.sammystraus.com/</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Thu, 30 Jul 2026 13:44:22 -0400</pubDate>
-  <lastBuildDate>Thu, 30 Jul 2026 13:44:22 -0400</lastBuildDate>
+  <pubDate>Sat, 06 Jun 2026 10:56:37 -0400</pubDate>
+  <lastBuildDate>Sat, 06 Jun 2026 10:56:37 -0400</lastBuildDate>
   <generator>Emacs 30.2 Org-mode 9.7.11</generator>
   <webMaster>sam@Mac (sam)</webMaster>
   <image>
@@ -28,153 +28,28 @@
     <h2>Table of Contents</h2>
     <div id="text-table-of-contents" role="doc-toc">
       <ul>
-	<li><a href="#if-technology-got-better-why-did-everything-get-worse">1. If technology got better, why did everything get worse?</a></li>
-	<li><a href="#deft-version-0-2-0">2. Deft version 0.2.0</a></li>
-	<li><a href="#how-much-llms-is-too-much-llms">3. How much LLMs is too much LLMs?</a></li>
-	<li><a href="#building-chess-in-about-350-lines-of-clojure">4. Building Chess in about 350 lines of Clojure</a></li>
-	<li><a href="#announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript">5. Announcing Deft: A class and interface system for Clojure and ClojureScript</a></li>
-	<li><a href="#my-blog-is-now-on-rss">6. My Blog is Now on RSS</a></li>
-	<li><a href="#how-to-win-at-wordle">7. How to Win at Wordle</a></li>
-	<li><a href="#the-power-of-habit-book-review-pt-1">8. The Power Of Habit (Book Review Pt 1)</a></li>
-	<li><a href="#modern-monetary-theory-and-you">9. Modern Monetary Theory and You</a></li>
-	<li><a href="#the-perfect-camera">10. The Perfect Camera</a></li>
-	<li><a href="#camera-lenses-what-s-in-my-bag">11. Camera Lenses: What's in My Bag</a></li>
-	<li><a href="#why-many-primary-forecasts-are-wrong">12. Why Many Primary Forecasts are Wrong</a></li>
-	<li><a href="#the-wonky-math-behind-the-democratic-primary">13. The Wonky Math behind the Democratic Primary</a></li>
-	<li><a href="#what-s-going-on-with-the-impeachment">14. What's Going on With The Impeachment</a></li>
-	<li><a href="#treating-cancer-with-chemo-part-3">15. Treating Cancer with Chemo (Part 3)</a></li>
-	<li><a href="#treating-cancer-with-chemo-part-2">16. Treating Cancer with Chemo (Part 2)</a></li>
-	<li><a href="#treating-cancer-with-chemo-part-1">17. Treating Cancer with Chemo (Part 1)</a></li>
-	<li><a href="#the-importance-of-doing-nothing">18. The Importance of Doing Nothing</a></li>
-	<li><a href="#why-i-support-citizens-united">19. Why I Support Citizens United</a></li>
-	<li><a href="#camera-settings">20. Camera Settings</a></li>
+	<li><a href="#how-much-llms-is-too-much-llms">1. How much LLMs is too much LLMs?</a></li>
+	<li><a href="#building-chess-in-about-350-lines-of-clojure">2. Building Chess in about 350 lines of Clojure</a></li>
+	<li><a href="#announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript">3. Announcing Deft: A class and interface system for Clojure and ClojureScript</a></li>
+	<li><a href="#my-blog-is-now-on-rss">4. My Blog is Now on RSS</a></li>
+	<li><a href="#how-to-win-at-wordle">5. How to Win at Wordle</a></li>
+	<li><a href="#the-power-of-habit-book-review-pt-1">6. The Power Of Habit (Book Review Pt 1)</a></li>
+	<li><a href="#modern-monetary-theory-and-you">7. Modern Monetary Theory and You</a></li>
+	<li><a href="#the-perfect-camera">8. The Perfect Camera</a></li>
+	<li><a href="#camera-lenses-what-s-in-my-bag">9. Camera Lenses: What's in My Bag</a></li>
+	<li><a href="#why-many-primary-forecasts-are-wrong">10. Why Many Primary Forecasts are Wrong</a></li>
+	<li><a href="#the-wonky-math-behind-the-democratic-primary">11. The Wonky Math behind the Democratic Primary</a></li>
+	<li><a href="#what-s-going-on-with-the-impeachment">12. What's Going on With The Impeachment</a></li>
+	<li><a href="#treating-cancer-with-chemo-part-3">13. Treating Cancer with Chemo (Part 3)</a></li>
+	<li><a href="#treating-cancer-with-chemo-part-2">14. Treating Cancer with Chemo (Part 2)</a></li>
+	<li><a href="#treating-cancer-with-chemo-part-1">15. Treating Cancer with Chemo (Part 1)</a></li>
+	<li><a href="#the-importance-of-doing-nothing">16. The Importance of Doing Nothing</a></li>
+	<li><a href="#why-i-support-citizens-united">17. Why I Support Citizens United</a></li>
+	<li><a href="#camera-settings">18. Camera Settings</a></li>
       </ul>
     </div>
   </div>
   <div class="rss-link"><a href="feed.xml">rss</a></div>
-  <item>
-    <title>If technology got better, why did everything get worse?</title>
-    <link>https://www.sammystraus.com/#if-technology-got-better-why-did-everything-get-worse</link>
-    <author>sam@Mac (sam)</author>
-    <guid isPermaLink="false">https://www.sammystraus.com/#if-technology-got-better-why-did-everything-get-worse</guid>
-    <pubDate>Thu, 30 Jul 2026 00:00:00 -0400</pubDate>
-
-    <description><![CDATA[<p>
-    I think we all know the answer to this: bad incentives.
-    </p>
-
-    <p>
-    Technology makes systems more productive, but it does not, in fact, make <b>you</b> in particular more productive. The tools that enable computers to be more efficient also enable <b>people</b> to be more efficient at exploiting your time, attention, and wellbeing. I'm talking neural nets babyyy.
-    </p>
-
-    <p>
-    I first noticed the problem in 2018. Or rather, I noticed that <b>I</b> had a problem, and that problem was spendinng 3 hours a day watching starcraft 2 replays and wondering where the time went, and how I managed to stay up til 2am again.
-    </p>
-
-    <p>
-    What's interesting to me is that I didn't have any of these problems until the late 2010s. I had a computer with an internet connection since at least the mid 2000s, and a smartphone with twitter and reddit and the like not long after. It's possible that I've gotten less resiliant over the years, but I have a sneaking suspiscion that it's the computers who changed.
-    </p>
-
-    <p>
-    I can't quite put my finger on it, but I have this sneaking sensation that every time I interact with a system or website, I'm playing this kind of adversarial game, where I'm trying to just go about my day, and maybe read a little article about computers, and they're trying to figure out a way to keep me on their site for just a little bit longer.
-    </p>
-
-    <p>
-    I also have this feeling that as software engineering has moved from a discipline of hobbyists and enthusiasts to leaders who increasingly developed through finance or business-minded tracks, we've increasingly found ourselves with these major tools that we used to love become both extremely bland and extremely profitable.
-    </p>
-
-
-    <p>
-    So what can we do it make it stop?
-    </p>
-    <ol class="org-ol">
-    <li>touch grass. really when the world is like this, i think the best solution is to just leave. it's not easy, especially when the planning is often online, but if you can set it up, I promise that a day in the park playing chess with your friends is better than any amount of time you can spend on the internet.</li>
-    <li>take to the streets. i think that protesting is effective, and more people should do it. if you're willing to take action, it models to others that they can take action.</li>
-    <li>stop coming back to the same machines. I think we all have this gamblers fallacy in us, where if it didn't pay out the first time, but it pays out sometimes, we try the machine again, but it doesn't really work like that. if you're losing money the lesson is to stop putting coins in the machine.</li>
-    </ol>
-
-
-
-
-    <p>
-    editor's note: I've been working on a free [[<a href="https://sprinklz.io">https://sprinklz.io</a>][customizable news reader] ] as a way to take out some of my frustrations with the modern internet. if you don't use this one, I recommend following individual blogs and websites, because it's so much better to just get off these big platforms entirely.
-    </p>
-    ]]></description>
-  </item>
-  <item>
-    <title>Deft version 0.2.0</title>
-    <link>https://www.sammystraus.com/#deft-version-0-2-0</link>
-    <author>sam@Mac (sam)</author>
-    <guid isPermaLink="false">https://www.sammystraus.com/#deft-version-0-2-0</guid>
-    <pubDate>Tue, 16 Jun 2026 00:00:00 -0400</pubDate>
-
-    <description><![CDATA[<p>
-    Now that <a href="https://github.com/sstraust/deft">deft 0.2.0</a> is released, I figure it's a good time to talk about what I built, and why I built it.
-    </p>
-
-    <p>
-    The <i>point</i> of Clojure's everything-is-a-map toolkit is that getters and setters are a waste of time. Clojure was built, in large part, in response to the crappy 2008 Java workflow, where you had to write getters, setters, and builders, and you took on all this bloat that nobody enjoyed.
-    </p>
-
-    <p>
-    The <i>problem</i> is that if you want to represent your data using the built-in defprotocol and defrecord, and you want to define functions that depend on the presence of a certain field, then the only way to <i>encode</i> that information into the protocol is to add getter and setter metohds to it. icky.
-    </p>
-
-    <p>
-    You can also use a combination of protocol + malli schema to represent this, but then when you use it, you need to specify 'this function takes as input something that both implements this protocol <i>and</i> implements this Malli schema'. Also icky.
-    </p>
-
-    <p>
-    What we <i>want</i> is something we can use in the style of defprotocol and defrecord, but gives us all the getters and setters and map-like stuff by default. The key insight is that if a field exists in a record, we get all the other good stuff, so we just need to add support for protocols with required keys.
-    </p>
-
-
-    <p>
-    Deft v0.2.0 adds support for namespaced keys in type and protocol definitions. i.e., you can now do:
-    </p>
-
-    <div class="org-src-container">
-    <pre class="src src-nil">(defp Positioned :required-keys [::pos - ::Point])
-    </pre>
-    </div>
-
-    <p>
-    and 
-    </p>
-    <div class="org-src-container">
-    <pre class="src src-nil">(deft Circle [::location/position radius])
-
-    (&gt;Circle ::location/position [1 2] :radius 12)
-    </pre>
-    </div>
-
-
-    <p>
-    this is useful because you can now define methods that <i>depend on those fields being present</i> i.e.:
-    </p>
-
-
-    <div class="org-src-container">
-    <pre class="src src-nil">(defp Gremlin :extends [location/Positioned])
-
-    (defmethod game-object/get-hitbox ::Gremlin [self]
-    (js/Matter.Bodies.rectangle
-    (get-in self [::location/pos ::location/x])
-    (get-in self [::location/pos ::location/y])
-    15 15))
-    </pre>
-    </div>
-
-
-    <p>
-    Check it out!
-    </p>
-
-    <p>
-    <a href="https://github.com/sstraust/deft">https://github.com/sstraust/deft</a>
-    </p>
-    ]]></description>
-  </item>
   <item>
     <title>How much LLMs is too much LLMs?</title>
     <link>https://www.sammystraus.com/#how-much-llms-is-too-much-llms</link>
@@ -494,8 +369,8 @@
   Ok, I got a little bit lucky, but it wasn't all luck. While I was playing I had a chance to think through some of the strategies, and saw some pitfalls I think others might have missed.
   </p>
   <div id="outline-container-ID-81E51619-D781-40D7-9B49-2A5C61F7D4A0" class="outline-3">
-  <h3 id="ID-81E51619-D781-40D7-9B49-2A5C61F7D4A0"><span class="section-number-3">7.1.</span> Don't guess letters that are already green</h3>
-  <div class="outline-text-3" id="text-7-1">
+  <h3 id="ID-81E51619-D781-40D7-9B49-2A5C61F7D4A0"><span class="section-number-3">5.1.</span> Don't guess letters that are already green</h3>
+  <div class="outline-text-3" id="text-5-1">
   <p>
   Unless you're trying to make your final guess to win the game, you shouldn't guess the same letter in the same place. You already tried that, so doing it again doesn't give you new information.
   </p>
@@ -510,8 +385,8 @@
   </div>
   </div>
   <div id="outline-container-ID-06422413-45DF-498B-9AEB-F8EBA92B5DD3" class="outline-3">
-  <h3 id="ID-06422413-45DF-498B-9AEB-F8EBA92B5DD3"><span class="section-number-3">7.2.</span> When you guess new letters, put them in places they commonly appear</h3>
-  <div class="outline-text-3" id="text-7-2">
+  <h3 id="ID-06422413-45DF-498B-9AEB-F8EBA92B5DD3"><span class="section-number-3">5.2.</span> When you guess new letters, put them in places they commonly appear</h3>
+  <div class="outline-text-3" id="text-5-2">
   <p>
   Just for a moment, think of worlde a little bit like binary search. Your goal is to learn as much information as possible with every guess. If your guess splits the problem space in half (i.e. you eliminate half of possible words if it shows up green, and half of words if it shows up yellow), you learn (on average) the most possible information with every guess.
   </p>
@@ -526,8 +401,8 @@
   </div>
   </div>
   <div id="outline-container-ID-6E6686E5-CA34-435E-9C68-FECDF5EA7227" class="outline-3">
-  <h3 id="ID-6E6686E5-CA34-435E-9C68-FECDF5EA7227"><span class="section-number-3">7.3.</span> Guess common letters first</h3>
-  <div class="outline-text-3" id="text-7-3">
+  <h3 id="ID-6E6686E5-CA34-435E-9C68-FECDF5EA7227"><span class="section-number-3">5.3.</span> Guess common letters first</h3>
+  <div class="outline-text-3" id="text-5-3">
   <p>
   Basically the same logic as above. It's either one of the 5 specific letters you guessed, or it's one of the 21 other letters. You want to guess the 5 that most closely split the problem in half.
   </p>
@@ -538,8 +413,8 @@
   </div>
   </div>
   <div id="outline-container-ID-BC84053E-824F-4654-848D-B381DF4C69CB" class="outline-3">
-  <h3 id="ID-BC84053E-824F-4654-848D-B381DF4C69CB"><span class="section-number-3">7.4.</span> Think through the list of possible words at every step</h3>
-  <div class="outline-text-3" id="text-7-4">
+  <h3 id="ID-BC84053E-824F-4654-848D-B381DF4C69CB"><span class="section-number-3">5.4.</span> Think through the list of possible words at every step</h3>
+  <div class="outline-text-3" id="text-5-4">
   <p>
   Remember, your goal is to "divide in half" with every letter. If you have a sense of/random sample of the words in the space, it's easier to pick the letters/positions that divide that list the most precisely.
   </p>
@@ -599,8 +474,8 @@
   Some people argue that with the power of MMT, we have the money to finance all of our wildest hopes and dreams, if somebody would just have the courage to turn on the money printer. Free college, loan reimbursement, free housing, we could pay for everything with a click of a button, and no negative long-term reprecussions. As long as we don't cause inflation, there really isn't anything to worry about.
   </p>
   <div id="outline-container-ID-8252C9B9-B35B-4580-8233-479C1705BA6D" class="outline-3">
-  <h3 id="ID-8252C9B9-B35B-4580-8233-479C1705BA6D"><span class="section-number-3">9.1.</span> The Big If</h3>
-  <div class="outline-text-3" id="text-9-1">
+  <h3 id="ID-8252C9B9-B35B-4580-8233-479C1705BA6D"><span class="section-number-3">7.1.</span> The Big If</h3>
+  <div class="outline-text-3" id="text-7-1">
   <p>
   The thing is, that's a pretty big if. You can "prove" anything you want if you start with a false assumption. If we could print infinite money, and not cause inflation, that'd be pretty awesome, but is such a thing even possible? How did we get here, and why does anybody believe we can do this?
   </p>
@@ -619,8 +494,8 @@
   </div>
   </div>
   <div id="outline-container-ID-52818742-EBFF-448A-8E31-AD8F84E074E2" class="outline-3">
-  <h3 id="ID-52818742-EBFF-448A-8E31-AD8F84E074E2"><span class="section-number-3">9.2.</span> How We Got Here</h3>
-  <div class="outline-text-3" id="text-9-2">
+  <h3 id="ID-52818742-EBFF-448A-8E31-AD8F84E074E2"><span class="section-number-3">7.2.</span> How We Got Here</h3>
+  <div class="outline-text-3" id="text-7-2">
   <p>
   So if America went out tommorrow, and started printing tons of money, and taking on tons of debt, we'd expect the cost of everything to go way up. We'd expect government bonds to be much less valuable, right? Right?
   </p>
@@ -637,8 +512,8 @@
   </div>
   </div>
   <div id="outline-container-ID-73859BEF-D79B-470A-9A8F-04521A7A175B" class="outline-3">
-  <h3 id="ID-73859BEF-D79B-470A-9A8F-04521A7A175B"><span class="section-number-3">9.3.</span> The United States as a Trustworthy Institution</h3>
-  <div class="outline-text-3" id="text-9-3">
+  <h3 id="ID-73859BEF-D79B-470A-9A8F-04521A7A175B"><span class="section-number-3">7.3.</span> The United States as a Trustworthy Institution</h3>
+  <div class="outline-text-3" id="text-7-3">
   <p>
   Ok, so, we took on a lot of debt before, and it was fine. We printed a truly wild amount of money, and people still trusted us as a stable, reliable institution. Everyone believed that the U.S. government would pay them back, and would pay them back in dollars that held value.
   </p>
@@ -673,8 +548,8 @@
   </div>
   </div>
   <div id="outline-container-ID-AADDCE98-FB55-42CE-B36D-A09F23E5DC16" class="outline-3">
-  <h3 id="ID-AADDCE98-FB55-42CE-B36D-A09F23E5DC16"><span class="section-number-3">9.4.</span> Take From the Rich and Give to the Poor</h3>
-  <div class="outline-text-3" id="text-9-4">
+  <h3 id="ID-AADDCE98-FB55-42CE-B36D-A09F23E5DC16"><span class="section-number-3">7.4.</span> Take From the Rich and Give to the Poor</h3>
+  <div class="outline-text-3" id="text-7-4">
   <p>
   The argument goes something like this:
   </p>
@@ -697,8 +572,8 @@
   </div>
   </div>
   <div id="outline-container-ID-EC7A53E4-5B8D-4119-8CD3-EA779D1A083B" class="outline-3">
-  <h3 id="ID-EC7A53E4-5B8D-4119-8CD3-EA779D1A083B"><span class="section-number-3">9.5.</span> Stimulus and Economic Growth</h3>
-  <div class="outline-text-3" id="text-9-5">
+  <h3 id="ID-EC7A53E4-5B8D-4119-8CD3-EA779D1A083B"><span class="section-number-3">7.5.</span> Stimulus and Economic Growth</h3>
+  <div class="outline-text-3" id="text-7-5">
   <p>
   Ok so there's a real argument here. The idea is – it's ok to print money because we can generate more goods and services. If we spend it wisely – build bridges, improve broadband, we can create jobs for people who were previously out of work. What's more, that new infrastructure and spending will spur even further economic growth.
   </p>
