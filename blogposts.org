@@ -35,6 +35,7 @@ So what can we do it make it stop?
 
 editor's note: I've been working on a free [[https://sprinklz.io][customizable news reader]] as a way to take out some of my frustrations with the modern internet. if you don't use this one, I recommend following individual blogs and websites, because it's so much better to just get off these big platforms entirely.
 
+editors note 2: i haven't yet posted this latest article to my rss xml, because i'm not ready to send notifications for it yet. will add in the coming weeks.
 * Deft version 0.2.0
 :PROPERTIES:
 :CUSTOM_ID: deft-version-0-2-0
