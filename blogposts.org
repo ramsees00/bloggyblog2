@@ -5,6 +5,37 @@
 #+HTML: <div class="rss-link"><a href="feed.xml">rss</a></div>
 # use org-export-blog to export the blog to html and rss
 # and then git push origin master to publish it
+* If technology got better, why did everything get worse?
+:PROPERTIES:
+:CUSTOM_ID: if-technology-got-better-why-did-everything-get-worse
+:RSS_PERMALINK: #if-technology-got-better-why-did-everything-get-worse
+:PUBDATE:  2026-07-30
+:ID:       91AF6B8C-A508-4432-A6A8-BAED1B93D8BC
+:END:
+I think we all know the answer to this: bad incentives.
+
+Technology makes systems more productive, but it does not, in fact, make /you/ in particular more productive. The tools that enable computers to be more efficient also enable /people/ to be more efficient at exploiting your time, attention, and wellbeing. I'm talking neural nets babyyy.
+
+I first noticed the problem in 2018. Or rather, I noticed that /I/ had a problem, and that problem was spendinng 3 hours a day watching starcraft 2 replays and wondering where the time went, and how I managed to stay up til 2am again.
+
+What's interesting to me is that I didn't have any of these problems until the late 2010s. I had a computer with an internet connection since at least the mid 2000s, and a smartphone with twitter and reddit and the like not long after. It's possible that I've gotten less resiliant over the years, but I have a sneaking suspiscion that it's the computers who changed.
+
+I can't quite put my finger on it, but I have this sensation that every time I interact with a system or website, I'm playing this kind of adversarial game, where I'm trying to just go about my day, and maybe read a little article about computers, and they're trying to figure out a way to keep me on their site for just a little bit longer.
+
+I also have this feeling that as software engineering has moved from a discipline of hobbyists and enthusiasts to leaders who increasingly developed through finance or business-minded tracks, we've found ourselves with these major tools that we used to love become both extremely bland and extremely profitable.
+
+
+So what can we do it make it stop?
+1. touch grass. really when the world is like this, i think the best solution is to just leave. it's not easy, especially when the planning is often online, but if you can set it up, I promise that a day in the park playing chess with your friends is better than any amount of time you can spend on the internet.
+2. take to the streets. i think that protesting is effective, and more people should do it. if you're willing to take action, it models to others that they can take action.
+3. stop coming back to the same machines. I think we all have this gamblers fallacy in us, where if it didn't pay out the first time, but it pays out sometimes, we try the machine again, but it doesn't really work like that. if you're losing money the lesson is to stop putting coins in the machine.
+
+
+
+
+editor's note: I've been working on a free [[https://sprinklz.io][customizable news reader]] as a way to take out some of my frustrations with the modern internet. if you don't use this one, I recommend following individual blogs and websites, because it's so much better to just get off these big platforms entirely.
+
+editors note 2: i haven't yet posted this latest article to my rss xml, because i'm not ready to send notifications for it yet. will add in the coming weeks.
 * Deft version 0.2.0
 :PROPERTIES:
 :CUSTOM_ID: deft-version-0-2-0
