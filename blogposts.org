@@ -20,9 +20,9 @@ I first noticed the problem in 2018. Or rather, I noticed that /I/ had a problem
 
 What's interesting to me is that I didn't have any of these problems until the late 2010s. I had a computer with an internet connection since at least the mid 2000s, and a smartphone with twitter and reddit and the like not long after. It's possible that I've gotten less resiliant over the years, but I have a sneaking suspiscion that it's the computers who changed.
 
-I can't quite put my finger on it, but I have this sneaking sensation that every time I interact with a system or website, I'm playing this kind of adversarial game, where I'm trying to just go about my day, and maybe read a little article about computers, and they're trying to figure out a way to keep me on their site for just a little bit longer.
+I can't quite put my finger on it, but I have this sensation that every time I interact with a system or website, I'm playing this kind of adversarial game, where I'm trying to just go about my day, and maybe read a little article about computers, and they're trying to figure out a way to keep me on their site for just a little bit longer.
 
-I also have this feeling that as software engineering has moved from a discipline of hobbyists and enthusiasts to leaders who increasingly developed through finance or business-minded tracks, we've increasingly found ourselves with these major tools that we used to love become both extremely bland and extremely profitable.
+I also have this feeling that as software engineering has moved from a discipline of hobbyists and enthusiasts to leaders who increasingly developed through finance or business-minded tracks, we've found ourselves with these major tools that we used to love become both extremely bland and extremely profitable.
 
 
 So what can we do it make it stop?
