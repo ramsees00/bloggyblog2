@@ -14,9 +14,9 @@
 :END:
 I think we all know the answer to this: bad incentives.
 
-Technology makes systems more productive, but it does not, in fact, make *you* in particular more productive. The tools that enable computers to be more efficient also enable *people* to be more efficient at exploiting your time, attention, and wellbeing. I'm talking neural nets babyyy.
+Technology makes systems more productive, but it does not, in fact, make /you/ in particular more productive. The tools that enable computers to be more efficient also enable /people/ to be more efficient at exploiting your time, attention, and wellbeing. I'm talking neural nets babyyy.
 
-I first noticed the problem in 2018. Or rather, I noticed that *I* had a problem, and that problem was spendinng 3 hours a day watching starcraft 2 replays and wondering where the time went, and how I managed to stay up til 2am again.
+I first noticed the problem in 2018. Or rather, I noticed that /I/ had a problem, and that problem was spendinng 3 hours a day watching starcraft 2 replays and wondering where the time went, and how I managed to stay up til 2am again.
 
 What's interesting to me is that I didn't have any of these problems until the late 2010s. I had a computer with an internet connection since at least the mid 2000s, and a smartphone with twitter and reddit and the like not long after. It's possible that I've gotten less resiliant over the years, but I have a sneaking suspiscion that it's the computers who changed.
 
@@ -33,7 +33,7 @@ So what can we do it make it stop?
 
 
 
-editor's note: I've been working on a free [[https://sprinklz.io][customizable news reader] ] as a way to take out some of my frustrations with the modern internet. if you don't use this one, I recommend following individual blogs and websites, because it's so much better to just get off these big platforms entirely.
+editor's note: I've been working on a free [[https://sprinklz.io][customizable news reader]] as a way to take out some of my frustrations with the modern internet. if you don't use this one, I recommend following individual blogs and websites, because it's so much better to just get off these big platforms entirely.
 
 * Deft version 0.2.0
 :PROPERTIES:
