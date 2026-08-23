@@ -1,10 +1,47 @@
 #+TITLE: Sammy's Blog
 #+RSS_LINK_HOME: https://www.sammystraus.com/
-#+HTML_HEAD: <style> body {width:80%; margin: auto; max-width:38rem}</style>
+#+HTML_HEAD: <style> body {width:80%; margin: auto; max-width:38rem} blockquote { background-color: #f2f2f2; border: 1px solid #e6e6e6; border-radius: 3px; padding: 8pt 12pt; }</style>
 #+OPTIONS:  toc:1
 #+HTML: <div class="rss-link"><a href="feed.xml">rss</a></div>
 # use org-export-blog to export the blog to html and rss
 # and then git push origin master to publish it
+* I'm Unsure if Someone Yoinked my Project Idea
+:PROPERTIES:
+:CUSTOM_ID: i-m-unsure-if-someone-yoinked-my-project-idea
+:RSS_PERMALINK: #i-m-unsure-if-someone-yoinked-my-project-idea
+:PUBDATE:  2026-08-16
+:ID:       88DAAFA1-34C7-458F-86D3-901B079021BD
+:END:
+I applied to give a talk this year at Clojure Conj. After 6 months designing and building a gradual type linter for Clojure, I submitted the following blurb:
+
+#+begin_quote
+A Practical Type Linter for Clojure
+
+Type validation is great, but manually writing annotations is painful. In this talk we explore the idea of a gradual type /linter/ that uses strong inference rules, along with relaxed soundness requirements, to provide useful type warnings without adding annotations or changes to existing code.
+
+We also give an overview of the existing ecosystem of tools, from schema to spec to malli to typedclojure. Complete with live demos!  
+#+end_quote
+
+I also gave speaker notes, explaining the rough outline of adapting Hindley Milner + constraint based typing to serve as a type linter, and enough detail to kind of explain the sauce of how it would function. My talk was rejected from the conference on July 1, and then, 15 days later, the maintainer of clj-kondo (clojure's existing linter) posted this to the Clojurian's slack:
+
+#+ATTR_HTML: :width 600px
+[[./clj-kondo-slack.png]]
+
+And so now, I'm unsure if somebody yoinked my idea.
+
+I generally like to believe in the well-intentionedness of people, and kind of assume the good-heartedness of everyone in the Clojure community, so it's possible that 1 of 3 things happened:
+1. This is completely coincidental. Nobody saw my talk submission, and I just happened to get extremely unlucky.
+2. Someone who is not working on clj-kondo saw my submission, absorbed the ideas, and talked about them in passing. No bad intentions were made by anybody involved, and nobody was aware that they copied this, but still the information somehow flowed through indirectly.
+3. Somebody yoinked my talk submission, or saw my talk and was uh, heavily inspired.
+
+   
+I generally believe in the kindheartedness of everyone involved, and the general spirit of the Clojure community. By default I assume that it was 1, but 2 is still possible even if everyone involved was kindhearted and well intentioned.
+
+What's frustrating though, is that, I don't know, and I don't think I'll ever really figure it out.
+
+I think the whole experience of kind of not knowing, and kind of being just a tiny bit unsure has made me more defensive about sharing my work publicly. It's most likely just a coincedence (after all, it's likely smart people will think of similar ideas), but if I don't talk about it, then at least I can be certain that I just got unlucky.
+
+
 * If technology got better, why did everything get worse?
 :PROPERTIES:
 :CUSTOM_ID: if-technology-got-better-why-did-everything-get-worse
