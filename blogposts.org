@@ -9,10 +9,10 @@
 :PROPERTIES:
 :CUSTOM_ID: i-m-unsure-if-someone-yoinked-my-project-idea
 :RSS_PERMALINK: #i-m-unsure-if-someone-yoinked-my-project-idea
-:PUBDATE:  2026-08-16
 :ID:       88DAAFA1-34C7-458F-86D3-901B079021BD
+:PUBDATE:  2026-08-23
 :END:
-I applied to give a talk this year at Clojure Conj. After 6 months designing and building a gradual type linter for Clojure, I submitted the following blurb:
+I applied to give a talk this year at Clojure Conj. After good bit of work, I submitted the following blurb:
 
 #+begin_quote
 A Practical Type Linter for Clojure
@@ -22,24 +22,28 @@ Type validation is great, but manually writing annotations is painful. In this t
 We also give an overview of the existing ecosystem of tools, from schema to spec to malli to typedclojure. Complete with live demos!  
 #+end_quote
 
-I also gave speaker notes, explaining the rough outline of adapting Hindley Milner + constraint based typing to serve as a type linter, and enough detail to kind of explain the sauce of how it would function. My talk was rejected from the conference on July 1, and then, 15 days later, the maintainer of clj-kondo (clojure's existing linter) posted this to the Clojurian's slack:
+I also gave speaker notes, explaining that I was adapting ideas from Hindley Milner + constraint based typing to serve as the linter. My talk was rejected from the conference on July 1, and then, 15 days later, the maintainer of clj-kondo posted this to the Clojurian's slack:
 
 #+ATTR_HTML: :width 600px
 [[./clj-kondo-slack.png]]
 
 And so now, I'm unsure if somebody yoinked my idea.
 
-I generally like to believe in the well-intentionedness of people, and kind of assume the good-heartedness of everyone in the Clojure community, so it's possible that 1 of 3 things happened:
+I generally like to believe in the well-intentionedness of people, especially everyone in the Clojure community, so it's possible that 1 of 3 things happened:
 1. This is completely coincidental. Nobody saw my talk submission, and I just happened to get extremely unlucky.
-2. Someone who is not working on clj-kondo saw my submission, absorbed the ideas, and talked about them in passing. No bad intentions were made by anybody involved, and nobody was aware that they copied this, but still the information somehow flowed through indirectly.
-3. Somebody yoinked my talk submission, or saw my talk and was uh, heavily inspired.
+2. Someone who is not working on clj-kondo saw my submission, absorbed the ideas, and talked about them in passing. No bad intentions were made by anybody involved, but still the information somehow flowed through indirectly.
+3. Somebody yoinked my talk submission, or saw my talk and was heavily inspired.
 
-   
-I generally believe in the kindheartedness of everyone involved, and the general spirit of the Clojure community. By default I assume that it was 1, but 2 is still possible even if everyone involved was kindhearted and well intentioned.
+
+The good news in all of this is that, by all accounts, borkdude is an overwhelmingly good dude. I don't think he would have yoinked something without attribution, and he is in general welcoming and active at linking to the inspiration for his work.
+
+So that kind of leaves scenario 1 and scenario 2. Based on the timing of it, I really think scenario 2 could have happened through no fault of anyone's, but it's hard to tell, and I don't think anyone can ever really trace sort of the indirect flow of information.
+
 
 What's frustrating though, is that, I don't know, and I don't think I'll ever really figure it out.
 
-I think the whole experience of kind of not knowing, and kind of being just a tiny bit unsure has made me more defensive about sharing my work publicly. It's most likely just a coincedence (after all, it's likely smart people will think of similar ideas), but if I don't talk about it, then at least I can be certain that I just got unlucky.
+
+I think maybe I just feel frustrated that my project got over-shadowed a month or so before I planned to announce it, but, you know, maybe sometimes you just get really unlucky.
 
 
 * If technology got better, why did everything get worse?
