@@ -1,10 +1,62 @@
 #+TITLE: Sammy's Blog
 #+RSS_LINK_HOME: https://www.sammystraus.com/
-#+HTML_HEAD: <style> body {width:80%; margin: auto; max-width:38rem} blockquote { background-color: #f2f2f2; border: 1px solid #e6e6e6; border-radius: 3px; padding: 8pt 12pt; }</style>
+#+HTML_HEAD: <style> body {width:80%; margin: auto; max-width:38rem} blockquote { background-color: #f2f2f2; border: 1px solid #e6e6e6; border-radius: 3px; padding: 8pt 12pt; } [class^="section-number-"]{display:none}</style>
 #+OPTIONS:  toc:1
 #+HTML: <div class="rss-link"><a href="feed.xml">rss</a></div>
 # use org-export-blog to export the blog to html and rss
 # and then git push origin master to publish it
+* Using LLMs to Make the Emacs Web Browser Great Again
+:PROPERTIES:
+:CUSTOM_ID: using-llms-to-make-the-emacs-web-browser-great-again
+:RSS_PERMALINK: #using-llms-to-make-the-emacs-web-browser-great-again
+:PUBDATE:  2026-08-24
+:ID:       3F5C9554-EEBA-4F5D-BD44-1623161F6CD0
+:END:
+When I tell people about the emacs web browser, their first reaction is 'Wait emacs has a web browser?!', followed by, 'yeah... I guess that's kind of a web browser'.
+
+The emacs web browser is designed to render webpages in a terminal-based, textonly environment and, well, it goes about exactly the way you'd expect. It works well on HTML-only, small-content websites, but not so good for anything else.
+
+The problem is that emacs is primarily a text-only editor, but the modern internet is very much /not/ plain-text based. /Simple/ HTML, designed in the /simple/ style of the 1990s has a clear translation into plain text, but /modern/ UI design, with it's visual styling, heavy javascript, and just, overall chaos, not so much.
+
+
+The emacs web browser would be great, if only we could find a way to go back in time...
+
+
+Ok, so the plan is simple. We take modern webpages, rewrite their source code into old-school simply-styled HTML, and then pipe it through to the emacs web browser. We just need to find a way to do this easily and at scale.
+
+So um, you didn't forget about LLMs did you? It's nice to be using them in a way that will hopefully /reduce/ the amount of spam content in the world.
+
+Basically, the plan is we write a program that:
+- Opens a webpage in firefox
+- Loads the page and runs all the javascript
+- Asks an LLM to generate a *re-usable program* that transforms the current-page's contents into simplified text
+- Inject the generated javascript into the firefox browser
+- Grab the new page source and forward it to emacs web browser.
+
+Yeah, and so, I've been using it, and it runs very well. Like realistically I can use this on many webpages where eww (emacs web wowser) did not run previously.
+
+Below are some examples of before and after:
+
+The docs for Clojure's mapcat
+#+CAPTION: (before) Using eww-readable
+#+ATTR_HTML: :width 400px
+[[file:./images/ClojureDocs_before.png]]
+
+#+CAPTION: (after) Using simpleweb-simplify-page
+#+ATTR_HTML: :width 400px
+[[file:./images/ClojureDocs_after.png]]
+
+
+It takes a moment to generate the initial modifier program, but once it's generated, it runs pretty fast, and during day-to-day browsing, it mostly doesn't need any extra LLM calls. I have been using it myself and enjoying the experience.
+
+
+The source code lives here: https://github.com/sstraust/simpleweb
+
+and is open-source, and free to install, etc., etc.
+
+
+
+
 * I'm Unsure if Someone Yoinked my Project Idea
 :PROPERTIES:
 :CUSTOM_ID: i-m-unsure-if-someone-yoinked-my-project-idea

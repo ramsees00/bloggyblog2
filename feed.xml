@@ -14,8 +14,8 @@
   <link>https://www.sammystraus.com/</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Sun, 23 Aug 2026 13:48:16 -0400</pubDate>
-  <lastBuildDate>Sun, 23 Aug 2026 13:48:16 -0400</lastBuildDate>
+  <pubDate>Mon, 24 Aug 2026 12:11:51 -0400</pubDate>
+  <lastBuildDate>Mon, 24 Aug 2026 12:11:51 -0400</lastBuildDate>
   <generator>Emacs 30.2 Org-mode 9.7.11</generator>
   <webMaster>sam@Mac (sam)</webMaster>
   <image>
@@ -28,31 +28,116 @@
     <h2>Table of Contents</h2>
     <div id="text-table-of-contents" role="doc-toc">
       <ul>
-	<li><a href="#i-m-unsure-if-someone-yoinked-my-project-idea">1. I'm Unsure if Someone Yoinked my Project Idea</a></li>
-	<li><a href="#if-technology-got-better-why-did-everything-get-worse">2. If technology got better, why did everything get worse?</a></li>
-	<li><a href="#deft-version-0-2-0">3. Deft version 0.2.0</a></li>
-	<li><a href="#how-much-llms-is-too-much-llms">4. How much LLMs is too much LLMs?</a></li>
-	<li><a href="#building-chess-in-about-350-lines-of-clojure">5. Building Chess in about 350 lines of Clojure</a></li>
-	<li><a href="#announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript">6. Announcing Deft: A class and interface system for Clojure and ClojureScript</a></li>
-	<li><a href="#my-blog-is-now-on-rss">7. My Blog is Now on RSS</a></li>
-	<li><a href="#how-to-win-at-wordle">8. How to Win at Wordle</a></li>
-	<li><a href="#the-power-of-habit-book-review-pt-1">9. The Power Of Habit (Book Review Pt 1)</a></li>
-	<li><a href="#modern-monetary-theory-and-you">10. Modern Monetary Theory and You</a></li>
-	<li><a href="#the-perfect-camera">11. The Perfect Camera</a></li>
-	<li><a href="#camera-lenses-what-s-in-my-bag">12. Camera Lenses: What's in My Bag</a></li>
-	<li><a href="#why-many-primary-forecasts-are-wrong">13. Why Many Primary Forecasts are Wrong</a></li>
-	<li><a href="#the-wonky-math-behind-the-democratic-primary">14. The Wonky Math behind the Democratic Primary</a></li>
-	<li><a href="#what-s-going-on-with-the-impeachment">15. What's Going on With The Impeachment</a></li>
-	<li><a href="#treating-cancer-with-chemo-part-3">16. Treating Cancer with Chemo (Part 3)</a></li>
-	<li><a href="#treating-cancer-with-chemo-part-2">17. Treating Cancer with Chemo (Part 2)</a></li>
-	<li><a href="#treating-cancer-with-chemo-part-1">18. Treating Cancer with Chemo (Part 1)</a></li>
-	<li><a href="#the-importance-of-doing-nothing">19. The Importance of Doing Nothing</a></li>
-	<li><a href="#why-i-support-citizens-united">20. Why I Support Citizens United</a></li>
-	<li><a href="#camera-settings">21. Camera Settings</a></li>
+	<li><a href="#using-llms-to-make-the-emacs-web-browser-great-again">1. Using LLMs to Make the Emacs Web Browser Great Again</a></li>
+	<li><a href="#i-m-unsure-if-someone-yoinked-my-project-idea">2. I'm Unsure if Someone Yoinked my Project Idea</a></li>
+	<li><a href="#if-technology-got-better-why-did-everything-get-worse">3. If technology got better, why did everything get worse?</a></li>
+	<li><a href="#deft-version-0-2-0">4. Deft version 0.2.0</a></li>
+	<li><a href="#how-much-llms-is-too-much-llms">5. How much LLMs is too much LLMs?</a></li>
+	<li><a href="#building-chess-in-about-350-lines-of-clojure">6. Building Chess in about 350 lines of Clojure</a></li>
+	<li><a href="#announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript">7. Announcing Deft: A class and interface system for Clojure and ClojureScript</a></li>
+	<li><a href="#my-blog-is-now-on-rss">8. My Blog is Now on RSS</a></li>
+	<li><a href="#how-to-win-at-wordle">9. How to Win at Wordle</a></li>
+	<li><a href="#the-power-of-habit-book-review-pt-1">10. The Power Of Habit (Book Review Pt 1)</a></li>
+	<li><a href="#modern-monetary-theory-and-you">11. Modern Monetary Theory and You</a></li>
+	<li><a href="#the-perfect-camera">12. The Perfect Camera</a></li>
+	<li><a href="#camera-lenses-what-s-in-my-bag">13. Camera Lenses: What's in My Bag</a></li>
+	<li><a href="#why-many-primary-forecasts-are-wrong">14. Why Many Primary Forecasts are Wrong</a></li>
+	<li><a href="#the-wonky-math-behind-the-democratic-primary">15. The Wonky Math behind the Democratic Primary</a></li>
+	<li><a href="#what-s-going-on-with-the-impeachment">16. What's Going on With The Impeachment</a></li>
+	<li><a href="#treating-cancer-with-chemo-part-3">17. Treating Cancer with Chemo (Part 3)</a></li>
+	<li><a href="#treating-cancer-with-chemo-part-2">18. Treating Cancer with Chemo (Part 2)</a></li>
+	<li><a href="#treating-cancer-with-chemo-part-1">19. Treating Cancer with Chemo (Part 1)</a></li>
+	<li><a href="#the-importance-of-doing-nothing">20. The Importance of Doing Nothing</a></li>
+	<li><a href="#why-i-support-citizens-united">21. Why I Support Citizens United</a></li>
+	<li><a href="#camera-settings">22. Camera Settings</a></li>
       </ul>
     </div>
   </div>
   <div class="rss-link"><a href="feed.xml">rss</a></div>
+  <item>
+    <title>Using LLMs to Make the Emacs Web Browser Great Again</title>
+    <link>https://www.sammystraus.com/#using-llms-to-make-the-emacs-web-browser-great-again</link>
+    <author>sam@Mac (sam)</author>
+    <guid isPermaLink="false">https://www.sammystraus.com/#using-llms-to-make-the-emacs-web-browser-great-again</guid>
+    <pubDate>Mon, 24 Aug 2026 00:00:00 -0400</pubDate>
+
+    <description><![CDATA[<p>
+    When I tell people about the emacs web browser, their first reaction is 'Wait emacs has a web browser?!', followed by, 'yeah... I guess that's kind of a web browser'.
+    </p>
+
+    <p>
+    The emacs web browser is designed to render webpages in a terminal-based, textonly environment and, well, it goes about exactly the way you'd expect. It works well on HTML-only, small-content websites, but not so good for anything else.
+    </p>
+
+    <p>
+    The problem is that emacs is primarily a text-only editor, but the modern internet is very much <i>not</i> plain-text based. <i>Simple</i> HTML, designed in the <i>simple</i> style of the 1990s has a clear translation into plain text, but <i>modern</i> UI design, with it's visual styling, heavy javascript, and just, overall chaos, not so much.
+    </p>
+
+
+    <p>
+    The emacs web browser would be great, if only we could find a way to go back in time...
+    </p>
+
+
+    <p>
+    Ok, so the plan is simple. We take modern webpages, rewrite their source code into old-school simply-styled HTML, and then pipe it through to the emacs web browser. We just need to find a way to do this easily and at scale.
+    </p>
+
+    <p>
+    So um, you didn't forget about LLMs did you? It's nice to be using them in a way that will hopefully <i>reduce</i> the amount of spam content in the world.
+    </p>
+
+    <p>
+    Basically, the plan is we write a program that:
+    </p>
+    <ul class="org-ul">
+    <li>Opens a webpage in firefox</li>
+    <li>Loads the page and runs all the javascript</li>
+    <li>Asks an LLM to generate a <b>re-usable program</b> that transforms the current-page's contents into simplified text</li>
+    <li>Inject the generated javascript into the firefox browser</li>
+    <li>Grab the new page source and forward it to emacs web browser.</li>
+    </ul>
+
+    <p>
+    Yeah, and so, I've been using it, and it runs very well. Like realistically I can use this on many webpages where eww (emacs web wowser) did not run previously.
+    </p>
+
+    <p>
+    Below are some examples of before and after:
+    </p>
+
+    <p>
+    The docs for Clojure's mapcat
+    </p>
+
+    <div id="org0d4e32f" class="figure">
+    <p><img src="./images/ClojureDocs_before.png" alt="ClojureDocs_before.png" width="400px" />
+    </p>
+    <p><span class="figure-number">Figure 1: </span>(before) Using eww-readable</p>
+    </div>
+
+
+    <div id="org8aa92bc" class="figure">
+    <p><img src="./images/ClojureDocs_after.png" alt="ClojureDocs_after.png" width="400px" />
+    </p>
+    <p><span class="figure-number">Figure 2: </span>(after) Using simpleweb-simplify-page</p>
+    </div>
+
+
+    <p>
+    It takes a moment to generate the initial modifier program, but once it's generated, it runs pretty fast, and during day-to-day browsing, it mostly doesn't need any extra LLM calls. I have been using it myself and enjoying the experience.
+    </p>
+
+
+    <p>
+    The source code lives here: <a href="https://github.com/sstraust/simpleweb">https://github.com/sstraust/simpleweb</a>
+    </p>
+
+    <p>
+    and is open-source, and free to install, etc., etc.
+    </p>
+    ]]></description>
+  </item>
   <item>
     <title>I'm Unsure if Someone Yoinked my Project Idea</title>
     <link>https://www.sammystraus.com/#i-m-unsure-if-someone-yoinked-my-project-idea</link>
@@ -83,7 +168,7 @@
     </p>
 
 
-    <div id="orgec9c654" class="figure">
+    <div id="org0772945" class="figure">
     <p><img src="./clj-kondo-slack.png" alt="clj-kondo-slack.png" width="600px" />
     </p>
     </div>
@@ -567,8 +652,8 @@
   Ok, I got a little bit lucky, but it wasn't all luck. While I was playing I had a chance to think through some of the strategies, and saw some pitfalls I think others might have missed.
   </p>
   <div id="outline-container-ID-81E51619-D781-40D7-9B49-2A5C61F7D4A0" class="outline-3">
-  <h3 id="ID-81E51619-D781-40D7-9B49-2A5C61F7D4A0"><span class="section-number-3">8.1.</span> Don't guess letters that are already green</h3>
-  <div class="outline-text-3" id="text-8-1">
+  <h3 id="ID-81E51619-D781-40D7-9B49-2A5C61F7D4A0"><span class="section-number-3">9.1.</span> Don't guess letters that are already green</h3>
+  <div class="outline-text-3" id="text-9-1">
   <p>
   Unless you're trying to make your final guess to win the game, you shouldn't guess the same letter in the same place. You already tried that, so doing it again doesn't give you new information.
   </p>
@@ -583,8 +668,8 @@
   </div>
   </div>
   <div id="outline-container-ID-06422413-45DF-498B-9AEB-F8EBA92B5DD3" class="outline-3">
-  <h3 id="ID-06422413-45DF-498B-9AEB-F8EBA92B5DD3"><span class="section-number-3">8.2.</span> When you guess new letters, put them in places they commonly appear</h3>
-  <div class="outline-text-3" id="text-8-2">
+  <h3 id="ID-06422413-45DF-498B-9AEB-F8EBA92B5DD3"><span class="section-number-3">9.2.</span> When you guess new letters, put them in places they commonly appear</h3>
+  <div class="outline-text-3" id="text-9-2">
   <p>
   Just for a moment, think of worlde a little bit like binary search. Your goal is to learn as much information as possible with every guess. If your guess splits the problem space in half (i.e. you eliminate half of possible words if it shows up green, and half of words if it shows up yellow), you learn (on average) the most possible information with every guess.
   </p>
@@ -599,8 +684,8 @@
   </div>
   </div>
   <div id="outline-container-ID-6E6686E5-CA34-435E-9C68-FECDF5EA7227" class="outline-3">
-  <h3 id="ID-6E6686E5-CA34-435E-9C68-FECDF5EA7227"><span class="section-number-3">8.3.</span> Guess common letters first</h3>
-  <div class="outline-text-3" id="text-8-3">
+  <h3 id="ID-6E6686E5-CA34-435E-9C68-FECDF5EA7227"><span class="section-number-3">9.3.</span> Guess common letters first</h3>
+  <div class="outline-text-3" id="text-9-3">
   <p>
   Basically the same logic as above. It's either one of the 5 specific letters you guessed, or it's one of the 21 other letters. You want to guess the 5 that most closely split the problem in half.
   </p>
@@ -611,8 +696,8 @@
   </div>
   </div>
   <div id="outline-container-ID-BC84053E-824F-4654-848D-B381DF4C69CB" class="outline-3">
-  <h3 id="ID-BC84053E-824F-4654-848D-B381DF4C69CB"><span class="section-number-3">8.4.</span> Think through the list of possible words at every step</h3>
-  <div class="outline-text-3" id="text-8-4">
+  <h3 id="ID-BC84053E-824F-4654-848D-B381DF4C69CB"><span class="section-number-3">9.4.</span> Think through the list of possible words at every step</h3>
+  <div class="outline-text-3" id="text-9-4">
   <p>
   Remember, your goal is to "divide in half" with every letter. If you have a sense of/random sample of the words in the space, it's easier to pick the letters/positions that divide that list the most precisely.
   </p>
@@ -672,8 +757,8 @@
   Some people argue that with the power of MMT, we have the money to finance all of our wildest hopes and dreams, if somebody would just have the courage to turn on the money printer. Free college, loan reimbursement, free housing, we could pay for everything with a click of a button, and no negative long-term reprecussions. As long as we don't cause inflation, there really isn't anything to worry about.
   </p>
   <div id="outline-container-ID-8252C9B9-B35B-4580-8233-479C1705BA6D" class="outline-3">
-  <h3 id="ID-8252C9B9-B35B-4580-8233-479C1705BA6D"><span class="section-number-3">10.1.</span> The Big If</h3>
-  <div class="outline-text-3" id="text-10-1">
+  <h3 id="ID-8252C9B9-B35B-4580-8233-479C1705BA6D"><span class="section-number-3">11.1.</span> The Big If</h3>
+  <div class="outline-text-3" id="text-11-1">
   <p>
   The thing is, that's a pretty big if. You can "prove" anything you want if you start with a false assumption. If we could print infinite money, and not cause inflation, that'd be pretty awesome, but is such a thing even possible? How did we get here, and why does anybody believe we can do this?
   </p>
@@ -692,8 +777,8 @@
   </div>
   </div>
   <div id="outline-container-ID-52818742-EBFF-448A-8E31-AD8F84E074E2" class="outline-3">
-  <h3 id="ID-52818742-EBFF-448A-8E31-AD8F84E074E2"><span class="section-number-3">10.2.</span> How We Got Here</h3>
-  <div class="outline-text-3" id="text-10-2">
+  <h3 id="ID-52818742-EBFF-448A-8E31-AD8F84E074E2"><span class="section-number-3">11.2.</span> How We Got Here</h3>
+  <div class="outline-text-3" id="text-11-2">
   <p>
   So if America went out tommorrow, and started printing tons of money, and taking on tons of debt, we'd expect the cost of everything to go way up. We'd expect government bonds to be much less valuable, right? Right?
   </p>
@@ -710,8 +795,8 @@
   </div>
   </div>
   <div id="outline-container-ID-73859BEF-D79B-470A-9A8F-04521A7A175B" class="outline-3">
-  <h3 id="ID-73859BEF-D79B-470A-9A8F-04521A7A175B"><span class="section-number-3">10.3.</span> The United States as a Trustworthy Institution</h3>
-  <div class="outline-text-3" id="text-10-3">
+  <h3 id="ID-73859BEF-D79B-470A-9A8F-04521A7A175B"><span class="section-number-3">11.3.</span> The United States as a Trustworthy Institution</h3>
+  <div class="outline-text-3" id="text-11-3">
   <p>
   Ok, so, we took on a lot of debt before, and it was fine. We printed a truly wild amount of money, and people still trusted us as a stable, reliable institution. Everyone believed that the U.S. government would pay them back, and would pay them back in dollars that held value.
   </p>
@@ -746,8 +831,8 @@
   </div>
   </div>
   <div id="outline-container-ID-AADDCE98-FB55-42CE-B36D-A09F23E5DC16" class="outline-3">
-  <h3 id="ID-AADDCE98-FB55-42CE-B36D-A09F23E5DC16"><span class="section-number-3">10.4.</span> Take From the Rich and Give to the Poor</h3>
-  <div class="outline-text-3" id="text-10-4">
+  <h3 id="ID-AADDCE98-FB55-42CE-B36D-A09F23E5DC16"><span class="section-number-3">11.4.</span> Take From the Rich and Give to the Poor</h3>
+  <div class="outline-text-3" id="text-11-4">
   <p>
   The argument goes something like this:
   </p>
@@ -770,8 +855,8 @@
   </div>
   </div>
   <div id="outline-container-ID-EC7A53E4-5B8D-4119-8CD3-EA779D1A083B" class="outline-3">
-  <h3 id="ID-EC7A53E4-5B8D-4119-8CD3-EA779D1A083B"><span class="section-number-3">10.5.</span> Stimulus and Economic Growth</h3>
-  <div class="outline-text-3" id="text-10-5">
+  <h3 id="ID-EC7A53E4-5B8D-4119-8CD3-EA779D1A083B"><span class="section-number-3">11.5.</span> Stimulus and Economic Growth</h3>
+  <div class="outline-text-3" id="text-11-5">
   <p>
   Ok so there's a real argument here. The idea is – it's ok to print money because we can generate more goods and services. If we spend it wisely – build bridges, improve broadband, we can create jobs for people who were previously out of work. What's more, that new infrastructure and spending will spur even further economic growth.
   </p>
