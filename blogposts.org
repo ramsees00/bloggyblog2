@@ -5,6 +5,34 @@
 #+HTML: <div class="rss-link"><a href="feed.xml">rss</a></div>
 # use org-export-blog to export the blog to html and rss
 # and then git push origin master to publish it
+* I posted to HN, and then my website was flooded with AI BOT traffic
+:PROPERTIES:
+:CUSTOM_ID: i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic
+:RSS_PERMALINK: #i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic
+:PUBDATE:  2026-10-12
+:ID:       BA7BD2CA-26FC-4664-A6EA-7E4D3D200425
+:END:
+For the past few years, I've been working on [[https://sprinklz.io][sprinklz.io]], a customizable feed reader that can, among other things, deprioritize certain topics from your news feed.
+
+A few weeks ago, I [[https://news.ycombinator.com/item?id=49660482][posted it to HN]], and it got a hundred or so upvotes, nice! It seems like people are really tired of hearing about LLMs, and they enjoyed being able to deprioritize them from their feed. It was a good demo of why a tool like this is so useful. Everything was looking up, and then...
+
+My website got slow. Like, really, painfully slow. At first I chalked it up to the extra attention of a suddenly popular post. Like any developer I both celebrated, and vowed to make my website more resiliant in the future. Strangely though, the slowness continued, and even started to get worse /several days after/ my post went live, and the metrics I did log did not make sense. Like, you know, a good handful of genuinely active, logged-in users, and a sever exhibiting exhorbatantly high load.
+
+
+So I took a look at some data. I added top-level logging for every endpoint (how many times was a request made to each url path), and I found that a majority of the requests did not even make an attempt to fetch news articles! For reference, my website is built as a single-page-application, and what this means is that a majority of the requests did not even run the javascript necessary to render the page (!).
+
+Digging further, I looked at aggregate NGINX logs to find abusers, and, you're never going to believe this, but it turns out that nearly half of our traffic was coming from one /specific/ user. I won't name names, but I looked them up, and they describe themselves as a service that listens for changes to a website, and then summarizes them into an AI slop news letter. And by 'listens to changes' I mean query our website many many times per-minute. Blocked.
+
+Several of the others were your standard known crawlers, and kindly identified themselves as such. Claude bot, OpenAI bot, google's search indexer, and several others. I even picked up a few vulnerability scanners along the way. At least, somebody is trying to access -/wp-content/phpinfo.php (my website is not a wordpress site). I added robots.txt to discourage most of the AI scanners, but allow google-bot and other search-related traffic, and asked claude to query all the vulnerability paths and mimic the scanners to make sure I wasn't leaking anything. I also added reasonable rate limits, etc., etc.
+
+The most important lesson though, is that it's time to make my website faster. I want to be the website that /can/ day handle xxx QPS of real traffic, and it should scale better than it did, even under heavy load. Inspired by this encounter, I've made quite a few improvements to the underlying infrastructure over the past few weeks, and these should result in pretty substantial performance gains for all users.
+
+
+
+P.S. if you'd like to check it out, the website is fully free, and available at [[here][https://sprinklz.io]]
+
+The TLDR is that it lets you define your own customizations, /in addition/ to things like the points totals from hacker news. You can use it to filter out topics, like AI or LLMs, but the topics are completely arbitrary and you can program your own customizations.
+
 * Using LLMs to Make the Emacs Web Browser Great Again
 :PROPERTIES:
 :CUSTOM_ID: using-llms-to-make-the-emacs-web-browser-great-again
