@@ -14,10 +14,10 @@
   <link>https://www.sammystraus.com/</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Tue, 29 Sep 2026 09:12:44 -0400</pubDate>
-  <lastBuildDate>Tue, 29 Sep 2026 09:12:44 -0400</lastBuildDate>
+  <pubDate>Mon, 12 Oct 2026 22:11:33 -0400</pubDate>
+  <lastBuildDate>Mon, 12 Oct 2026 22:11:33 -0400</lastBuildDate>
   <generator>Emacs 30.2 Org-mode 9.7.11</generator>
-  <webMaster>sam@sams-MacBook-Pro.local (sam)</webMaster>
+  <webMaster>sam@Mac (sam)</webMaster>
   <image>
     <url>https://orgmode.org/img/org-mode-unicorn-logo.png</url>
     <title>Sammy's Blog</title>
@@ -28,35 +28,83 @@
     <h2>Table of Contents</h2>
     <div id="text-table-of-contents" role="doc-toc">
       <ul>
-	<li><a href="#using-llms-to-make-the-emacs-web-browser-great-again">1. Using LLMs to Make the Emacs Web Browser Great Again</a></li>
-	<li><a href="#if-technology-got-better-why-did-everything-get-worse">2. If technology got better, why did everything get worse?</a></li>
-	<li><a href="#deft-version-0-2-0">3. Deft version 0.2.0</a></li>
-	<li><a href="#how-much-llms-is-too-much-llms">4. How much LLMs is too much LLMs?</a></li>
-	<li><a href="#building-chess-in-about-350-lines-of-clojure">5. Building Chess in about 350 lines of Clojure</a></li>
-	<li><a href="#announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript">6. Announcing Deft: A class and interface system for Clojure and ClojureScript</a></li>
-	<li><a href="#my-blog-is-now-on-rss">7. My Blog is Now on RSS</a></li>
-	<li><a href="#how-to-win-at-wordle">8. How to Win at Wordle</a></li>
-	<li><a href="#the-power-of-habit-book-review-pt-1">9. The Power Of Habit (Book Review Pt 1)</a></li>
-	<li><a href="#modern-monetary-theory-and-you">10. Modern Monetary Theory and You</a></li>
-	<li><a href="#the-perfect-camera">11. The Perfect Camera</a></li>
-	<li><a href="#camera-lenses-what-s-in-my-bag">12. Camera Lenses: What's in My Bag</a></li>
-	<li><a href="#why-many-primary-forecasts-are-wrong">13. Why Many Primary Forecasts are Wrong</a></li>
-	<li><a href="#the-wonky-math-behind-the-democratic-primary">14. The Wonky Math behind the Democratic Primary</a></li>
-	<li><a href="#what-s-going-on-with-the-impeachment">15. What's Going on With The Impeachment</a></li>
-	<li><a href="#treating-cancer-with-chemo-part-3">16. Treating Cancer with Chemo (Part 3)</a></li>
-	<li><a href="#treating-cancer-with-chemo-part-2">17. Treating Cancer with Chemo (Part 2)</a></li>
-	<li><a href="#treating-cancer-with-chemo-part-1">18. Treating Cancer with Chemo (Part 1)</a></li>
-	<li><a href="#the-importance-of-doing-nothing">19. The Importance of Doing Nothing</a></li>
-	<li><a href="#why-i-support-citizens-united">20. Why I Support Citizens United</a></li>
-	<li><a href="#camera-settings">21. Camera Settings</a></li>
+	<li><a href="#i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic">1. I posted to HN, and then my website was flooded with AI BOT traffic</a></li>
+	<li><a href="#using-llms-to-make-the-emacs-web-browser-great-again">2. Using LLMs to Make the Emacs Web Browser Great Again</a></li>
+	<li><a href="#if-technology-got-better-why-did-everything-get-worse">3. If technology got better, why did everything get worse?</a></li>
+	<li><a href="#deft-version-0-2-0">4. Deft version 0.2.0</a></li>
+	<li><a href="#how-much-llms-is-too-much-llms">5. How much LLMs is too much LLMs?</a></li>
+	<li><a href="#building-chess-in-about-350-lines-of-clojure">6. Building Chess in about 350 lines of Clojure</a></li>
+	<li><a href="#announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript">7. Announcing Deft: A class and interface system for Clojure and ClojureScript</a></li>
+	<li><a href="#my-blog-is-now-on-rss">8. My Blog is Now on RSS</a></li>
+	<li><a href="#how-to-win-at-wordle">9. How to Win at Wordle</a></li>
+	<li><a href="#the-power-of-habit-book-review-pt-1">10. The Power Of Habit (Book Review Pt 1)</a></li>
+	<li><a href="#modern-monetary-theory-and-you">11. Modern Monetary Theory and You</a></li>
+	<li><a href="#the-perfect-camera">12. The Perfect Camera</a></li>
+	<li><a href="#camera-lenses-what-s-in-my-bag">13. Camera Lenses: What's in My Bag</a></li>
+	<li><a href="#why-many-primary-forecasts-are-wrong">14. Why Many Primary Forecasts are Wrong</a></li>
+	<li><a href="#the-wonky-math-behind-the-democratic-primary">15. The Wonky Math behind the Democratic Primary</a></li>
+	<li><a href="#what-s-going-on-with-the-impeachment">16. What's Going on With The Impeachment</a></li>
+	<li><a href="#treating-cancer-with-chemo-part-3">17. Treating Cancer with Chemo (Part 3)</a></li>
+	<li><a href="#treating-cancer-with-chemo-part-2">18. Treating Cancer with Chemo (Part 2)</a></li>
+	<li><a href="#treating-cancer-with-chemo-part-1">19. Treating Cancer with Chemo (Part 1)</a></li>
+	<li><a href="#the-importance-of-doing-nothing">20. The Importance of Doing Nothing</a></li>
+	<li><a href="#why-i-support-citizens-united">21. Why I Support Citizens United</a></li>
+	<li><a href="#camera-settings">22. Camera Settings</a></li>
       </ul>
     </div>
   </div>
   <div class="rss-link"><a href="feed.xml">rss</a></div>
   <item>
+    <title>I posted to HN, and then my website was flooded with AI BOT traffic</title>
+    <link>https://www.sammystraus.com/#i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic</link>
+    <author>sam@Mac (sam)</author>
+    <guid isPermaLink="false">https://www.sammystraus.com/#i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic</guid>
+    <pubDate>Mon, 12 Oct 2026 00:00:00 -0400</pubDate>
+
+    <description><![CDATA[<p>
+    For the past few years, I've been working on <a href="https://sprinklz.io">sprinklz.io</a>, a customizable feed reader that can, among other things, deprioritize certain topics from your news feed.
+    </p>
+
+    <p>
+    A month ago, I <a href="https://news.ycombinator.com/item?id=49660482">posted it to HN</a>, and it got a hundred or so upvotes, nice! It seems like people are really tired of hearing about LLMs, and they enjoyed being able to deprioritize them from their feed. It was a good demo of why a tool like this is so useful. Everything was looking up, and then...
+    </p>
+
+    <p>
+    My website got slow. Like, really, painfully slow. At first I chalked it up to the extra attention of a suddenly popular post. Like any developer I both celebrated, and vowed to make my website more resiliant in the future. Strangely though, the slowness continued, and even started to get worse <i>several days after</i> my post went live, and the metrics I did log did not make sense. Like, you know, a good handful of genuinely active, logged-in users, and a sever exhibiting exhorbatantly high load.
+    </p>
+
+
+    <p>
+    So I took a look at some data. I added top-level logging for every endpoint (how many times was a request made to each url path), and I found that a majority of the requests did not even make an attempt to fetch news articles! For reference, my website is built as a single-page-application, and what this means is that a majority of the requests did not even run the javascript necessary to render the page (!).
+    </p>
+
+    <p>
+    Digging further, I looked at aggregate NGINX logs to find abusers, and, you're never going to believe this, but it turns out that nearly half of our traffic was coming from one <i>specific</i> user. I won't name names, but I looked them up, and they describe themselves as a service that listens for changes to a website, and then summarizes them into an AI slop news letter. And by 'listens to changes' I mean query our website many many times per-minute. Blocked.
+    </p>
+
+    <p>
+    Several of the others were your standard known crawlers, and kindly identified themselves as such. Claude bot, OpenAI bot, google's search indexer, and several others. I even picked up a few vulnerability scanners along the way. At least, somebody is trying to access -/wp-content/phpinfo.php (my website is not a wordpress site). I added robots.txt to discourage most of the AI scanners, but allow google-bot and other search-related traffic, and asked claude to query all the vulnerability paths and mimic the scanners to make sure I wasn't leaking anything. I also added reasonable rate limits, etc., etc.
+    </p>
+
+    <p>
+    The most important lesson though, is that it's time to make my website faster. I want to be the website that <i>can</i> day handle xxx QPS of real traffic, and it should scale better than it did, even under heavy load. Inspired by this encounter, I've made quite a few improvements to the underlying infrastructure over the past few weeks, and these should result in pretty substantial performance gains for all users.
+    </p>
+
+
+
+    <p>
+    P.S. if you'd like to check it out, the website is fully free, and available <a href="https://sprinklz.io">here</a>
+    </p>
+
+    <p>
+    The TLDR is that it lets you define your own customizations, <i>in addition</i> to things like the points totals from hacker news. You can use it to filter out topics, like AI or LLMs, but the topics are completely arbitrary and you can program your own customizations.
+    </p>
+    ]]></description>
+  </item>
+  <item>
     <title>Using LLMs to Make the Emacs Web Browser Great Again</title>
     <link>https://www.sammystraus.com/#using-llms-to-make-the-emacs-web-browser-great-again</link>
-    <author>sam@sams-MacBook-Pro.local (sam)</author>
+    <author>sam@Mac (sam)</author>
     <guid isPermaLink="false">https://www.sammystraus.com/#using-llms-to-make-the-emacs-web-browser-great-again</guid>
     <pubDate>Mon, 24 Aug 2026 00:00:00 -0400</pubDate>
 
@@ -109,14 +157,14 @@
     The docs for Clojure's mapcat
     </p>
 
-    <div id="org4ce85f3" class="figure">
+    <div id="org11499b2" class="figure">
     <p><img src="./images/ClojureDocs_before.png" alt="ClojureDocs_before.png" width="400px" />
     </p>
     <p><span class="figure-number">Figure 1: </span>(before) Using eww-readable</p>
     </div>
 
 
-    <div id="orge513f20" class="figure">
+    <div id="org6437a94" class="figure">
     <p><img src="./images/ClojureDocs_after.png" alt="ClojureDocs_after.png" width="400px" />
     </p>
     <p><span class="figure-number">Figure 2: </span>(after) Using simpleweb-simplify-page</p>
@@ -140,7 +188,7 @@
   <item>
     <title>If technology got better, why did everything get worse?</title>
     <link>https://www.sammystraus.com/#if-technology-got-better-why-did-everything-get-worse</link>
-    <author>sam@sams-MacBook-Pro.local (sam)</author>
+    <author>sam@Mac (sam)</author>
     <guid isPermaLink="false">https://www.sammystraus.com/#if-technology-got-better-why-did-everything-get-worse</guid>
     <pubDate>Thu, 30 Jul 2026 00:00:00 -0400</pubDate>
 
@@ -193,7 +241,7 @@
   <item>
     <title>Deft version 0.2.0</title>
     <link>https://www.sammystraus.com/#deft-version-0-2-0</link>
-    <author>sam@sams-MacBook-Pro.local (sam)</author>
+    <author>sam@Mac (sam)</author>
     <guid isPermaLink="false">https://www.sammystraus.com/#deft-version-0-2-0</guid>
     <pubDate>Tue, 16 Jun 2026 00:00:00 -0400</pubDate>
 
@@ -267,7 +315,7 @@
   <item>
     <title>How much LLMs is too much LLMs?</title>
     <link>https://www.sammystraus.com/#how-much-llms-is-too-much-llms</link>
-    <author>sam@sams-MacBook-Pro.local (sam)</author>
+    <author>sam@Mac (sam)</author>
     <guid isPermaLink="false">https://www.sammystraus.com/#how-much-llms-is-too-much-llms</guid>
     <pubDate>Wed, 29 Apr 2026 00:00:00 -0400</pubDate>
 
@@ -311,7 +359,7 @@
 <item>
   <title>Building Chess in about 350 lines of Clojure</title>
   <link>https://www.sammystraus.com/#building-chess-in-about-350-lines-of-clojure</link>
-  <author>sam@sams-MacBook-Pro.local (sam)</author>
+  <author>sam@Mac (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#building-chess-in-about-350-lines-of-clojure</guid>
   <pubDate>Wed, 11 Feb 2026 00:00:00 -0500</pubDate>
 
@@ -327,31 +375,31 @@
   I hand-drew all of the pieces, and used this little reagent snippet to render the display,
   </p>
   <div class="org-src-container">
-  <pre class="src src-clojurescript">[<span style="color: #000080805555;">:h-box</span>
-  (<span style="color: #00007ffc7ffd;">doall</span> (<span style="color: #00007ffc7ffd;">for</span> [x (range (count tiles))]
-  ^{<span style="color: #000080805555;">:key</span> x}
-  [<span style="color: #000080805555;">:v-box</span>
-  (<span style="color: #00007ffc7ffd;">doall</span> (<span style="color: #00007ffc7ffd;">for</span> [y (reverse (range (count (nth tiles x))))]
-  ^{<span style="color: #000080805555;">:key</span> y}
-  [<span style="color: #000080805555;">:p</span> {<span style="color: #000080805555;">:style</span> {<span style="color: #000080805555;">:background-color</span> (<span style="color: #00007ffc7ffd;">cond</span>
-  (= [x y] @currently-selected-location)  <span style="color: #4cc74cc7fffe;">"yellow"</span>
-  (= (mod (+ x y) 2) 1) <span style="color: #4cc74cc7fffe;">"white"</span>
-  <span style="color: #000080805555;">:else</span> <span style="color: #4cc74cc7fffe;">"black"</span>)
-  <span style="color: #000080805555;">:height</span> <span style="color: #4cc74cc7fffe;">"4rem"</span>
-  <span style="color: #000080805555;">:width</span> <span style="color: #4cc74cc7fffe;">"4rem"</span>
+  <pre class="src src-clojurescript">[<span style="color: #7fffd4;">:h-box</span>
+  (<span style="color: #00ffff;">doall</span> (<span style="color: #00ffff;">for</span> [x (range (count tiles))]
+  ^{<span style="color: #7fffd4;">:key</span> x}
+  [<span style="color: #7fffd4;">:v-box</span>
+  (<span style="color: #00ffff;">doall</span> (<span style="color: #00ffff;">for</span> [y (reverse (range (count (nth tiles x))))]
+  ^{<span style="color: #7fffd4;">:key</span> y}
+  [<span style="color: #7fffd4;">:p</span> {<span style="color: #7fffd4;">:style</span> {<span style="color: #7fffd4;">:background-color</span> (<span style="color: #00ffff;">cond</span>
+  (= [x y] @currently-selected-location)  <span style="color: #9999FF;">"yellow"</span>
+  (= (mod (+ x y) 2) 1) <span style="color: #9999FF;">"white"</span>
+  <span style="color: #7fffd4;">:else</span> <span style="color: #9999FF;">"black"</span>)
+  <span style="color: #7fffd4;">:height</span> <span style="color: #9999FF;">"4rem"</span>
+  <span style="color: #7fffd4;">:width</span> <span style="color: #9999FF;">"4rem"</span>
   }
-  <span style="color: #000080805555;">:on-click</span> (<span style="color: #00007ffc7ffd;">fn</span> [] (move-selected-piece
+  <span style="color: #7fffd4;">:on-click</span> (<span style="color: #00ffff;">fn</span> [] (move-selected-piece
   game-board-atom
   currently-selected-location
   [x y]))}
 
-  (<span style="color: #00007ffc7ffd;">if</span> (not (nil? (get-in tiles [x y])))
-  [<span style="color: #000080805555;">:img</span> {<span style="color: #000080805555;">:src</span> (image-path (<span style="color: #000080805555;">::piece-type</span> (get-in tiles [x y])))
-  <span style="color: #000080805555;">:style</span> {<span style="color: #000080805555;">:height</span> <span style="color: #4cc74cc7fffe;">"100%"</span>
-  <span style="color: #000080805555;">:width</span> <span style="color: #4cc74cc7fffe;">"100%"</span>
-  <span style="color: #000080805555;">:filter</span> (<span style="color: #00007ffc7ffd;">when</span> (= (<span style="color: #000080805555;">::color</span> (get-in tiles [x y])) <span style="color: #000080805555;">::black</span>)
-  <span style="color: #4cc74cc7fffe;">"invert()"</span>)}}]
-  <span style="color: #4cc74cc7fffe;">""</span>)]))]))]
+  (<span style="color: #00ffff;">if</span> (not (nil? (get-in tiles [x y])))
+  [<span style="color: #7fffd4;">:img</span> {<span style="color: #7fffd4;">:src</span> (image-path (<span style="color: #7fffd4;">::piece-type</span> (get-in tiles [x y])))
+  <span style="color: #7fffd4;">:style</span> {<span style="color: #7fffd4;">:height</span> <span style="color: #9999FF;">"100%"</span>
+  <span style="color: #7fffd4;">:width</span> <span style="color: #9999FF;">"100%"</span>
+  <span style="color: #7fffd4;">:filter</span> (<span style="color: #00ffff;">when</span> (= (<span style="color: #7fffd4;">::color</span> (get-in tiles [x y])) <span style="color: #7fffd4;">::black</span>)
+  <span style="color: #9999FF;">"invert()"</span>)}}]
+  <span style="color: #9999FF;">""</span>)]))]))]
   </pre>
   </div>
   <p>
@@ -365,9 +413,9 @@
   <pre class="src src-clojurescript">(deft ChessPiece [color piece-type])
 
 
-  (deft ChessBoard [tiles - [<span style="color: #000080805555;">:vector</span> [<span style="color: #000080805555;">:vector</span> [<span style="color: #000080805555;">:or</span> <span style="color: #000080805555;">:nil</span> ChessPiece]]]
-  curr-move - [<span style="color: #000080805555;">:enum</span> <span style="color: #000080805555;">::white</span> <span style="color: #000080805555;">::black</span>]
-  move-history - [<span style="color: #000080805555;">:vector</span> ChessMove]])
+  (deft ChessBoard [tiles - [<span style="color: #7fffd4;">:vector</span> [<span style="color: #7fffd4;">:vector</span> [<span style="color: #7fffd4;">:or</span> <span style="color: #7fffd4;">:nil</span> ChessPiece]]]
+  curr-move - [<span style="color: #7fffd4;">:enum</span> <span style="color: #7fffd4;">::white</span> <span style="color: #7fffd4;">::black</span>]
+  move-history - [<span style="color: #7fffd4;">:vector</span> ChessMove]])
   </pre>
   </div>
 
@@ -389,14 +437,14 @@
   <div class="org-src-container">
   <pre class="src src-clojurescript">(deft Knight []
   PieceType
-  (image-path [this] (image-asset <span style="color: #4cc74cc7fffe;">"knight_white.png"</span>))
+  (image-path [this] (image-asset <span style="color: #9999FF;">"knight_white.png"</span>))
   MovablePiece
   (is-valid-move-for-piece?
   [this game-board start-location end-location]
-  (<span style="color: #00007ffc7ffd;">and</span>
-  (<span style="color: #00007ffc7ffd;">let</span> [direction (map abs (map - end-location start-location))]
-  (<span style="color: #00007ffc7ffd;">or</span> (<span style="color: #00007ffc7ffd;">and</span> (= (first direction) 1) (= (second direction) 2))
-  (<span style="color: #00007ffc7ffd;">and</span> (= (first direction) 2) (= (second direction) 1))))
+  (<span style="color: #00ffff;">and</span>
+  (<span style="color: #00ffff;">let</span> [direction (map abs (map - end-location start-location))]
+  (<span style="color: #00ffff;">or</span> (<span style="color: #00ffff;">and</span> (= (first direction) 1) (= (second direction) 2))
+  (<span style="color: #00ffff;">and</span> (= (first direction) 2) (= (second direction) 1))))
   (is-valid-end-location? game-board start-location end-location))))
   </pre>
   </div>
@@ -423,40 +471,40 @@
   so for pawns, it would look something like this:
   </p>
   <div class="org-src-container">
-  <pre class="src src-clojurescript">(<span style="color: #00007ffc7ffd;">defmethod</span> <span style="color: #05054c4c7878;">special-move-for-piece</span> <span style="color: #000080805555;">::Pawn</span>
+  <pre class="src src-clojurescript">(<span style="color: #00ffff;">defmethod</span> <span style="color: #87cefa;">special-move-for-piece</span> <span style="color: #7fffd4;">::Pawn</span>
   [this game-board start-location end-location]
-  (<span style="color: #00007ffc7ffd;">let</span> [curr-piece-color (<span style="color: #000080805555;">::color</span> (get-in (<span style="color: #000080805555;">::tiles</span> game-board) start-location))
+  (<span style="color: #00ffff;">let</span> [curr-piece-color (<span style="color: #7fffd4;">::color</span> (get-in (<span style="color: #7fffd4;">::tiles</span> game-board) start-location))
   move-direction (into [] (map - end-location start-location))
-  prev-move (last (<span style="color: #000080805555;">::move-history</span> game-board))]
-  (<span style="color: #00007ffc7ffd;">cond</span>
-  <span style="color: #51f44a264a26;">;; </span><span style="color: #b92eb1bab1ba;">en passant
-  </span>      (<span style="color: #00007ffc7ffd;">and</span> (= (second move-direction)
-  (<span style="color: #00007ffc7ffd;">if</span> (= curr-piece-color <span style="color: #000080805555;">::white</span>)
+  prev-move (last (<span style="color: #7fffd4;">::move-history</span> game-board))]
+  (<span style="color: #00ffff;">cond</span>
+  <span style="color: #bebebe;">;; </span><span style="color: #575757;">en passant
+  </span>      (<span style="color: #00ffff;">and</span> (= (second move-direction)
+  (<span style="color: #00ffff;">if</span> (= curr-piece-color <span style="color: #7fffd4;">::white</span>)
   1 -1))
   (= (abs (first move-direction)) 1)
-  (= (<span style="color: #000080805555;">:type</span> (<span style="color: #000080805555;">::piece-type</span> (<span style="color: #000080805555;">::piece</span> prev-move))) <span style="color: #000080805555;">::Pawn</span>)
-  (= (apply max (map abs (map - (<span style="color: #000080805555;">::end-location</span> prev-move) (<span style="color: #000080805555;">::start-location</span> prev-move)))) 2)
+  (= (<span style="color: #7fffd4;">:type</span> (<span style="color: #7fffd4;">::piece-type</span> (<span style="color: #7fffd4;">::piece</span> prev-move))) <span style="color: #7fffd4;">::Pawn</span>)
+  (= (apply max (map abs (map - (<span style="color: #7fffd4;">::end-location</span> prev-move) (<span style="color: #7fffd4;">::start-location</span> prev-move)))) 2)
   (= end-location
   (into []
   (map +
-  (map (<span style="color: #00007ffc7ffd;">fn</span> [x] (/ x 2 )) (map - (<span style="color: #000080805555;">::end-location</span> prev-move) (<span style="color: #000080805555;">::start-location</span> prev-move)))
-  (<span style="color: #000080805555;">::start-location</span> prev-move)))))
-  (<span style="color: #00007ffc7ffd;">-&gt;</span> game-board
-  (update <span style="color: #000080805555;">::tiles</span> assoc-in start-location <span style="color: #000080805555;">nil</span>)
-  (update <span style="color: #000080805555;">::tiles</span> assoc-in end-location
-  (get-in (<span style="color: #000080805555;">::tiles</span> game-board) start-location))
-  (update <span style="color: #000080805555;">::tiles</span> assoc-in (<span style="color: #000080805555;">::end-location</span> prev-move)
-  <span style="color: #000080805555;">nil</span>))
+  (map (<span style="color: #00ffff;">fn</span> [x] (/ x 2 )) (map - (<span style="color: #7fffd4;">::end-location</span> prev-move) (<span style="color: #7fffd4;">::start-location</span> prev-move)))
+  (<span style="color: #7fffd4;">::start-location</span> prev-move)))))
+  (<span style="color: #00ffff;">-&gt;</span> game-board
+  (update <span style="color: #7fffd4;">::tiles</span> assoc-in start-location <span style="color: #7fffd4;">nil</span>)
+  (update <span style="color: #7fffd4;">::tiles</span> assoc-in end-location
+  (get-in (<span style="color: #7fffd4;">::tiles</span> game-board) start-location))
+  (update <span style="color: #7fffd4;">::tiles</span> assoc-in (<span style="color: #7fffd4;">::end-location</span> prev-move)
+  <span style="color: #7fffd4;">nil</span>))
 
-  (<span style="color: #00007ffc7ffd;">and</span> (is-valid-move-for-piece? this game-board start-location end-location)
-  (<span style="color: #00007ffc7ffd;">or</span> (= (second end-location) 0)
+  (<span style="color: #00ffff;">and</span> (is-valid-move-for-piece? this game-board start-location end-location)
+  (<span style="color: #00ffff;">or</span> (= (second end-location) 0)
   (= (second end-location) 7)))
-  (<span style="color: #00007ffc7ffd;">-&gt;</span> game-board
-  (update <span style="color: #000080805555;">::tiles</span> assoc-in start-location <span style="color: #000080805555;">nil</span>)
-  (update <span style="color: #000080805555;">::tiles</span> assoc-in end-location
-  (assoc (get-in (<span style="color: #000080805555;">::tiles</span> game-board) start-location)
-  <span style="color: #000080805555;">::piece-type</span> (&gt;Queen))))
-  <span style="color: #000080805555;">:else</span> <span style="color: #000080805555;">nil</span>)))
+  (<span style="color: #00ffff;">-&gt;</span> game-board
+  (update <span style="color: #7fffd4;">::tiles</span> assoc-in start-location <span style="color: #7fffd4;">nil</span>)
+  (update <span style="color: #7fffd4;">::tiles</span> assoc-in end-location
+  (assoc (get-in (<span style="color: #7fffd4;">::tiles</span> game-board) start-location)
+  <span style="color: #7fffd4;">::piece-type</span> (&gt;Queen))))
+  <span style="color: #7fffd4;">:else</span> <span style="color: #7fffd4;">nil</span>)))
   </pre>
   </div>
 
@@ -508,7 +556,7 @@
 <item>
   <title>Announcing Deft: A class and interface system for Clojure and ClojureScript</title>
   <link>https://www.sammystraus.com/#announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript</link>
-  <author>sam@sams-MacBook-Pro.local (sam)</author>
+  <author>sam@Mac (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#announcing-deft-a-class-and-interface-system-for-clojure-and-clojurescript</guid>
   <pubDate>Mon, 12 Jan 2026 00:00:00 -0500</pubDate>
 
@@ -555,7 +603,7 @@
 <item>
   <title>My Blog is Now on RSS</title>
   <link>https://www.sammystraus.com/#my-blog-is-now-on-rss</link>
-  <author>sam@sams-MacBook-Pro.local (sam)</author>
+  <author>sam@Mac (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#my-blog-is-now-on-rss</guid>
   <pubDate>Thu, 08 Jan 2026 00:00:00 -0500</pubDate>
 
@@ -571,7 +619,7 @@
 <item>
   <title>How to Win at Wordle</title>
   <link>https://www.sammystraus.com/#how-to-win-at-wordle</link>
-  <author>sam@sams-MacBook-Pro.local (sam)</author>
+  <author>sam@Mac (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#how-to-win-at-wordle</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -583,8 +631,8 @@
   Ok, I got a little bit lucky, but it wasn't all luck. While I was playing I had a chance to think through some of the strategies, and saw some pitfalls I think others might have missed.
   </p>
   <div id="outline-container-ID-81E51619-D781-40D7-9B49-2A5C61F7D4A0" class="outline-3">
-  <h3 id="ID-81E51619-D781-40D7-9B49-2A5C61F7D4A0"><span class="section-number-3">8.1.</span> Don't guess letters that are already green</h3>
-  <div class="outline-text-3" id="text-8-1">
+  <h3 id="ID-81E51619-D781-40D7-9B49-2A5C61F7D4A0"><span class="section-number-3">9.1.</span> Don't guess letters that are already green</h3>
+  <div class="outline-text-3" id="text-9-1">
   <p>
   Unless you're trying to make your final guess to win the game, you shouldn't guess the same letter in the same place. You already tried that, so doing it again doesn't give you new information.
   </p>
@@ -599,8 +647,8 @@
   </div>
   </div>
   <div id="outline-container-ID-06422413-45DF-498B-9AEB-F8EBA92B5DD3" class="outline-3">
-  <h3 id="ID-06422413-45DF-498B-9AEB-F8EBA92B5DD3"><span class="section-number-3">8.2.</span> When you guess new letters, put them in places they commonly appear</h3>
-  <div class="outline-text-3" id="text-8-2">
+  <h3 id="ID-06422413-45DF-498B-9AEB-F8EBA92B5DD3"><span class="section-number-3">9.2.</span> When you guess new letters, put them in places they commonly appear</h3>
+  <div class="outline-text-3" id="text-9-2">
   <p>
   Just for a moment, think of worlde a little bit like binary search. Your goal is to learn as much information as possible with every guess. If your guess splits the problem space in half (i.e. you eliminate half of possible words if it shows up green, and half of words if it shows up yellow), you learn (on average) the most possible information with every guess.
   </p>
@@ -615,8 +663,8 @@
   </div>
   </div>
   <div id="outline-container-ID-6E6686E5-CA34-435E-9C68-FECDF5EA7227" class="outline-3">
-  <h3 id="ID-6E6686E5-CA34-435E-9C68-FECDF5EA7227"><span class="section-number-3">8.3.</span> Guess common letters first</h3>
-  <div class="outline-text-3" id="text-8-3">
+  <h3 id="ID-6E6686E5-CA34-435E-9C68-FECDF5EA7227"><span class="section-number-3">9.3.</span> Guess common letters first</h3>
+  <div class="outline-text-3" id="text-9-3">
   <p>
   Basically the same logic as above. It's either one of the 5 specific letters you guessed, or it's one of the 21 other letters. You want to guess the 5 that most closely split the problem in half.
   </p>
@@ -627,8 +675,8 @@
   </div>
   </div>
   <div id="outline-container-ID-BC84053E-824F-4654-848D-B381DF4C69CB" class="outline-3">
-  <h3 id="ID-BC84053E-824F-4654-848D-B381DF4C69CB"><span class="section-number-3">8.4.</span> Think through the list of possible words at every step</h3>
-  <div class="outline-text-3" id="text-8-4">
+  <h3 id="ID-BC84053E-824F-4654-848D-B381DF4C69CB"><span class="section-number-3">9.4.</span> Think through the list of possible words at every step</h3>
+  <div class="outline-text-3" id="text-9-4">
   <p>
   Remember, your goal is to "divide in half" with every letter. If you have a sense of/random sample of the words in the space, it's easier to pick the letters/positions that divide that list the most precisely.
   </p>
@@ -639,7 +687,7 @@
 <item>
   <title>The Power Of Habit (Book Review Pt 1)</title>
   <link>https://www.sammystraus.com/#the-power-of-habit-book-review-pt-1</link>
-  <author>sam@sams-MacBook-Pro.local (sam)</author>
+  <author>sam@Mac (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#the-power-of-habit-book-review-pt-1</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -672,7 +720,7 @@
 <item>
   <title>Modern Monetary Theory and You</title>
   <link>https://www.sammystraus.com/#modern-monetary-theory-and-you</link>
-  <author>sam@sams-MacBook-Pro.local (sam)</author>
+  <author>sam@Mac (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#modern-monetary-theory-and-you</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -688,8 +736,8 @@
   Some people argue that with the power of MMT, we have the money to finance all of our wildest hopes and dreams, if somebody would just have the courage to turn on the money printer. Free college, loan reimbursement, free housing, we could pay for everything with a click of a button, and no negative long-term reprecussions. As long as we don't cause inflation, there really isn't anything to worry about.
   </p>
   <div id="outline-container-ID-8252C9B9-B35B-4580-8233-479C1705BA6D" class="outline-3">
-  <h3 id="ID-8252C9B9-B35B-4580-8233-479C1705BA6D"><span class="section-number-3">10.1.</span> The Big If</h3>
-  <div class="outline-text-3" id="text-10-1">
+  <h3 id="ID-8252C9B9-B35B-4580-8233-479C1705BA6D"><span class="section-number-3">11.1.</span> The Big If</h3>
+  <div class="outline-text-3" id="text-11-1">
   <p>
   The thing is, that's a pretty big if. You can "prove" anything you want if you start with a false assumption. If we could print infinite money, and not cause inflation, that'd be pretty awesome, but is such a thing even possible? How did we get here, and why does anybody believe we can do this?
   </p>
@@ -708,8 +756,8 @@
   </div>
   </div>
   <div id="outline-container-ID-52818742-EBFF-448A-8E31-AD8F84E074E2" class="outline-3">
-  <h3 id="ID-52818742-EBFF-448A-8E31-AD8F84E074E2"><span class="section-number-3">10.2.</span> How We Got Here</h3>
-  <div class="outline-text-3" id="text-10-2">
+  <h3 id="ID-52818742-EBFF-448A-8E31-AD8F84E074E2"><span class="section-number-3">11.2.</span> How We Got Here</h3>
+  <div class="outline-text-3" id="text-11-2">
   <p>
   So if America went out tommorrow, and started printing tons of money, and taking on tons of debt, we'd expect the cost of everything to go way up. We'd expect government bonds to be much less valuable, right? Right?
   </p>
@@ -726,8 +774,8 @@
   </div>
   </div>
   <div id="outline-container-ID-73859BEF-D79B-470A-9A8F-04521A7A175B" class="outline-3">
-  <h3 id="ID-73859BEF-D79B-470A-9A8F-04521A7A175B"><span class="section-number-3">10.3.</span> The United States as a Trustworthy Institution</h3>
-  <div class="outline-text-3" id="text-10-3">
+  <h3 id="ID-73859BEF-D79B-470A-9A8F-04521A7A175B"><span class="section-number-3">11.3.</span> The United States as a Trustworthy Institution</h3>
+  <div class="outline-text-3" id="text-11-3">
   <p>
   Ok, so, we took on a lot of debt before, and it was fine. We printed a truly wild amount of money, and people still trusted us as a stable, reliable institution. Everyone believed that the U.S. government would pay them back, and would pay them back in dollars that held value.
   </p>
@@ -762,8 +810,8 @@
   </div>
   </div>
   <div id="outline-container-ID-AADDCE98-FB55-42CE-B36D-A09F23E5DC16" class="outline-3">
-  <h3 id="ID-AADDCE98-FB55-42CE-B36D-A09F23E5DC16"><span class="section-number-3">10.4.</span> Take From the Rich and Give to the Poor</h3>
-  <div class="outline-text-3" id="text-10-4">
+  <h3 id="ID-AADDCE98-FB55-42CE-B36D-A09F23E5DC16"><span class="section-number-3">11.4.</span> Take From the Rich and Give to the Poor</h3>
+  <div class="outline-text-3" id="text-11-4">
   <p>
   The argument goes something like this:
   </p>
@@ -786,8 +834,8 @@
   </div>
   </div>
   <div id="outline-container-ID-EC7A53E4-5B8D-4119-8CD3-EA779D1A083B" class="outline-3">
-  <h3 id="ID-EC7A53E4-5B8D-4119-8CD3-EA779D1A083B"><span class="section-number-3">10.5.</span> Stimulus and Economic Growth</h3>
-  <div class="outline-text-3" id="text-10-5">
+  <h3 id="ID-EC7A53E4-5B8D-4119-8CD3-EA779D1A083B"><span class="section-number-3">11.5.</span> Stimulus and Economic Growth</h3>
+  <div class="outline-text-3" id="text-11-5">
   <p>
   Ok so there's a real argument here. The idea is – it's ok to print money because we can generate more goods and services. If we spend it wisely – build bridges, improve broadband, we can create jobs for people who were previously out of work. What's more, that new infrastructure and spending will spur even further economic growth.
   </p>
@@ -810,7 +858,7 @@
 <item>
   <title>The Perfect Camera</title>
   <link>https://www.sammystraus.com/#the-perfect-camera</link>
-  <author>sam@sams-MacBook-Pro.local (sam)</author>
+  <author>sam@Mac (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#the-perfect-camera</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -1064,7 +1112,7 @@
 <item>
   <title>Camera Lenses: What's in My Bag</title>
   <link>https://www.sammystraus.com/#camera-lenses-what-s-in-my-bag</link>
-  <author>sam@sams-MacBook-Pro.local (sam)</author>
+  <author>sam@Mac (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#camera-lenses-what-s-in-my-bag</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -1124,7 +1172,7 @@
 <item>
   <title>Why Many Primary Forecasts are Wrong</title>
   <link>https://www.sammystraus.com/#why-many-primary-forecasts-are-wrong</link>
-  <author>sam@sams-MacBook-Pro.local (sam)</author>
+  <author>sam@Mac (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#why-many-primary-forecasts-are-wrong</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -1144,7 +1192,7 @@
 <item>
   <title>The Wonky Math behind the Democratic Primary</title>
   <link>https://www.sammystraus.com/#the-wonky-math-behind-the-democratic-primary</link>
-  <author>sam@sams-MacBook-Pro.local (sam)</author>
+  <author>sam@Mac (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#the-wonky-math-behind-the-democratic-primary</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -1180,7 +1228,7 @@
 <item>
   <title>What's Going on With The Impeachment</title>
   <link>https://www.sammystraus.com/#what-s-going-on-with-the-impeachment</link>
-  <author>sam@sams-MacBook-Pro.local (sam)</author>
+  <author>sam@Mac (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#what-s-going-on-with-the-impeachment</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -1308,7 +1356,7 @@
 <item>
   <title>Treating Cancer with Chemo (Part 3)</title>
   <link>https://www.sammystraus.com/#treating-cancer-with-chemo-part-3</link>
-  <author>sam@sams-MacBook-Pro.local (sam)</author>
+  <author>sam@Mac (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#treating-cancer-with-chemo-part-3</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -1330,7 +1378,7 @@
 <item>
   <title>Treating Cancer with Chemo (Part 2)</title>
   <link>https://www.sammystraus.com/#treating-cancer-with-chemo-part-2</link>
-  <author>sam@sams-MacBook-Pro.local (sam)</author>
+  <author>sam@Mac (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#treating-cancer-with-chemo-part-2</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -1366,7 +1414,7 @@
 <item>
   <title>Treating Cancer with Chemo (Part 1)</title>
   <link>https://www.sammystraus.com/#treating-cancer-with-chemo-part-1</link>
-  <author>sam@sams-MacBook-Pro.local (sam)</author>
+  <author>sam@Mac (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#treating-cancer-with-chemo-part-1</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -1422,7 +1470,7 @@
 <item>
   <title>The Importance of Doing Nothing</title>
   <link>https://www.sammystraus.com/#the-importance-of-doing-nothing</link>
-  <author>sam@sams-MacBook-Pro.local (sam)</author>
+  <author>sam@Mac (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#the-importance-of-doing-nothing</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -1458,7 +1506,7 @@
 <item>
   <title>Why I Support Citizens United</title>
   <link>https://www.sammystraus.com/#why-i-support-citizens-united</link>
-  <author>sam@sams-MacBook-Pro.local (sam)</author>
+  <author>sam@Mac (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#why-i-support-citizens-united</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 
@@ -1494,7 +1542,7 @@
 <item>
   <title>Camera Settings</title>
   <link>https://www.sammystraus.com/#camera-settings</link>
-  <author>sam@sams-MacBook-Pro.local (sam)</author>
+  <author>sam@Mac (sam)</author>
   <guid isPermaLink="false">https://www.sammystraus.com/#camera-settings</guid>
   <pubDate>Sun, 14 Dec 2025 00:00:00 -0500</pubDate>
 

@@ -14,7 +14,7 @@
 :END:
 For the past few years, I've been working on [[https://sprinklz.io][sprinklz.io]], a customizable feed reader that can, among other things, deprioritize certain topics from your news feed.
 
-A few weeks ago, I [[https://news.ycombinator.com/item?id=49660482][posted it to HN]], and it got a hundred or so upvotes, nice! It seems like people are really tired of hearing about LLMs, and they enjoyed being able to deprioritize them from their feed. It was a good demo of why a tool like this is so useful. Everything was looking up, and then...
+A month ago, I [[https://news.ycombinator.com/item?id=49660482][posted it to HN]], and it got a hundred or so upvotes, nice! It seems like people are really tired of hearing about LLMs, and they enjoyed being able to deprioritize them from their feed. It was a good demo of why a tool like this is so useful. Everything was looking up, and then...
 
 My website got slow. Like, really, painfully slow. At first I chalked it up to the extra attention of a suddenly popular post. Like any developer I both celebrated, and vowed to make my website more resiliant in the future. Strangely though, the slowness continued, and even started to get worse /several days after/ my post went live, and the metrics I did log did not make sense. Like, you know, a good handful of genuinely active, logged-in users, and a sever exhibiting exhorbatantly high load.
 
@@ -29,7 +29,7 @@ The most important lesson though, is that it's time to make my website faster. I
 
 
 
-P.S. if you'd like to check it out, the website is fully free, and available at [[here][https://sprinklz.io]]
+P.S. if you'd like to check it out, the website is fully free, and available [[https://sprinklz.io][here]]
 
 The TLDR is that it lets you define your own customizations, /in addition/ to things like the points totals from hacker news. You can use it to filter out topics, like AI or LLMs, but the topics are completely arbitrary and you can program your own customizations.
 
