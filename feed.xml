@@ -14,8 +14,8 @@
   <link>https://www.sammystraus.com/</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Mon, 12 Oct 2026 22:11:33 -0400</pubDate>
-  <lastBuildDate>Mon, 12 Oct 2026 22:11:33 -0400</lastBuildDate>
+  <pubDate>Mon, 12 Oct 2026 22:12:24 -0400</pubDate>
+  <lastBuildDate>Mon, 12 Oct 2026 22:12:24 -0400</lastBuildDate>
   <generator>Emacs 30.2 Org-mode 9.7.11</generator>
   <webMaster>sam@Mac (sam)</webMaster>
   <image>
@@ -66,7 +66,7 @@
     </p>
 
     <p>
-    A month ago, I <a href="https://news.ycombinator.com/item?id=49660482">posted it to HN</a>, and it got a hundred or so upvotes, nice! It seems like people are really tired of hearing about LLMs, and they enjoyed being able to deprioritize them from their feed. It was a good demo of why a tool like this is so useful. Everything was looking up, and then...
+    A month ago, I <a href="https://news.ycombinator.com/item?id=49660482">posted it to HN</a>, and it got a hundred or so upvotes, nice! It seems like people are really tired of hearing about LLMs, and they enjoyed being able to deprioritize them from their feed. It was a good demo of why a tool like this is useful. Everything was looking up, and then...
     </p>
 
     <p>
@@ -157,14 +157,14 @@
     The docs for Clojure's mapcat
     </p>
 
-    <div id="org11499b2" class="figure">
+    <div id="orgb8e7b88" class="figure">
     <p><img src="./images/ClojureDocs_before.png" alt="ClojureDocs_before.png" width="400px" />
     </p>
     <p><span class="figure-number">Figure 1: </span>(before) Using eww-readable</p>
     </div>
 
 
-    <div id="org6437a94" class="figure">
+    <div id="orgbac89fc" class="figure">
     <p><img src="./images/ClojureDocs_after.png" alt="ClojureDocs_after.png" width="400px" />
     </p>
     <p><span class="figure-number">Figure 2: </span>(after) Using simpleweb-simplify-page</p>
